@@ -1,0 +1,49 @@
+"use client";
+
+import { introStill } from "@/lib/media";
+import { ImageReveal } from "./ImageReveal";
+import { ScrollReveal } from "./ScrollReveal";
+
+type Props = { onOpen: (id: string) => void };
+
+export function EventIntro({ onOpen }: Props) {
+  return (
+    <section className="gathering" id="gathering">
+      <div className="gathering-copy">
+        <ScrollReveal>
+          <p className="eyebrow">02 — The gathering</p>
+          <h2 lang="bn">প্রকৃতি জাগরণ মঞ্চ</h2>
+          <p>
+            All Bengal Yogasana Sports Association presents this gathering at Bharat Sevashram Sangha,
+            Muluk, Bolpur, Birbhum. The association is affiliated to Yogasana Bharat, New Delhi, and to
+            World Yogasana.
+          </p>
+          <p>
+            With it stands the 7th State Yogasana Sports Championship 2026–27, for men and women. The
+            programme is organised jointly with Karmyog and Bharatiya Krishak Samaj.
+          </p>
+        </ScrollReveal>
+        <blockquote>
+          <p lang="bn">সমত্বং যোগ উচ্যতে</p>
+          <footer>The line carried on the Yogasana Bharat seal.</footer>
+        </blockquote>
+      </div>
+      <ImageReveal
+        {...introStill}
+        className="gathering-still"
+        onOpen={() => onOpen(introStill.id)}
+      />
+      <div className="significance">
+        <p className="eyebrow">03 — Why the day is held this way</p>
+        <h2>
+          A championship in the hall.
+          <em> A practice on the ground.</em>
+        </h2>
+        <p>
+          The morning begins indoors, in the mandir, and moves out onto the ashram field. Yogasana is
+          present as a state sport, and as a practice taken together.
+        </p>
+      </div>
+    </section>
+  );
+}
