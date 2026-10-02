@@ -237,6 +237,24 @@ export const stills: Still[] = [
     alt: "An instructor seen from behind leads the group, incense smoke rising from the mats.",
     caption: "The association team leads. Muluk, 2 October 2026.",
   },
+  {
+    id: "interview-seated",
+    src: "/assets/gallery/interview-seated.webp",
+    plate: "28",
+    width: 1024,
+    height: 768,
+    alt: "An interview with Dr (Major) Narayan Bhattacharya being filmed in front of the Prakriti Jagaran banner.",
+    caption: "Interview with Dr (Major) Narayan Bhattacharya.",
+  },
+  {
+    id: "interview-camera",
+    src: "/assets/gallery/interview-camera.webp",
+    plate: "29",
+    width: 768,
+    height: 1024,
+    alt: "A camera on a tripod records the interview with Dr (Major) Narayan Bhattacharya.",
+    caption: "The interview, filmed in front of the banner.",
+  },
 ];
 
 export const films: Film[] = [

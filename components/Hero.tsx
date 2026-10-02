@@ -8,7 +8,9 @@ import { useReducedMotion } from "@/lib/use-reduced-motion";
 const gesture =
   "M304 338 C268 292 228 236 252 178 C270 136 236 108 204 126 C184 138 192 168 220 162";
 
-export function Hero() {
+type Props = { play: boolean };
+
+export function Hero({ play }: Props) {
   const frameRef = useRef<HTMLDivElement>(null);
   const gestureRef = useRef<SVGPathElement>(null);
   const reduced = useReducedMotion();
@@ -16,7 +18,7 @@ export function Hero() {
   useEffect(() => {
     const path = gestureRef.current;
     const image = frameRef.current?.querySelector("img");
-    if (!path || !image) return;
+    if (!path || !image || !play) return;
 
     if (reduced) {
       gsap.set(path, { opacity: 0 });
@@ -37,10 +39,10 @@ export function Hero() {
     return () => {
       timeline.kill();
     };
-  }, [reduced]);
+  }, [reduced, play]);
 
   return (
-    <section className="hero" id="top" aria-labelledby="hero-title">
+    <section className="hero" id="home" aria-labelledby="hero-title">
       <div className="hero-frame" ref={frameRef}>
         <img src={hero.src} alt={hero.alt} width={1024} height={576} fetchPriority="high" />
         <svg viewBox="0 0 1024 576" aria-hidden="true">
@@ -58,7 +60,6 @@ export function Hero() {
         <p className="hero-meta">
           7th State Yogasana Sports Championship 2026–27
           <span>Muluk, Bolpur, Birbhum</span>
-          <span>2 October 2026</span>
         </p>
       </div>
     </section>

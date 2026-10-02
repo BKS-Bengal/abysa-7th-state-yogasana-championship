@@ -1,7 +1,7 @@
 export function IdentitySection() {
   return (
     <section className="identity" id="identity" aria-labelledby="identity-title">
-      <p className="eyebrow">09 — Identity</p>
+      <p className="eyebrow">Affiliation</p>
       <h2 id="identity-title" lang="bn">
         সমত্বং যোগ উচ্যতে
       </h2>

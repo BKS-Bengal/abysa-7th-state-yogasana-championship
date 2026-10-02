@@ -1,17 +1,11 @@
-"use client";
-
-import { introStill } from "@/lib/media";
-import { ImageReveal } from "./ImageReveal";
 import { ScrollReveal } from "./ScrollReveal";
 
-type Props = { onOpen: (id: string) => void };
-
-export function EventIntro({ onOpen }: Props) {
+export function EventIntro() {
   return (
-    <section className="gathering" id="gathering">
+    <section className="gathering" id="event">
       <div className="gathering-copy">
         <ScrollReveal>
-          <p className="eyebrow">02 — The gathering</p>
+          <p className="eyebrow">The event</p>
           <h2 lang="bn">প্রকৃতি জাগরণ মঞ্চ</h2>
           <p>
             All Bengal Yogasana Sports Association presents this gathering at Bharat Sevashram Sangha,
@@ -19,8 +13,9 @@ export function EventIntro({ onOpen }: Props) {
             World Yogasana.
           </p>
           <p>
-            With it stands the 7th State Yogasana Sports Championship 2026–27, for men and women. The
-            programme is organised jointly with Karmyog and Bharatiya Krishak Samaj.
+            With it stands the 7th State Yogasana Sports Championship 2026–27, for men and women, as
+            lettered on the hall banner. The programme is organised jointly with Karmyog and Bharatiya
+            Krishak Samaj.
           </p>
         </ScrollReveal>
         <blockquote>
@@ -28,13 +23,8 @@ export function EventIntro({ onOpen }: Props) {
           <footer>The line carried on the Yogasana Bharat seal.</footer>
         </blockquote>
       </div>
-      <ImageReveal
-        {...introStill}
-        className="gathering-still"
-        onOpen={() => onOpen(introStill.id)}
-      />
       <div className="significance">
-        <p className="eyebrow">03 — Why the day is held this way</p>
+        <p className="eyebrow">Why the day is held this way</p>
         <h2>
           A championship in the hall.
           <em> A practice on the ground.</em>
