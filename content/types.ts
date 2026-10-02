@@ -75,6 +75,8 @@ export type Copy = {
     title: string;
     lead: string;
     affiliation: string;
+    organisersEyebrow: string;
+    organisersTitle: string;
     organisers: string;
     closeEyebrow: string;
     closeTitle: string;

@@ -4,7 +4,13 @@
   --ink: #1b140f;
   --ink-soft: #5c4b3e;
   --maroon: #7d2430;
+  --oxblood: #5c1822;
+  --charcoal: #1a1412;
+  --on-dark: #f6efe4;
+  --on-dark-soft: #e4d5c4;
+  --on-dark-accent: #e7c27a;
   --line: rgba(27, 20, 15, 0.16);
+  --line-light: rgba(246, 239, 228, 0.24);
 }
 
 * { box-sizing: border-box; }
@@ -1055,6 +1061,196 @@ figcaption p,
   .lightbox-stage video {
     max-height: calc(100vh - 10.5rem);
   }
+}
+
+.band-oxblood,
+.band-charcoal {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 4.8rem 0 4.4rem;
+  color: var(--on-dark);
+}
+
+.band-oxblood { background: var(--oxblood); }
+.band-charcoal { background: var(--charcoal); }
+
+.band-inner {
+  width: min(1180px, calc(100% - 8vw));
+  margin: 0 auto;
+}
+
+.edit-split {
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+  gap: 2.2rem 3.2rem;
+  align-items: end;
+}
+
+.edit-split.image-lead {
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
+}
+
+.edit-copy > p:not(.eyebrow) {
+  max-width: 38rem;
+  margin: 0.9rem 0 0;
+}
+
+.edit-note {
+  margin: 0.8rem 0 0;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.edit-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.edit-figure.edit-overlap {
+  position: relative;
+}
+
+.edit-figure.edit-overlap::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  top: 1.15rem;
+  width: 32%;
+  height: calc(100% - 5rem);
+  background: var(--oxblood);
+}
+
+.edit-figure.edit-overlap img {
+  position: relative;
+  z-index: 1;
+  width: calc(100% - 1.15rem);
+}
+
+.band-oxblood .eyebrow,
+.band-charcoal .eyebrow,
+.band-oxblood h2 em,
+.band-charcoal h2 em,
+.band-oxblood figcaption span,
+.band-charcoal figcaption span,
+.band-charcoal .film-meta span {
+  color: var(--on-dark-accent);
+}
+
+.band-oxblood p,
+.band-charcoal p,
+.band-oxblood figcaption,
+.band-charcoal figcaption,
+.band-oxblood .date-note,
+.band-charcoal .date-note,
+.band-charcoal .film-meta,
+.band-charcoal .film-meta strong {
+  color: var(--on-dark-soft);
+}
+
+.band-oxblood h2,
+.band-charcoal h2,
+.band-oxblood blockquote p,
+.band-charcoal blockquote p,
+.band-charcoal .details dd {
+  color: var(--on-dark);
+}
+
+.details.band-charcoal dl > div,
+.details.band-charcoal dl > div:last-child {
+  border-color: var(--line-light);
+}
+
+.details.band-charcoal dt { color: var(--on-dark-accent); }
+
+.details .edit-split { align-items: start; }
+
+.band-oxblood :focus-visible,
+.band-charcoal :focus-visible {
+  outline-color: var(--on-dark-accent);
+}
+
+.home-lead.band-charcoal {
+  width: 100%;
+  padding: 4.6rem 0 4.8rem;
+}
+
+.home-lead.band-charcoal h2 em { color: var(--on-dark-accent); }
+
+.home-lead.band-charcoal .home-routes a {
+  color: var(--on-dark);
+  border-bottom-color: var(--on-dark-accent);
+}
+
+.story.band-oxblood,
+.significance.band-oxblood,
+.details.band-charcoal,
+.closing.band-charcoal,
+.archive.band-charcoal,
+.story-interview.band-charcoal,
+.organisers.band-oxblood {
+  width: 100%;
+}
+
+.significance.band-oxblood {
+  border-top: 0;
+  padding-top: 4.8rem;
+  padding-bottom: 4.4rem;
+}
+
+.story-ground {
+  width: min(1180px, calc(100% - 8vw));
+  margin: 0 auto;
+  padding: 4.8rem 0 4.4rem;
+}
+
+.story-ground h2,
+.story-interview h2,
+.organisers h2 {
+  margin: 0;
+  max-width: 14ch;
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(2.4rem, 5vw, 4.6rem);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+}
+
+html[lang="bn"] .story-ground h2,
+html[lang="bn"] .story-interview h2,
+html[lang="bn"] .organisers h2 {
+  font-family: var(--font-bangla), serif;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+.story-interview { margin-top: 0; }
+
+.archive.band-charcoal { padding-top: 5.2rem; }
+
+.archive.band-charcoal .chapter-head { margin-bottom: 1.8rem; }
+
+@media (max-width: 860px) {
+  .edit-split,
+  .edit-split.image-lead {
+    grid-template-columns: 1fr;
+    gap: 1.35rem;
+  }
+
+  .edit-split .edit-figure { order: -1; }
+
+  .edit-figure.edit-overlap::before {
+    width: 22%;
+    right: 0;
+  }
+
+  .story-ground { padding: 3.2rem 0; }
+
+  .band-oxblood,
+  .band-charcoal { padding: 3.2rem 0 3rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

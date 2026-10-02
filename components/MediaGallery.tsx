@@ -121,7 +121,8 @@ export function GalleryView({ onOpen }: Props) {
 export function MediaView({ onOpen }: Props) {
   const { copy } = useLanguage();
   return (
-    <section className="archive" aria-labelledby="media-title">
+    <section className="archive band-charcoal" aria-labelledby="media-title">
+      <div className="band-inner">
       <header className="chapter-head">
         <p className="eyebrow">{copy.media.eyebrow}</p>
         <h2 id="media-title">
@@ -149,6 +150,7 @@ export function MediaView({ onOpen }: Props) {
             </button>
           );
         })}
+      </div>
       </div>
     </section>
   );

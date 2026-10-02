@@ -1,5 +1,6 @@
 "use client";
 
+import { EditorialFigure } from "./EditorialFigure";
 import { useLanguage } from "@/lib/language";
 
 export function ClosingSection() {
@@ -7,17 +8,20 @@ export function ClosingSection() {
   const info = copy.information;
 
   return (
-    <section className="closing" aria-labelledby="closing-title">
-      <div className="closing-copy">
-        <p className="eyebrow">{info.closeEyebrow}</p>
-        <h2 id="closing-title" lang="bn">
-          {info.closeTitle}
-        </h2>
-        <p>{info.closeName}</p>
-        <p className="closing-meta">
-          {info.closePlace}
-          <span>{info.closeDate}</span>
-        </p>
+    <section className="closing band-charcoal" aria-labelledby="closing-title">
+      <div className="band-inner edit-split image-lead">
+        <EditorialFigure id="field-circle" />
+        <div className="closing-copy edit-copy">
+          <p className="eyebrow">{info.closeEyebrow}</p>
+          <h2 id="closing-title" lang="bn">
+            {info.closeTitle}
+          </h2>
+          <p>{info.closeName}</p>
+          <p className="closing-meta">
+            {info.closePlace}
+            <span>{info.closeDate}</span>
+          </p>
+        </div>
       </div>
     </section>
   );

@@ -93,6 +93,8 @@ export const en: Copy = {
     lead: "The motto set beneath the Yogasana Bharat seal.",
     affiliation:
       "Yogasana Bharat is named on the invitation as the national affiliation of the All Bengal Yogasana Sports Association, from New Delhi. World Yogasana is named beside it.",
+    organisersEyebrow: "Joint organisers",
+    organisersTitle: "Printed on the artwork.",
     organisers:
       "ABYSA presents the gathering and the 7th State Yogasana Sports Championship. Karmyog and Bharatiya Krishak Samaj are the joint organisers printed on the artwork.",
     closeEyebrow: "Close",
