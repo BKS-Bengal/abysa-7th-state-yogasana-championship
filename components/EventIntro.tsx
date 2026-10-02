@@ -10,23 +10,22 @@ export function EventIntro() {
 
   return (
     <>
-      <section className="gathering" aria-labelledby="event-title">
-        <div className="edit-split">
-          <div className="gathering-copy edit-copy">
-            <ScrollReveal>
-              <p className="eyebrow">{event.eyebrow}</p>
-              <h2 id="event-title" lang="bn">
-                {event.title}
-              </h2>
-              <p>{event.present}</p>
-              <p>{event.championship}</p>
-            </ScrollReveal>
-            <blockquote>
-              <p lang="bn">{event.motto}</p>
-              <footer>{event.mottoNote}</footer>
-            </blockquote>
-          </div>
-          <EditorialFigure id="championship-dais" className="edit-overlap" />
+      <section className="event-poster" aria-labelledby="event-title">
+        <div className="event-poster-copy">
+          <ScrollReveal>
+            <p className="edition">07</p>
+            <p className="eyebrow">{event.eyebrow}</p>
+            <h2 id="event-title" className="event-display">{event.title}</h2>
+          </ScrollReveal>
+          <blockquote>
+            <p lang="bn">{event.motto}</p>
+            <footer>{event.mottoNote}</footer>
+          </blockquote>
+        </div>
+        <EditorialFigure id="championship-dais" className="event-poster-photo" />
+        <div className="event-poster-note">
+          <p>{event.championship}</p>
+          <p>{event.present}</p>
         </div>
       </section>
       <section className="significance band-oxblood" aria-labelledby="significance-title">

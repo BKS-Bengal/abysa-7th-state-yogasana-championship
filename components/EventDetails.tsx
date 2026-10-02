@@ -8,7 +8,16 @@ export function EventDetails() {
   const event = copy.event;
 
   return (
-    <section className="details band-charcoal" aria-labelledby="details-title">
+    <>
+      <section className="fact-slabs" aria-label={event.recordTitle}>
+        {event.rows.slice(1, 4).map((row) => (
+          <article className="fact-slab" key={row.term}>
+            <p>{row.term}</p>
+            <strong lang={row.lang}>{row.value}</strong>
+          </article>
+        ))}
+      </section>
+      <section className="details band-charcoal" aria-labelledby="details-title">
       <div className="band-inner edit-split">
         <div className="edit-copy">
           <p className="eyebrow">{event.recordEyebrow}</p>
@@ -24,7 +33,8 @@ export function EventDetails() {
           <p className="date-note">{event.dateNote}</p>
         </div>
         <EditorialFigure id="hall-wide" />
-      </div>
-    </section>
+        </div>
+      </section>
+    </>
   );
 }

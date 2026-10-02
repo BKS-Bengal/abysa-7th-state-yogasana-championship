@@ -6,6 +6,9 @@ export type Copy = {
   nav: {
     home: string;
     event: string;
+    yogasana: string;
+    organisation: string;
+    prakriti: string;
     story: string;
     gallery: string;
     media: string;
@@ -30,6 +33,34 @@ export type Copy = {
     leadTitle: string;
     leadEm: string;
     lead: string;
+    context: string;
+  };
+  yogasana: {
+    eyebrow: string;
+    title: string;
+    em: string;
+    lead: string;
+    practice: string;
+    sport: string;
+    mottoNote: string;
+  };
+  organisation: {
+    eyebrow: string;
+    title: string;
+    lead: string;
+    leadersEyebrow: string;
+    presidentTerm: string;
+    president: string;
+    secretaryTerm: string;
+    secretary: string;
+    joint: string;
+  };
+  prakriti: {
+    eyebrow: string;
+    title: string;
+    bangla: string;
+    lead: string;
+    note: string;
   };
   event: {
     eyebrow: string;

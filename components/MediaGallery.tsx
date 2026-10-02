@@ -8,10 +8,6 @@ type Props = { onOpen: (id: string) => void };
 
 const groups: { id: string; ids: string[]; crop?: boolean }[] = [
   {
-    id: "interview",
-    ids: ["interview-seated", "interview-camera"],
-  },
-  {
     id: "moments",
     ids: [
       "championship-dais",
@@ -49,20 +45,6 @@ const groups: { id: string; ids: string[]; crop?: boolean }[] = [
 
 const byId = new Map(stills.map((item) => [item.id, item]));
 
-function rows(items: Still[]) {
-  const pattern = [2, 3, 2, 3];
-  const result: Still[][] = [];
-  let index = 0;
-  let step = 0;
-  while (index < items.length) {
-    const size = Math.min(pattern[step % pattern.length], items.length - index);
-    result.push(items.slice(index, index + size));
-    index += size;
-    step += 1;
-  }
-  return result;
-}
-
 function Shot({ item, className, crop, onOpen }: { item: Still; className?: string; crop?: boolean; onOpen: (id: string) => void }) {
   const { copy } = useLanguage();
   const text = copy.captions[item.id];
@@ -80,7 +62,7 @@ function Shot({ item, className, crop, onOpen }: { item: Still; className?: stri
 export function GalleryView({ onOpen }: Props) {
   const { copy } = useLanguage();
   return (
-    <section className="gallery" aria-labelledby="gallery-title">
+    <section className="gallery tone-photo" aria-labelledby="gallery-title">
       <header className="chapter-head">
         <p className="eyebrow">{copy.gallery.eyebrow}</p>
         <h2 id="gallery-title">
@@ -91,28 +73,23 @@ export function GalleryView({ onOpen }: Props) {
       {groups.map((group) => {
         const words = copy.gallery.groups.find((item) => item.id === group.id);
         const items = group.ids.map((id) => byId.get(id)).filter((item): item is Still => item != null);
-        const [lead, second, third, ...rest] = items;
         return (
           <div className="gallery-group" key={group.id}>
             <header className="group-head">
               <p className="eyebrow">{words?.kicker}</p>
-              <h3>{words?.title}</h3>
+              <h3>
+                <span>{String(groups.indexOf(group) + 1).padStart(2, "0")}</span>
+                {words?.title}
+              </h3>
               <p>{words?.note}</p>
             </header>
-              {lead ? <Shot item={lead} className="bleed" crop={group.crop} onOpen={onOpen} /> : null}
-              {rows(second ? [second, third, ...rest].filter((item): item is Still => item != null) : []).map((row, index) =>
-                row.length === 1 ? (
-                  <Shot key={row[0].id} item={row[0]} className="offset-still" crop={group.crop} onOpen={onOpen} />
-                ) : (
-                  <div key={index} className={row.length === 3 ? "trio" : "split uneven"}>
-                    {row.map((item) => (
-                      <Shot key={item.id} item={item} crop={group.crop} onOpen={onOpen} />
-                    ))}
-                  </div>
-                ),
-              )}
+            <div className="exhibit">
+              {items.map((item) => (
+                <Shot key={item.id} item={item} crop={group.crop} onOpen={onOpen} />
+              ))}
             </div>
-          );
+          </div>
+        );
       })}
     </section>
   );
@@ -130,17 +107,17 @@ export function MediaView({ onOpen }: Props) {
           <em>{copy.media.em}</em>
         </h2>
       </header>
-      <div className="films">
-        {films.map((film) => {
+      <div className="cinema">
+        {films.map((film, index) => {
           const text = copy.captions[film.id];
           return (
             <button
               key={film.id}
               type="button"
-              className={film.width > film.height ? "film wide" : "film"}
+              className={index === 0 ? "film feature" : "film rail"}
               onClick={() => onOpen(film.id)}
             >
-              <img src={film.poster} alt="" width={film.width} height={film.height} loading="lazy" />
+              <img src={film.poster} alt="" width={film.width} height={film.height} loading={index === 0 ? "eager" : "lazy"} />
               <span className="film-meta">
                 <span>
                   {copy.media.play} · {film.plate}

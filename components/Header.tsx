@@ -10,6 +10,9 @@ import type { Locale } from "@/content/types";
 const routes = [
   { href: "/", key: "home" },
   { href: "/event", key: "event" },
+  { href: "/yogasana", key: "yogasana" },
+  { href: "/organisation", key: "organisation" },
+  { href: "/prakriti-jagaran-mancha", key: "prakriti" },
   { href: "/story", key: "story" },
   { href: "/gallery", key: "gallery" },
   { href: "/media", key: "media" },
@@ -18,8 +21,18 @@ const routes = [
 
 type Props = { ready: boolean };
 
+const darkNav = new Set([
+  "/yogasana",
+  "/organisation",
+  "/story",
+  "/gallery",
+  "/media",
+  "/prakriti-jagaran-mancha",
+]);
+
 export function Header({ ready }: Props) {
   const pathname = usePathname();
+  const tone = pathname === "/" ? "tone-overlay" : darkNav.has(pathname) ? "tone-dark" : "tone-light";
   const { locale, setLocale, copy } = useLanguage();
   const [open, setOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
@@ -59,13 +72,16 @@ export function Header({ ready }: Props) {
   };
 
   return (
-    <header className={ready ? "site-header is-ready" : "site-header"}>
+    <header className={ready ? `site-header is-ready ${tone}` : `site-header ${tone}`}>
       <a className="skip" href="#content">
         {copy.nav.skip}
       </a>
-      <Link className="seal" href="/" aria-label="Yogasana Bharat">
-        <img src={logo.src} alt={logo.alt} width={447} height={447} />
-      </Link>
+      <div className="nav-brand">
+        <Link className="seal" href="/" aria-label="Yogasana Bharat">
+          <img src={logo.src} alt={logo.alt} width={447} height={447} />
+        </Link>
+        <span className="nav-edition" aria-hidden="true">07</span>
+      </div>
       <button
         type="button"
         className="nav-toggle"
@@ -91,7 +107,8 @@ export function Header({ ready }: Props) {
             </Link>
           );
         })}
-        <div className="lang">
+      </nav>
+      <div className="lang">
           <button
             type="button"
             className="lang-toggle"
@@ -117,8 +134,7 @@ export function Header({ ready }: Props) {
               </li>
             </ul>
           ) : null}
-        </div>
-      </nav>
+      </div>
     </header>
   );
 }

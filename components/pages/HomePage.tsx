@@ -3,11 +3,15 @@
 import Link from "next/link";
 import { EditorialFigure } from "@/components/EditorialFigure";
 import { Hero } from "@/components/Hero";
+import { ScrollReveal } from "@/components/ScrollReveal";
 import { SiteFrame } from "@/components/SiteFrame";
 import { useLanguage } from "@/lib/language";
 
 const onward = [
   { href: "/event", key: "event" },
+  { href: "/yogasana", key: "yogasana" },
+  { href: "/organisation", key: "organisation" },
+  { href: "/prakriti-jagaran-mancha", key: "prakriti" },
   { href: "/story", key: "story" },
   { href: "/gallery", key: "gallery" },
   { href: "/media", key: "media" },
@@ -20,6 +24,20 @@ export function HomePage() {
   return (
     <SiteFrame intro>
       <Hero />
+      <ScrollReveal>
+        <nav className="chapter-index band-saffron" aria-label={copy.nav.event}>
+          <ol>
+            {onward.map((item, index) => (
+              <li key={item.href}>
+                <Link href={item.href}>
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  {copy.nav[item.key]}
+                </Link>
+              </li>
+            ))}
+          </ol>
+        </nav>
+      </ScrollReveal>
       <section className="home-lead band-charcoal" aria-labelledby="home-lead-title">
         <div className="band-inner edit-split">
           <div className="edit-copy">
