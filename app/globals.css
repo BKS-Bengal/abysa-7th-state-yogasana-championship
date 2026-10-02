@@ -689,7 +689,12 @@ figcaption span,
   letter-spacing: 0.08em;
 }
 
-figcaption p { margin: 0; }
+figcaption p,
+.film-meta strong {
+  margin: 0;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
 
 .practice {
   display: grid;

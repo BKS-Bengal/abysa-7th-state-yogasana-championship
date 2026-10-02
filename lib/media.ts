@@ -243,8 +243,8 @@ export const stills: Still[] = [
     plate: "28",
     width: 1024,
     height: 768,
-    alt: "An interview with Dr (Major) Narayan Bhattacharya being filmed in front of the Prakriti Jagaran banner.",
-    caption: "Interview with Dr (Major) Narayan Bhattacharya.",
+    alt: "Interview with Dr (Major) Narayan Bhattacharya being filmed in front of the Prakriti Jagaran banner.",
+    caption: "Interview with Dr (Major) Narayan Bhattacharya during the event.",
   },
   {
     id: "interview-camera",
@@ -252,8 +252,8 @@ export const stills: Still[] = [
     plate: "29",
     width: 768,
     height: 1024,
-    alt: "A camera on a tripod records the interview with Dr (Major) Narayan Bhattacharya.",
-    caption: "The interview, filmed in front of the banner.",
+    alt: "A camera on a tripod set up to record the interview in front of the event banner.",
+    caption: "Interview recording setup at the event.",
   },
 ];
 
@@ -265,8 +265,8 @@ export const films: Film[] = [
     plate: "24",
     width: 1280,
     height: 720,
-    alt: "Film of people seated before the championship banner and the Prakriti Jagaran banner.",
-    caption: "Seated before the two banners, in the mandir corridor.",
+    alt: "The gathering seated before the 7th State Yogasana Sports Championship banner and the Prakriti Jagaran banner.",
+    caption: "The gathering seated before the championship banner and the Prakriti Jagaran banner, on the mandir verandah.",
   },
   {
     id: "film-athletes",
@@ -275,8 +275,8 @@ export const films: Film[] = [
     plate: "25",
     width: 720,
     height: 1280,
-    alt: "Portrait film of athletes in orange seated in the hall.",
-    caption: "Athletes in the hall.",
+    alt: "Athletes in orange seated in the hall at Sri Sri Shiv Mandir.",
+    caption: "Athletes in orange seated in the hall at Sri Sri Shiv Mandir.",
   },
   {
     id: "film-dais",
@@ -285,8 +285,8 @@ export const films: Film[] = [
     plate: "26",
     width: 720,
     height: 1280,
-    alt: "Portrait film of the championship dais and the seated gathering.",
-    caption: "The dais, from within the gathering.",
+    alt: "The championship dais seen from within the seated gathering.",
+    caption: "The championship dais, seen from within the seated gathering.",
   },
   {
     id: "film-ceremony",
@@ -295,8 +295,8 @@ export const films: Film[] = [
     plate: "27",
     width: 1280,
     height: 720,
-    alt: "Film of the ceremonial table inside Sri Sri Shiv Mandir.",
-    caption: "The table inside Sri Sri Shiv Mandir.",
+    alt: "People gathered at the long table inside Sri Sri Shiv Mandir.",
+    caption: "At the long table inside Sri Sri Shiv Mandir.",
   },
 ];
 

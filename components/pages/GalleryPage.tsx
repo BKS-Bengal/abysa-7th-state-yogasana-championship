@@ -6,6 +6,8 @@ import { Lightbox } from "@/components/Lightbox";
 import { SiteFrame } from "@/components/SiteFrame";
 
 const galleryIds = [
+  "interview-seated",
+  "interview-camera",
   "championship-dais",
   "address",
   "dais-speaker",

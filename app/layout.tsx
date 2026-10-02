@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { cookies } from "next/headers";
 import { Cormorant_Garamond, Noto_Serif_Bengali, Outfit, Tiro_Bangla } from "next/font/google";
 import { LanguageProvider } from "@/lib/language";
 import "./globals.css";
@@ -59,11 +60,14 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default async function RootLayout({ children }: { children: ReactNode }) {
+  const jar = await cookies();
+  const initialLocale = jar.get("pjm-lang")?.value === "bn" ? "bn" : "en";
+
   return (
-    <html lang="en" className={`${display.variable} ${sans.variable} ${bangla.variable} ${banglaQuote.variable}`}>
+    <html lang={initialLocale} className={`${display.variable} ${sans.variable} ${bangla.variable} ${banglaQuote.variable}`}>
       <body>
-        <LanguageProvider>{children}</LanguageProvider>
+        <LanguageProvider initialLocale={initialLocale}>{children}</LanguageProvider>
       </body>
     </html>
   );

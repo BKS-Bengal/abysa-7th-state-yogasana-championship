@@ -74,6 +74,7 @@ export const en: Copy = {
     title: "The day,",
     em: " in photographs.",
     groups: [
+      { id: "interview", kicker: "Interview", title: "In front of the banner", note: "Dr (Major) Narayan Bhattacharya." },
       { id: "moments", kicker: "Moments", title: "The hall and the dais", note: "Address, dance, and the championship banner." },
       { id: "community", kicker: "Community", title: "Who was in the room", note: "Athletes, the seated hall, and the corridor." },
       { id: "practice", kicker: "Practice", title: "On the mats", note: "The association team leads the morning practice." },
@@ -103,7 +104,7 @@ export const en: Copy = {
   captions: {
     "athletes-hall": {
       alt: "Young athletes in orange shirts seated on the floor of the hall, listening.",
-      caption: "Athletes of the state championship, seated in the hall.",
+      caption: "Athletes of the state championship, seated in the hall at Sri Sri Shiv Mandir.",
     },
     "hall-assembly": {
       alt: "A wide view of the hall at Sri Sri Shiv Mandir, with the gathering seated before the dais.",
@@ -115,7 +116,7 @@ export const en: Copy = {
     },
     address: {
       alt: "A speaker in yellow stands at a microphone beside the long table.",
-      caption: "An address from the table.",
+      caption: "An address from the table in the hall.",
     },
     "dais-speaker": {
       alt: "A speaker with a microphone stands among officials at the championship dais.",
@@ -123,99 +124,99 @@ export const en: Copy = {
     },
     "dance-pair": {
       alt: "Two dancers in red and cream perform in the hall while the audience watches.",
-      caption: "Dance in the hall.",
+      caption: "Dance in the hall during the gathering.",
     },
     "dance-record": {
       alt: "Dancers mid-movement, with a phone held up to record the performance.",
-      caption: "The dance, watched and recorded from the floor.",
+      caption: "The dance in the hall, recorded from the floor.",
     },
     "dance-turn": {
       alt: "Dancers seen from behind, turning in red blouses and cream skirts.",
-      caption: "A turn in the dance.",
+      caption: "Dancers turn in the hall.",
     },
     remembrance: {
       alt: "A woman in a yellow saree holds a framed portrait at the ceremonial table.",
-      caption: "A framed portrait brought to the table.",
+      caption: "A framed portrait at the table in the hall.",
     },
     "ceremony-table": {
       alt: "People gathered at a long table under the sign of Sri Sri Shiv Mandir.",
-      caption: "At the table, beneath the temple sign.",
+      caption: "The long table beneath the sign of Sri Sri Shiv Mandir.",
     },
     offering: {
       alt: "A woman in white walks toward the dais as the hall watches.",
-      caption: "Approaching the dais.",
+      caption: "Approaching the dais in the hall.",
     },
     "young-athletes": {
       alt: "Rows of young athletes in orange sit along the mandir corridor.",
-      caption: "Young athletes along the mandir corridor.",
+      caption: "Young athletes seated along the mandir corridor.",
     },
     "hall-wide": {
       alt: "The long hall opens onto the grounds, with children seated and cameras in the foreground.",
-      caption: "The hall opens onto the grounds.",
+      caption: "The hall at Sri Sri Shiv Mandir, opening onto the grounds.",
     },
     "from-the-floor": {
       alt: "The gathering stands and sits around the dais, many holding phones.",
-      caption: "From the floor of the hall.",
+      caption: "The gathering around the dais, seen from the floor of the hall.",
     },
     "crossing-dais": {
       alt: "A blurred figure crosses in front of the championship dais.",
-      caption: "A passage across the dais.",
+      caption: "A figure crosses in front of the championship dais.",
     },
     "field-circle": {
       alt: "A large circle seated on the ashram field at Muluk on the morning of 2 October 2026.",
-      caption: "On the field at Muluk. 2 October 2026, morning.",
+      caption: "A circle seated on the field at Muluk, on the morning of 2 October 2026.",
     },
     courtyard: {
       alt: "People seated on mats in the courtyard, facing an address.",
-      caption: "The courtyard assembly.",
+      caption: "People seated on mats in the courtyard.",
     },
     "practice-ground": {
       alt: "Practitioners hold a low posture on striped mats beside a small fire offering.",
-      caption: "On the mats beside the health centre.",
+      caption: "Morning yogasana practice on the mats beside the health centre at Muluk.",
     },
     "practice-warrior": {
       alt: "A wide lunge led on the forecourt, with the group practising on an orange mat.",
-      caption: "A wide stance on the forecourt.",
+      caption: "A wide stance during morning practice on the forecourt.",
     },
     "practice-squat": {
       alt: "The group moves into a deep squat during morning practice.",
-      caption: "Into a squat. About 7:15 in the morning.",
+      caption: "A deep squat during morning practice on the mats.",
     },
     "practice-open": {
       alt: "Practitioners open the chest, arms extended, during the morning session.",
-      caption: "Arms open across the chest.",
+      caption: "Arms extended during morning practice on the mats.",
     },
     "practice-rise": {
       alt: "The group raises both arms, led by the All Bengal Yogasana Sports Association team.",
-      caption: "Arms raised with the association team.",
+      caption: "Arms raised, led by the All Bengal Yogasana Sports Association team.",
     },
     "practice-lead": {
       alt: "An instructor seen from behind leads the group, incense smoke rising from the mats.",
-      caption: "The association team leads. Muluk, 2 October 2026.",
+      caption: "The association team leads morning practice at Muluk, 2 October 2026.",
     },
     "interview-seated": {
-      alt: "An interview with Dr (Major) Narayan Bhattacharya being filmed in front of the Prakriti Jagaran banner.",
-      caption: "Interview with Dr (Major) Narayan Bhattacharya.",
+      alt: "Interview with Dr (Major) Narayan Bhattacharya being filmed in front of the Prakriti Jagaran banner.",
+      caption: "Interview with Dr (Major) Narayan Bhattacharya during the event.",
     },
     "interview-camera": {
-      alt: "A camera on a tripod records the interview with Dr (Major) Narayan Bhattacharya.",
-      caption: "The interview, filmed in front of the banner.",
+      alt: "A camera on a tripod set up to record the interview in front of the event banner.",
+      caption: "Interview recording setup at the event.",
     },
     "film-corridor": {
-      alt: "Film of people seated before the championship banner and the Prakriti Jagaran banner.",
-      caption: "Seated before the two banners, in the mandir corridor.",
+      alt: "The gathering seated before the 7th State Yogasana Sports Championship banner and the Prakriti Jagaran banner.",
+      caption: "The gathering seated before the championship banner and the Prakriti Jagaran banner, on the mandir verandah.",
     },
     "film-athletes": {
-      alt: "Portrait film of athletes in orange seated in the hall.",
-      caption: "Athletes in the hall.",
+      alt: "Athletes in orange seated in the hall at Sri Sri Shiv Mandir.",
+      caption: "Athletes in orange seated in the hall at Sri Sri Shiv Mandir.",
     },
     "film-dais": {
-      alt: "Portrait film of the championship dais and the seated gathering.",
-      caption: "The dais, from within the gathering.",
+      alt: "The championship dais seen from within the seated gathering.",
+      caption: "The championship dais, seen from within the seated gathering.",
     },
     "film-ceremony": {
-      alt: "Film of the ceremonial table inside Sri Sri Shiv Mandir.",
-      caption: "The table inside Sri Sri Shiv Mandir.",
+      alt: "People gathered at the long table inside Sri Sri Shiv Mandir.",
+      caption: "At the long table inside Sri Sri Shiv Mandir.",
     },
   },
 };

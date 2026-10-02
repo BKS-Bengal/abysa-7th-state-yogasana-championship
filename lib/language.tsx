@@ -16,21 +16,36 @@ type LanguageValue = {
 
 const LanguageContext = createContext<LanguageValue | null>(null);
 
-export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocaleState] = useState<Locale>("en");
+function writeLocale(next: Locale) {
+  window.localStorage.setItem(STORAGE_KEY, next);
+  document.cookie = `pjm-lang=${next};path=/;max-age=31536000;samesite=lax`;
+  document.documentElement.lang = next === "bn" ? "bn" : "en";
+}
 
-  useEffect(() => {
-    const stored = window.localStorage.getItem(STORAGE_KEY);
-    if (stored === "bn" || stored === "en") setLocaleState(stored);
-  }, []);
+export function LanguageProvider({
+  children,
+  initialLocale = "en",
+}: {
+  children: ReactNode;
+  initialLocale?: Locale;
+}) {
+  const [locale, setLocaleState] = useState<Locale>(initialLocale);
 
   useEffect(() => {
     document.documentElement.lang = locale === "bn" ? "bn" : "en";
   }, [locale]);
 
+  useEffect(() => {
+    const stored = window.localStorage.getItem(STORAGE_KEY);
+    if ((stored === "bn" || stored === "en") && stored !== initialLocale) {
+      setLocaleState(stored);
+      document.cookie = `pjm-lang=${stored};path=/;max-age=31536000;samesite=lax`;
+    }
+  }, [initialLocale]);
+
   const setLocale = (next: Locale) => {
     setLocaleState(next);
-    window.localStorage.setItem(STORAGE_KEY, next);
+    writeLocale(next);
   };
 
   const value = useMemo<LanguageValue>(

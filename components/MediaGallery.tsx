@@ -8,6 +8,10 @@ type Props = { onOpen: (id: string) => void };
 
 const groups: { id: string; ids: string[]; crop?: boolean }[] = [
   {
+    id: "interview",
+    ids: ["interview-seated", "interview-camera"],
+  },
+  {
     id: "moments",
     ids: [
       "championship-dais",
