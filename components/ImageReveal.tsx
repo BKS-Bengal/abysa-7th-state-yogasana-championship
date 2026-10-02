@@ -42,10 +42,10 @@ export function ImageReveal({
     const ctx = gsap.context(() => {
       gsap.fromTo(
         frame,
-        { clipPath: "inset(8% 0% 14% 0%)" },
+        { clipPath: "inset(3% 0% 4% 0%)" },
         {
           clipPath: "inset(0% 0% 0% 0%)",
-          duration: 1.15,
+          duration: 1.05,
           ease: "power2.out",
           scrollTrigger: {
             trigger: node,

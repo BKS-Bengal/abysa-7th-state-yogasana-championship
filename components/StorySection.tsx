@@ -23,7 +23,7 @@ export function StorySection({ onOpen }: Props) {
             <em> holds the championship.</em>
           </h2>
         </header>
-        <Still item={assembly} className="span-full" onOpen={onOpen} />
+        <Still item={assembly} className="bleed" onOpen={onOpen} />
         <div className="split uneven">
           <Still item={dais} onOpen={onOpen} />
           <Still item={address} onOpen={onOpen} />
@@ -39,10 +39,8 @@ export function StorySection({ onOpen }: Props) {
           <Still item={table} onOpen={onOpen} />
         </div>
         <Still item={offering} className="span-full" onOpen={onOpen} />
-        <div className="split uneven reverse">
-          <Still item={young} onOpen={onOpen} />
-          <Still item={wide} onOpen={onOpen} />
-        </div>
+        <Still item={wide} className="bleed" onOpen={onOpen} />
+        <Still item={young} className="offset-still" onOpen={onOpen} />
         <div className="split quiet-pair">
           <Still item={floor} onOpen={onOpen} />
           <Still item={passage} className="quiet" onOpen={onOpen} />
@@ -57,10 +55,8 @@ export function StorySection({ onOpen }: Props) {
             <em> in the morning.</em>
           </h2>
         </header>
-        <div className="split uneven">
-          <Still item={groundStills[0]} onOpen={onOpen} />
-          <Still item={groundStills[1]} onOpen={onOpen} />
-        </div>
+        <Still item={groundStills[0]} className="bleed" onOpen={onOpen} />
+        <Still item={groundStills[1]} className="offset-still" onOpen={onOpen} />
       </section>
     </>
   );
