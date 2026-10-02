@@ -3,17 +3,19 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { hero } from "@/lib/media";
+import { useLanguage } from "@/lib/language";
 import { useReducedMotion } from "@/lib/use-reduced-motion";
+import { usePageReady } from "./SiteFrame";
 
 const gesture =
   "M304 338 C268 292 228 236 252 178 C270 136 236 108 204 126 C184 138 192 168 220 162";
 
-type Props = { play: boolean };
-
-export function Hero({ play }: Props) {
+export function Hero() {
   const frameRef = useRef<HTMLDivElement>(null);
   const gestureRef = useRef<SVGPathElement>(null);
   const reduced = useReducedMotion();
+  const play = usePageReady();
+  const { copy } = useLanguage();
 
   useEffect(() => {
     const path = gestureRef.current;
@@ -42,7 +44,7 @@ export function Hero({ play }: Props) {
   }, [reduced, play]);
 
   return (
-    <section className="hero" id="home" aria-labelledby="hero-title">
+    <section className="hero" aria-labelledby="hero-title">
       <div className="hero-frame" ref={frameRef}>
         <img src={hero.src} alt={hero.alt} width={1024} height={576} fetchPriority="high" />
         <svg viewBox="0 0 1024 576" aria-hidden="true">
@@ -51,15 +53,15 @@ export function Hero({ play }: Props) {
       </div>
       <div className="hero-copy">
         <div>
-          <p className="eyebrow">All Bengal Yogasana Sports Association presents</p>
-          <h1 id="hero-title">Prakriti Jagaran Mancha</h1>
+          <p className="eyebrow">{copy.home.presents}</p>
+          <h1 id="hero-title">{copy.home.title}</h1>
           <p className="hero-bangla" lang="bn">
-            প্রকৃতি জাগরণ মঞ্চ
+            {copy.home.bangla}
           </p>
         </div>
         <p className="hero-meta">
-          7th State Yogasana Sports Championship 2026–27
-          <span>Muluk, Bolpur, Birbhum</span>
+          {copy.home.championship}
+          <span>{copy.home.place}</span>
         </p>
       </div>
     </section>

@@ -1,23 +1,14 @@
 "use client";
 
 import { films, stills, type Still } from "@/lib/media";
+import { useLanguage } from "@/lib/language";
 import { ImageReveal } from "./ImageReveal";
 
 type Props = { onOpen: (id: string) => void };
 
-const groups: { id: string; kicker: string; title: string; note: string; ids: string[]; crop?: boolean }[] = [
-  {
-    id: "interview",
-    kicker: "Interview",
-    title: "In front of the banner",
-    note: "Dr (Major) Narayan Bhattacharya.",
-    ids: ["interview-seated", "interview-camera"],
-  },
+const groups: { id: string; ids: string[]; crop?: boolean }[] = [
   {
     id: "moments",
-    kicker: "Moments",
-    title: "The hall and the dais",
-    note: "Address, dance, and the championship banner.",
     ids: [
       "championship-dais",
       "address",
@@ -32,16 +23,10 @@ const groups: { id: string; kicker: string; title: string; note: string; ids: st
   },
   {
     id: "community",
-    kicker: "Community",
-    title: "Who was in the room",
-    note: "Athletes, the seated hall, and the corridor.",
     ids: ["hall-assembly", "athletes-hall", "young-athletes", "from-the-floor", "hall-wide", "crossing-dais"],
   },
   {
     id: "practice",
-    kicker: "Practice",
-    title: "On the mats",
-    note: "The association team leads the morning practice.",
     ids: [
       "practice-ground",
       "practice-warrior",
@@ -54,9 +39,6 @@ const groups: { id: string; kicker: string; title: string; note: string; ids: st
   },
   {
     id: "atmosphere",
-    kicker: "Atmosphere",
-    title: "Muluk, outside",
-    note: "The field and the courtyard, the morning of 2 October 2026.",
     ids: ["field-circle", "courtyard"],
   },
 ];
@@ -78,36 +60,41 @@ function rows(items: Still[]) {
 }
 
 function Shot({ item, className, crop, onOpen }: { item: Still; className?: string; crop?: boolean; onOpen: (id: string) => void }) {
+  const { copy } = useLanguage();
+  const text = copy.captions[item.id];
   return (
     <ImageReveal
       {...item}
+      alt={text?.alt ?? item.alt}
+      caption={text?.caption ?? item.caption}
       className={[className, crop ? "crop-mark" : ""].filter(Boolean).join(" ")}
       onOpen={() => onOpen(item.id)}
     />
   );
 }
 
-export function MediaGallery({ onOpen }: Props) {
+export function GalleryView({ onOpen }: Props) {
+  const { copy } = useLanguage();
   return (
-    <>
-      <section className="gallery" id="gallery" aria-labelledby="gallery-title">
-        <header className="chapter-head">
-          <p className="eyebrow">Photographs</p>
-          <h2 id="gallery-title">
-            The day,
-            <em> in photographs.</em>
-          </h2>
-        </header>
-        {groups.map((group) => {
-          const items = group.ids.map((id) => byId.get(id)).filter((item): item is Still => item != null);
-          const [lead, second, third, ...rest] = items;
-          return (
-            <div className="gallery-group" key={group.id}>
-              <header className="group-head">
-                <p className="eyebrow">{group.kicker}</p>
-                <h3>{group.title}</h3>
-                <p>{group.note}</p>
-              </header>
+    <section className="gallery" aria-labelledby="gallery-title">
+      <header className="chapter-head">
+        <p className="eyebrow">{copy.gallery.eyebrow}</p>
+        <h2 id="gallery-title">
+          {copy.gallery.title}
+          <em>{copy.gallery.em}</em>
+        </h2>
+      </header>
+      {groups.map((group) => {
+        const words = copy.gallery.groups.find((item) => item.id === group.id);
+        const items = group.ids.map((id) => byId.get(id)).filter((item): item is Still => item != null);
+        const [lead, second, third, ...rest] = items;
+        return (
+          <div className="gallery-group" key={group.id}>
+            <header className="group-head">
+              <p className="eyebrow">{words?.kicker}</p>
+              <h3>{words?.title}</h3>
+              <p>{words?.note}</p>
+            </header>
               {lead ? <Shot item={lead} className="bleed" crop={group.crop} onOpen={onOpen} /> : null}
               {rows(second ? [second, third, ...rest].filter((item): item is Still => item != null) : []).map((row, index) =>
                 row.length === 1 ? (
@@ -122,19 +109,26 @@ export function MediaGallery({ onOpen }: Props) {
               )}
             </div>
           );
-        })}
-      </section>
+      })}
+    </section>
+  );
+}
 
-      <section className="archive" id="media" aria-labelledby="media-title">
-        <header className="chapter-head">
-          <p className="eyebrow">Films</p>
-          <h2 id="media-title">
-            Four films.
-            <em> Nothing plays until it is opened.</em>
-          </h2>
-        </header>
-        <div className="films">
-          {films.map((film) => (
+export function MediaView({ onOpen }: Props) {
+  const { copy } = useLanguage();
+  return (
+    <section className="archive" aria-labelledby="media-title">
+      <header className="chapter-head">
+        <p className="eyebrow">{copy.media.eyebrow}</p>
+        <h2 id="media-title">
+          {copy.media.title}
+          <em>{copy.media.em}</em>
+        </h2>
+      </header>
+      <div className="films">
+        {films.map((film) => {
+          const text = copy.captions[film.id];
+          return (
             <button
               key={film.id}
               type="button"
@@ -143,13 +137,15 @@ export function MediaGallery({ onOpen }: Props) {
             >
               <img src={film.poster} alt="" width={film.width} height={film.height} loading="lazy" />
               <span className="film-meta">
-                <span>Play · {film.plate}</span>
-                <strong>{film.caption}</strong>
+                <span>
+                  {copy.media.play} · {film.plate}
+                </span>
+                <strong>{text?.caption ?? film.caption}</strong>
               </span>
             </button>
-          ))}
-        </div>
-      </section>
-    </>
+          );
+        })}
+      </div>
+    </section>
   );
 }

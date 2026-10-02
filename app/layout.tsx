@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Cormorant_Garamond, Noto_Serif_Bengali, Outfit, Tiro_Bangla } from "next/font/google";
+import { LanguageProvider } from "@/lib/language";
 import "./globals.css";
 
 const display = Cormorant_Garamond({
@@ -38,7 +39,10 @@ const description =
   "A gathering presented by the All Bengal Yogasana Sports Association at Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum, with the 7th State Yogasana Sports Championship 2026–27. Affiliated to Yogasana Bharat and World Yogasana.";
 
 export const metadata: Metadata = {
-  title,
+  title: {
+    default: title,
+    template: "%s — Prakriti Jagaran Mancha",
+  },
   description,
   openGraph: {
     title,
@@ -58,7 +62,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={`${display.variable} ${sans.variable} ${bangla.variable} ${banglaQuote.variable}`}>
-      <body>{children}</body>
+      <body>
+        <LanguageProvider>{children}</LanguageProvider>
+      </body>
     </html>
   );
 }

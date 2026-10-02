@@ -1,38 +1,35 @@
+"use client";
+
+import { useLanguage } from "@/lib/language";
 import { ScrollReveal } from "./ScrollReveal";
 
 export function EventIntro() {
+  const { copy } = useLanguage();
+  const event = copy.event;
+
   return (
-    <section className="gathering" id="event">
+    <section className="gathering" aria-labelledby="event-title">
       <div className="gathering-copy">
         <ScrollReveal>
-          <p className="eyebrow">The event</p>
-          <h2 lang="bn">প্রকৃতি জাগরণ মঞ্চ</h2>
-          <p>
-            All Bengal Yogasana Sports Association presents this gathering at Bharat Sevashram Sangha,
-            Muluk, Bolpur, Birbhum. The association is affiliated to Yogasana Bharat, New Delhi, and to
-            World Yogasana.
-          </p>
-          <p>
-            With it stands the 7th State Yogasana Sports Championship 2026–27, for men and women, as
-            lettered on the hall banner. The programme is organised jointly with Karmyog and Bharatiya
-            Krishak Samaj.
-          </p>
+          <p className="eyebrow">{event.eyebrow}</p>
+          <h2 id="event-title" lang="bn">
+            {event.title}
+          </h2>
+          <p>{event.present}</p>
+          <p>{event.championship}</p>
         </ScrollReveal>
         <blockquote>
-          <p lang="bn">সমত্বং যোগ উচ্যতে</p>
-          <footer>The line carried on the Yogasana Bharat seal.</footer>
+          <p lang="bn">{event.motto}</p>
+          <footer>{event.mottoNote}</footer>
         </blockquote>
       </div>
       <div className="significance">
-        <p className="eyebrow">Why the day is held this way</p>
+        <p className="eyebrow">{event.whyEyebrow}</p>
         <h2>
-          A championship in the hall.
-          <em> A practice on the ground.</em>
+          {event.whyTitle}
+          <em>{event.whyEm}</em>
         </h2>
-        <p>
-          The morning begins indoors, in the mandir, and moves out onto the ashram field. Yogasana is
-          present as a state sport, and as a practice taken together.
-        </p>
+        <p>{event.why}</p>
       </div>
     </section>
   );

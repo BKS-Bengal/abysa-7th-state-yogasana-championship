@@ -1,20 +1,21 @@
+"use client";
+
+import { useLanguage } from "@/lib/language";
+
 export function IdentitySection() {
+  const { copy } = useLanguage();
+  const info = copy.information;
+
   return (
-    <section className="identity" id="identity" aria-labelledby="identity-title">
-      <p className="eyebrow">Affiliation</p>
+    <section className="identity" aria-labelledby="identity-title">
+      <p className="eyebrow">{info.eyebrow}</p>
       <h2 id="identity-title" lang="bn">
-        সমত্বং যোগ উচ্যতে
+        {info.title}
       </h2>
-      <p className="identity-lead">The motto set beneath the Yogasana Bharat seal.</p>
+      <p className="identity-lead">{info.lead}</p>
       <div className="identity-columns">
-        <p>
-          Yogasana Bharat is named on the invitation as the national affiliation of the All Bengal
-          Yogasana Sports Association, from New Delhi. World Yogasana is named beside it.
-        </p>
-        <p>
-          ABYSA presents the gathering and the 7th State Yogasana Sports Championship. Karmyog and
-          Bharatiya Krishak Samaj are the joint organisers printed on the artwork.
-        </p>
+        <p>{info.affiliation}</p>
+        <p>{info.organisers}</p>
       </div>
     </section>
   );

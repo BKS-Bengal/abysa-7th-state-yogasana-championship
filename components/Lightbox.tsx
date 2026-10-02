@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { films, stills, type Film, type Still } from "@/lib/media";
+import { useLanguage } from "@/lib/language";
 import { VideoModal } from "./VideoModal";
 
 type Item =
@@ -16,13 +17,16 @@ const items: Item[] = [
 type Props = {
   openId: string | null;
   onClose: () => void;
+  ids: string[];
 };
 
-export function Lightbox({ openId, onClose }: Props) {
+export function Lightbox({ openId, onClose, ids }: Props) {
+  const { copy } = useLanguage();
+  const pool = items.filter((item) => ids.includes(item.id));
   const closeRef = useRef<HTMLButtonElement>(null);
   const lastFocus = useRef<HTMLElement | null>(null);
   const touchX = useRef<number | null>(null);
-  const index = items.findIndex((item) => item.id === openId);
+  const index = pool.findIndex((item) => item.id === openId);
   const [active, setActive] = useState(index);
 
   useEffect(() => {
@@ -38,12 +42,12 @@ export function Lightbox({ openId, onClose }: Props) {
     (direction: number) => {
       setActive((current) => {
         const next = current + direction;
-        if (next < 0) return items.length - 1;
-        if (next >= items.length) return 0;
+        if (next < 0) return pool.length - 1;
+        if (next >= pool.length) return 0;
         return next;
       });
     },
-    [],
+    [pool.length],
   );
 
   useEffect(() => {
@@ -64,17 +68,21 @@ export function Lightbox({ openId, onClose }: Props) {
       document.body.style.overflow = previous;
       window.removeEventListener("keydown", onKey);
     };
-  }, [openId, close, step]);
+  }, [openId, close, step, pool.length]);
 
   if (openId == null || active < 0) return null;
-  const item = items[active];
+  const item = pool[active];
+  if (!item) return null;
+  const text = copy.captions[item.id];
+  const caption = text?.caption ?? item.caption;
+  const alt = text?.alt ?? item.alt;
 
   return (
     <div
       className="lightbox"
       role="dialog"
       aria-modal="true"
-      aria-label={item.caption}
+      aria-label={caption}
       onClick={(event) => {
         if (event.target === event.currentTarget) close();
       }}
@@ -92,25 +100,25 @@ export function Lightbox({ openId, onClose }: Props) {
       <div className="lightbox-bar">
         <p>
           <span>{item.plate}</span>
-          {item.caption}
+          {caption}
         </p>
         <div className="lightbox-nav">
-          <button type="button" onClick={() => step(-1)} aria-label="Previous plate">
-            Previous
+          <button type="button" onClick={() => step(-1)} aria-label={copy.lightbox.previous}>
+            {copy.lightbox.previous}
           </button>
-          <button type="button" onClick={() => step(1)} aria-label="Next plate">
-            Next
+          <button type="button" onClick={() => step(1)} aria-label={copy.lightbox.next}>
+            {copy.lightbox.next}
           </button>
-          <button ref={closeRef} type="button" onClick={close} aria-label="Close">
-            Close
+          <button ref={closeRef} type="button" onClick={close} aria-label={copy.lightbox.close}>
+            {copy.lightbox.close}
           </button>
         </div>
       </div>
       <div className="lightbox-stage">
         {item.kind === "film" ? (
-          <VideoModal src={item.src} poster={item.poster} title={item.caption} />
+          <VideoModal src={item.src} poster={item.poster} title={caption} />
         ) : (
-          <img src={item.src} alt={item.alt} width={item.width} height={item.height} />
+          <img src={item.src} alt={alt} width={item.width} height={item.height} />
         )}
       </div>
     </div>

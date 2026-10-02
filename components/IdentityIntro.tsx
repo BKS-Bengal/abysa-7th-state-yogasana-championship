@@ -3,12 +3,14 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { logo } from "@/lib/media";
+import { useLanguage } from "@/lib/language";
 
 const STORAGE_KEY = "pjm-intro-seen";
 
 type Props = { onDone: () => void };
 
 export function IdentityIntro({ onDone }: Props) {
+  const { copy } = useLanguage();
   const rootRef = useRef<HTMLDivElement>(null);
   const onDoneRef = useRef(onDone);
   onDoneRef.current = onDone;
@@ -17,6 +19,7 @@ export function IdentityIntro({ onDone }: Props) {
     const root = rootRef.current;
     if (!root) return;
     if (sessionStorage.getItem(STORAGE_KEY) === "1") {
+      window.dispatchEvent(new Event("pjm-intro-arrive"));
       onDoneRef.current();
       return;
     }
@@ -114,10 +117,11 @@ export function IdentityIntro({ onDone }: Props) {
         className="skip-intro"
         onClick={() => {
           sessionStorage.setItem(STORAGE_KEY, "1");
+          window.dispatchEvent(new Event("pjm-intro-arrive"));
           onDoneRef.current();
         }}
       >
-        Skip intro
+        {copy.nav.skipIntro}
       </button>
     </div>
   );

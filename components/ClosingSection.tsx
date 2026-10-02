@@ -1,16 +1,22 @@
+"use client";
+
+import { useLanguage } from "@/lib/language";
+
 export function ClosingSection() {
+  const { copy } = useLanguage();
+  const info = copy.information;
+
   return (
     <section className="closing" aria-labelledby="closing-title">
       <div className="closing-copy">
-        <p className="eyebrow">Close</p>
+        <p className="eyebrow">{info.closeEyebrow}</p>
         <h2 id="closing-title" lang="bn">
-          প্রকৃতি জাগরণ মঞ্চ
+          {info.closeTitle}
         </h2>
-        <p>Prakriti Jagaran Mancha</p>
+        <p>{info.closeName}</p>
         <p className="closing-meta">
-          Bharat Sevashram Sangha
-          <span>Muluk, Bolpur, Birbhum</span>
-          <span>Photographs from the morning of 2 October 2026</span>
+          {info.closePlace}
+          <span>{info.closeDate}</span>
         </p>
       </div>
     </section>
