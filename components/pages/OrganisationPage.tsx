@@ -51,6 +51,7 @@ export function OrganisationPage() {
         <div>
           <p className="chapter-no">04</p>
           <h2 id="affiliate-title">{copy.information.title}</h2>
+          {copy.information.title !== copy.event.motto ? <p lang="sa">{copy.event.motto}</p> : null}
           <p>{copy.information.affiliation}</p>
           <p>{copy.information.organisers}</p>
         </div>

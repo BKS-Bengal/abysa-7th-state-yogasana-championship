@@ -5,26 +5,30 @@ import { SiteFrame } from "@/components/SiteFrame";
 import { useLanguage } from "@/lib/language";
 
 export function PrakritiPage() {
-  const { copy } = useLanguage();
+  const { copy, locale } = useLanguage();
   const page = copy.prakriti;
 
   return (
     <SiteFrame>
       <section className="prakriti-stage" aria-labelledby="prakriti-title">
-        <div className="prakriti-copy">
+        <div className="prakriti-intro">
           <p className="eyebrow">{page.eyebrow}</p>
           <h2 id="prakriti-title" className="prakriti-display">
             {page.title}
           </h2>
-          <p className="hero-bangla" lang="bn">
-            {page.bangla}
-          </p>
+          <p lang={locale === "bn" ? "bn" : "en"}>{page.bangla}</p>
+        </div>
+        <figure className="prakriti-frame">
+          <span className="prakriti-corner tl" aria-hidden="true" />
+          <span className="prakriti-corner tr" aria-hidden="true" />
+          <span className="prakriti-corner bl" aria-hidden="true" />
+          <span className="prakriti-corner br" aria-hidden="true" />
+          <img src={hero.src} alt={hero.alt} width={1024} height={576} />
+        </figure>
+        <div className="prakriti-copy">
           <p className="prakriti-lead">{page.lead}</p>
           <p>{page.note}</p>
         </div>
-        <figure className="prakriti-art">
-          <img src={hero.src} alt={hero.alt} width={1024} height={576} />
-        </figure>
       </section>
       <section className="affiliate-band" aria-labelledby="prakriti-printed">
         <p className="chapter-no">02</p>

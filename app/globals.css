@@ -2768,3 +2768,165 @@ html[lang="bn"] .leaders-display dd {
 .film:hover img,
 .exhibit .plate-button:hover img,
 .exhibit .plate-button:focus-visible img { transform: none; }
+
+.prakriti-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  min-height: 0;
+  padding: 3.4rem 5vw 3rem;
+  background: #f7f5f2;
+  color: #1b140f;
+}
+
+.prakriti-intro,
+.prakriti-copy {
+  width: min(46rem, 100%);
+  padding: 0;
+  justify-content: flex-start;
+}
+
+.prakriti-intro { text-align: left; }
+
+.prakriti-stage .prakriti-display {
+  color: #1b140f;
+  font-size: clamp(2.5rem, 4.4vw, 4.4rem);
+  max-width: 16ch;
+  margin: 0 0 0.45rem;
+}
+
+.prakriti-stage .eyebrow { color: #4a1018; }
+
+.prakriti-frame {
+  position: relative;
+  width: min(1080px, 100%);
+  margin: 1.35rem 0 1.5rem;
+  padding: 0.85rem;
+  background: #fffdfb;
+  border: 1px solid rgba(74, 16, 24, 0.28);
+}
+
+.prakriti-frame img {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  object-fit: contain;
+  display: block;
+  background: transparent;
+}
+
+.prakriti-corner {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  pointer-events: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Cpath d='M3 16V3h13' fill='none' stroke='%234a1018' stroke-width='1.1'/%3E%3Cpath d='M8 8c3.2-.2 5.2 2.2 4.2 5.2-1.4-1.6-3.6-1.8-4.2-5.2z' fill='%234a1018' fill-opacity='.85'/%3E%3Ccircle cx='16' cy='6' r='1.15' fill='%234a1018'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.prakriti-corner.tl { top: 6px; left: 6px; }
+.prakriti-corner.tr { top: 6px; right: 6px; transform: scaleX(-1); }
+.prakriti-corner.bl { bottom: 6px; left: 6px; transform: scaleY(-1); }
+.prakriti-corner.br { bottom: 6px; right: 6px; transform: scale(-1); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .prakriti-frame { animation: frame-glow 8s ease-in-out infinite; }
+}
+
+@keyframes frame-glow {
+  0%, 100% { box-shadow: 0 0 0 rgba(74, 16, 24, 0); }
+  50% { box-shadow: 0 0 22px rgba(74, 16, 24, 0.12); }
+}
+
+.spread-ivory .eyebrow,
+.spread-ivory .chapter-no { color: #4a1018; }
+
+.spread:not(.spread-ivory) .eyebrow { color: #f6efe4; }
+
+.spread-story { align-items: center; }
+
+.spread-story .edit-figure,
+.spread-story .edit-figure.edit-portrait {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spread-story .edit-figure img,
+.spread-story .edit-figure.edit-portrait img {
+  width: 100%;
+  max-width: min(100%, 640px);
+  height: auto;
+  max-height: 72vh;
+  object-fit: contain;
+}
+
+.cinema {
+  grid-template-columns: 1fr 1fr;
+  gap: 1.15rem 1rem;
+  align-items: start;
+}
+
+.film.feature,
+.film.rail { grid-column: auto; grid-row: auto; }
+
+.film.feature img,
+.film.rail img {
+  aspect-ratio: 16 / 10;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.archive .film-meta strong,
+.film.feature .film-meta strong {
+  font-size: clamp(1.15rem, 1.45vw, 1.55rem);
+  line-height: 1.25;
+}
+
+@media (max-width: 720px) {
+  .cinema { grid-template-columns: 1fr; }
+}
+
+.dossier,
+.dossier-head { background: #fbfbfa; color: #161311; }
+
+.dossier-head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.1rem;
+  width: min(920px, calc(100% - 12vw));
+  margin: 0 auto;
+  padding: 2.6rem 0 0.4rem;
+}
+
+.identity-cluster {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.identity-cluster img {
+  width: auto;
+  height: 76px;
+  mix-blend-mode: multiply;
+}
+
+.dossier-list dt {
+  color: #3d332c;
+  font-weight: 500;
+}
+
+.dossier-list dd {
+  color: #161311;
+  font-weight: 500;
+}
+
+@media (max-width: 860px) {
+  .dossier-head { grid-template-columns: 1fr; }
+  .identity-cluster img { height: 64px; }
+}

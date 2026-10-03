@@ -3,7 +3,7 @@
 import { useLanguage } from "@/lib/language";
 
 export function IdentitySection() {
-  const { copy } = useLanguage();
+  const { copy, locale } = useLanguage();
   const info = copy.information;
 
   return (
@@ -12,7 +12,7 @@ export function IdentitySection() {
         <div className="edit-split">
           <div className="edit-copy">
             <p className="eyebrow">{info.eyebrow}</p>
-            <h2 id="identity-title" lang="bn">
+            <h2 id="identity-title" lang={info.title === copy.event.motto ? "sa" : locale}>
               {info.title}
             </h2>
             <p className="identity-lead">{info.lead}</p>
