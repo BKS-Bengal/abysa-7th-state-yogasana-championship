@@ -19,7 +19,7 @@ export function Hero() {
   const gestureRef = useRef<SVGPathElement>(null);
   const reduced = useReducedMotion();
   const play = usePageReady();
-  const { copy } = useLanguage();
+  const { copy, locale } = useLanguage();
 
   useEffect(() => {
     const stage = stageRef.current;
@@ -110,7 +110,7 @@ export function Hero() {
         <h1 className="hero-reveal" id="hero-title">
           {copy.home.title}
         </h1>
-        <p className="hero-reveal hero-bangla" lang="bn">
+        <p className="hero-reveal" lang={locale === "bn" ? "bn" : "en"}>
           {copy.home.bangla}
         </p>
         <p className="hero-reveal hero-context">{copy.home.context}</p>

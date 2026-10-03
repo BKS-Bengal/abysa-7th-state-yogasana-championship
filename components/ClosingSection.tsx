@@ -3,7 +3,7 @@
 import { useLanguage } from "@/lib/language";
 
 export function ClosingSection() {
-  const { copy } = useLanguage();
+  const { copy, locale } = useLanguage();
   const info = copy.information;
 
   return (
@@ -11,7 +11,7 @@ export function ClosingSection() {
       <div className="band-inner edit-split">
         <div className="closing-copy edit-copy">
           <p className="eyebrow">{info.closeEyebrow}</p>
-          <h2 id="closing-title" lang="bn">
+          <h2 id="closing-title" lang={locale}>
             {info.closeTitle}
           </h2>
           <p>{info.closeName}</p>

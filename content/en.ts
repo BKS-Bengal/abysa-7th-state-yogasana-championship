@@ -24,7 +24,7 @@ export const en: Copy = {
   home: {
     presents: "Yogasana",
     title: "7th State Yogasana",
-    bangla: "সপ্তম রাজ্য যোগাসন ক্রীড়া চ্যাম্পিয়নশিপ",
+    bangla: "7th State Yogasana Sports Championship",
     championship: "Sports Championship 2026–27 · Men & Women",
     place: "Muluk, Bolpur, Birbhum",
     context: "From early practice to competition, every part of the day reflects preparation, discipline and participation.",
@@ -40,7 +40,7 @@ export const en: Copy = {
       "All Bengal Yogasana Sports Association presents this gathering at Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum. The association is affiliated to Yogasana Bharat, New Delhi, and to World Yogasana.",
     championship:
       "The championship brings together athletes from across West Bengal for a structured programme of practice, evaluation and selection. In the interview, the State President of the All Bengal Yogasana Sports Association describes a large gathering of athletes from the state's districts, supported by a substantial judging panel and a multi-day event structure.",
-    motto: "সমত্বং যোগ উচ্যতে",
+    motto: "समत्वं योग उच्यते",
     mottoNote: "The line carried on the Yogasana Bharat seal.",
     whyEyebrow: "Why the day is held this way",
     whyTitle: "A championship in the hall.",
@@ -126,7 +126,7 @@ export const en: Copy = {
   },
   information: {
     eyebrow: "Affiliation",
-    title: "সমত্বং যোগ উচ্যতে",
+    title: "Equanimity is Yoga",
     lead: "The motto set beneath the Yogasana Bharat seal.",
     affiliation:
       "Yogasana Bharat is named on the invitation as the national affiliation of the All Bengal Yogasana Sports Association, from New Delhi. World Yogasana is named beside it.",
@@ -135,7 +135,7 @@ export const en: Copy = {
     organisers:
       "The invitation names the All Bengal Yogasana Sports Association as presenting the championship, and names Karmyog and Bharatiya Krishak Samaj as joint organisers.",
     closeEyebrow: "Close",
-    closeTitle: "প্রকৃতি জাগরণ মঞ্চ",
+    closeTitle: "Prakriti Jagaran Mancha",
     closeName: "Prakriti Jagaran Mancha",
     closePlace: "Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum",
     closeDate: "Photographs from the morning of 2 October 2026",
@@ -172,7 +172,7 @@ export const en: Copy = {
   prakriti: {
     eyebrow: "Beyond the mat",
     title: "A healthier life begins with more than exercise.",
-    bangla: "প্রকৃতি জাগরণ মঞ্চ",
+    bangla: "Prakriti Jagaran Mancha",
     lead: "The conversation around Yogasana eventually expands into a wider question: how do we build healthier lives for the next generation? The interview connects physical practice with food, agriculture and everyday wellbeing. The idea is simple but broad — a healthy body needs both disciplined movement and good food.",
     note: "Prakriti Jagaran Mancha is named on the invitation and on a banner beside the championship. The invitation also names the association, Yogasana Bharat, World Yogasana, Karmyog and Bharatiya Krishak Samaj. It does not print a separate calendar date. The interview does not give the mancha a formal definition.",
     contextTitle: "What we practise is connected to what we eat.",

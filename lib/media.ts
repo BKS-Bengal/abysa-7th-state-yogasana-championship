@@ -26,7 +26,7 @@ export const hero = {
 
 export const logo = {
   src: "/assets/logo/yogasana-bharat.webp",
-  alt: "Yogasana Bharat seal, with the line সমত্বং যোগ উচ্যতে",
+  alt: "Yogasana Bharat seal, with the line समत्वं योग उच्यते",
 };
 
 export const stills: Still[] = [

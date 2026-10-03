@@ -18,9 +18,9 @@ export function StorySection() {
           <p>{story.arrive}</p>
         </div>
       </section>
-      <section className="plate-full" aria-labelledby="story-ground-title">
+      <section className="spread spread-ivory spread-story" aria-labelledby="story-ground-title">
         <EditorialFigure id="field-circle" />
-        <div className="plate-full-copy">
+        <div className="spread-copy">
           <p className="chapter-no">02</p>
           <h2 id="story-ground-title">{story.em.trim()}</h2>
           <p>{story.ground}</p>
@@ -50,15 +50,15 @@ export function StorySection() {
         </div>
         <EditorialFigure id="morning-address" />
       </section>
-      <section className="plate-full plate-full-dark" aria-labelledby="story-interview-title">
-        <EditorialFigure id="interview-banner" />
-        <div className="plate-full-copy">
+      <section className="spread spread-flip spread-story" aria-labelledby="story-interview-title">
+        <div className="spread-copy">
           <p className="chapter-no">06</p>
           <p className="eyebrow">{story.interviewEyebrow}</p>
           <h2 id="story-interview-title">{story.interviewTitle}</h2>
           <p>{story.interview}</p>
           <p className="edit-note">{story.interviewNote}</p>
         </div>
+        <EditorialFigure id="interview-banner" />
       </section>
     </>
   );

@@ -37,7 +37,8 @@ export function YogasanaPage() {
           <p className="chapter-no">03</p>
           <h2 id="yogasana-close">{page.session}</h2>
           <blockquote>
-            <p lang="bn">{copy.event.motto}</p>
+            {copy.information.title !== copy.event.motto ? <p>{copy.information.title}</p> : null}
+            <p lang="sa">{copy.event.motto}</p>
             <footer>{page.mottoNote}</footer>
           </blockquote>
           <div className="seal-row">
