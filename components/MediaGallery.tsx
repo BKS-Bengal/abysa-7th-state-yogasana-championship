@@ -98,10 +98,11 @@ export function MediaView({ onOpen }: Props) {
             >
               <img src={film.poster} alt="" width={film.width} height={film.height} loading={index === 0 ? "eager" : "lazy"} />
               <span className="film-meta">
-                <span>
-                  {copy.media.play} · {film.plate}
-                </span>
+                <span>{copy.media.fig} {film.plate}</span>
                 <strong>{text?.caption ?? film.caption}</strong>
+                {film.day ? <span>{film.day}</span> : null}
+                {film.duration ? <span>{film.duration}</span> : null}
+                <span>{copy.media.play}</span>
               </span>
             </button>
           );

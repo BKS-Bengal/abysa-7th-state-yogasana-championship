@@ -26,8 +26,9 @@ export function PrakritiPage() {
           <img src={hero.src} alt={hero.alt} width={1024} height={576} />
         </figure>
         <div className="prakriti-copy">
-          <p className="prakriti-lead">{page.lead}</p>
-          <p>{page.note}</p>
+          {page.definition ? <p className="prakriti-lead">{page.definition}</p> : null}
+          {page.lead ? <p className="prakriti-lead">{page.lead}</p> : null}
+          {page.note ? <p>{page.note}</p> : null}
         </div>
       </section>
       <section className="affiliate-band" aria-labelledby="prakriti-printed">

@@ -110,13 +110,16 @@ export function Hero() {
         <h1 className="hero-reveal" id="hero-title">
           {copy.home.title}
         </h1>
-        <p className="hero-reveal" lang={locale === "bn" ? "bn" : "en"}>
-          {copy.home.bangla}
-        </p>
+        {copy.home.bangla ? (
+          <p className="hero-reveal" lang={locale === "bn" ? "bn" : "en"}>
+            {copy.home.bangla}
+          </p>
+        ) : null}
+        <p className="hero-reveal hero-meta">{copy.home.place}</p>
         <p className="hero-reveal hero-context">{copy.home.context}</p>
-        <p className="hero-reveal hero-meta">
-          {copy.home.championship}
-          <span>{copy.home.place}</span>
+        <p className="hero-reveal hero-actions">
+          <a href="#programme">{copy.home.ctaProgramme}</a>
+          <a href="/information">{copy.home.ctaVisit}</a>
         </p>
       </div>
       <div className="hero-frame" ref={frameRef}>

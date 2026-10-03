@@ -4,7 +4,7 @@ import { OrganisationPage } from "@/components/pages/OrganisationPage";
 export const metadata: Metadata = {
   title: "Organisation",
   description:
-    "All Bengal Yogasana Sports Association presents the 7th State Yogasana Sports Championship 2026–27. Affiliated to Yogasana Bharat and World Yogasana.",
+    "Partners of the 7th State Yogasana Sports Championship: the All Bengal Yogasana Sports Association, Yogasana Bharat, World Yogasana, Karmyog for the 21st Century and Bharatiya Krishak Samaj.",
 };
 
 export default function Page() {

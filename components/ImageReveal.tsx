@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLanguage } from "@/lib/language";
 import { useReducedMotion } from "@/lib/use-reduced-motion";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -32,6 +33,7 @@ export function ImageReveal({
 }: Props) {
   const ref = useRef<HTMLElement>(null);
   const reduced = useReducedMotion();
+  const { copy } = useLanguage();
 
   useEffect(() => {
     const node = ref.current;
@@ -74,7 +76,7 @@ export function ImageReveal({
     <figure ref={ref} className={className}>
       <div className="frame">
         {onOpen ? (
-          <button type="button" className="plate-button" onClick={onOpen} aria-label={`Open plate ${plate ?? ""}: ${alt}`}>
+          <button type="button" className="plate-button" onClick={onOpen} aria-label={`${copy.media.fig} ${plate ?? ""}: ${alt}`}>
             {image}
           </button>
         ) : (
@@ -83,7 +85,7 @@ export function ImageReveal({
       </div>
       {caption ? (
         <figcaption>
-          {plate ? <span>{plate}</span> : null}
+          {plate ? <span>{copy.media.fig} {plate}</span> : null}
           <p>{caption}</p>
         </figcaption>
       ) : null}

@@ -34,6 +34,11 @@ export type Copy = {
     leadEm: string;
     lead: string;
     context: string;
+    ctaProgramme: string;
+    ctaVisit: string;
+    programmeTitle: string;
+    programmeLead: string;
+    duringTitle: string;
   };
   yogasana: {
     eyebrow: string;
@@ -45,6 +50,7 @@ export type Copy = {
     session: string;
     pathway: string;
     mottoNote: string;
+    mottoGloss: string;
   };
   organisation: {
     eyebrow: string;
@@ -58,6 +64,10 @@ export type Copy = {
     secretaryTerm: string;
     secretary: string;
     joint: string;
+    partnersTitle: string;
+    abysaRole: string;
+    nationalRole: string;
+    jointRole: string;
   };
   prakriti: {
     eyebrow: string;
@@ -65,6 +75,7 @@ export type Copy = {
     bangla: string;
     lead: string;
     note: string;
+    definition: string;
     contextTitle: string;
     context: string;
   };
@@ -83,6 +94,18 @@ export type Copy = {
     recordTitle: string;
     dateNote: string;
     rows: { term: string; value: string; lang?: "bn" }[];
+    whatTitle: string;
+    what: string;
+    whoTitle: string;
+    who: string;
+    judgedTitle: string;
+    judged: string;
+    gatheringTitle: string;
+    gathering: string;
+    whereTitle: string;
+    where: string;
+    experienceTitle: string;
+    experience: string;
   };
   story: {
     eyebrow: string;
@@ -122,6 +145,7 @@ export type Copy = {
     title: string;
     em: string;
     play: string;
+    fig: string;
   };
   information: {
     eyebrow: string;

@@ -1,14 +1,16 @@
 "use client";
 
+import { summaryRows } from "@/content/facts";
 import { useLanguage } from "@/lib/language";
 
 export function EventDetails() {
-  const { copy } = useLanguage();
-  const event = copy.event;
-  const ribbon = [event.rows[1], event.rows[5], event.rows[6]];
+  const { copy, locale } = useLanguage();
+  const ribbon = summaryRows(locale);
+
+  if (ribbon.length === 0) return null;
 
   return (
-    <section className="fact-ribbon" aria-label={event.recordTitle}>
+    <section className="fact-ribbon" aria-label={copy.event.recordTitle}>
       {ribbon.map((row) => (
         <article key={row.term}>
           <p>{row.term}</p>

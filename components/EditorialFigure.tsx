@@ -29,7 +29,7 @@ export function EditorialFigure({ id, className, priority = false }: Props) {
         decoding="async"
       />
       <figcaption>
-        <span>{still.plate}</span>
+        <span>{copy.media.fig} {still.plate}</span>
         <p>{text?.caption ?? still.caption}</p>
       </figcaption>
     </figure>

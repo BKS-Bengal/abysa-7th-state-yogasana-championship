@@ -6,7 +6,6 @@ import { useLanguage } from "@/lib/language";
 export function EventIntro() {
   const { copy } = useLanguage();
   const event = copy.event;
-  const story = copy.story;
 
   return (
     <>
@@ -15,15 +14,15 @@ export function EventIntro() {
         <div className="spread-copy">
           <p className="chapter-no">01</p>
           <p className="eyebrow">{event.eyebrow}</p>
-          <h2 id="event-title">{event.title}</h2>
-          <p>{event.championship}</p>
+          <h2 id="event-title">{event.whatTitle}</h2>
+          <p>{event.what}</p>
         </div>
       </section>
       <section className="spread spread-flip spread-ivory" aria-labelledby="event-athletes">
         <div className="spread-copy">
           <p className="chapter-no">02</p>
-          <h2 id="event-athletes">{story.title}</h2>
-          <p>{story.hall}</p>
+          <h2 id="event-athletes">{event.whoTitle}</h2>
+          <p>{event.who}</p>
         </div>
         <EditorialFigure id="hall-athletes" />
       </section>
@@ -31,24 +30,23 @@ export function EventIntro() {
         <EditorialFigure id="dais-address" />
         <div className="plate-full-copy">
           <p className="chapter-no">03</p>
-          <h2 id="event-dais">{story.addressTitle}</h2>
-          <p>{story.address}</p>
+          <h2 id="event-dais">{event.judgedTitle}</h2>
+          <p>{event.judged}</p>
         </div>
       </section>
       <section className="spread spread-oxblood" aria-labelledby="event-dance">
         <EditorialFigure id="dance" />
         <div className="spread-copy">
           <p className="chapter-no">04</p>
-          <h2 id="event-dance">{story.danceTitle}</h2>
-          <p>{story.dance}</p>
+          <h2 id="event-dance">{event.gatheringTitle}</h2>
+          <p>{event.gathering}</p>
         </div>
       </section>
       <section className="spread spread-flip spread-ivory" aria-labelledby="event-banner">
         <div className="spread-copy">
           <p className="chapter-no">05</p>
-          <p className="eyebrow">{event.rows[2].term}</p>
-          <h2 id="event-banner">{story.bannerTitle}</h2>
-          <p>{story.banner}</p>
+          <h2 id="event-banner">{event.whereTitle}</h2>
+          <p>{event.where}</p>
         </div>
         <EditorialFigure id="children-banner" />
       </section>
@@ -56,8 +54,8 @@ export function EventIntro() {
         <EditorialFigure id="night-mats" />
         <div className="plate-full-copy">
           <p className="chapter-no">06</p>
-          <h2 id="event-night">{story.nightTitle}</h2>
-          <p>{story.night}</p>
+          <h2 id="event-night">{event.experienceTitle}</h2>
+          <p>{event.experience}</p>
         </div>
       </section>
     </>

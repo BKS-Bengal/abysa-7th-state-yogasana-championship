@@ -40,6 +40,7 @@ const description =
   "The 7th State Yogasana Sports Championship 2026–27 at Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum, presented by the All Bengal Yogasana Sports Association, with Prakriti Jagaran Mancha.";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://prakriti-jagaran-mancha.vercel.app"),
   title: {
     default: title,
     template: "%s — State Yogasana Championship",
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
     description,
     type: "website",
     locale: "en_IN",
-    images: [{ url: "/assets/hero/prakriti-jagaran.webp", width: 1024, height: 576, alt: "Prakriti Jagaran invitation artwork" }],
+    images: [{ url: "/assets/hero/prakriti-jagaran.webp", width: 1024, height: 576, alt: "Artwork for the 7th State Yogasana Sports Championship at Muluk, Bolpur, Birbhum." }],
   },
   twitter: {
     card: "summary_large_image",

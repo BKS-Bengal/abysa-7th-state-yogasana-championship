@@ -17,7 +17,7 @@ export function ClosingSection() {
           <p>{info.closeName}</p>
           <p className="closing-meta">
             {info.closePlace}
-            <span>{info.closeDate}</span>
+            {info.closeDate ? <span>{info.closeDate}</span> : null}
           </p>
         </div>
       </div>

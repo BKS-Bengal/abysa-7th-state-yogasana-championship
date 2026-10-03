@@ -4,7 +4,7 @@ import { InformationPage } from "@/components/pages/InformationPage";
 export const metadata: Metadata = {
   title: "Information",
   description:
-    "Yogasana Bharat and World Yogasana affiliations of the All Bengal Yogasana Sports Association, with Karmyog and Bharatiya Krishak Samaj as joint organisers.",
+    "Venue, hall, organisers and affiliations for the 7th State Yogasana Sports Championship at Muluk, Bolpur, Birbhum.",
 };
 
 export default function Page() {
