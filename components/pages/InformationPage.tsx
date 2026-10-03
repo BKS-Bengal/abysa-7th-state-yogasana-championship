@@ -1,7 +1,7 @@
 "use client";
 
-import { EditorialFigure } from "@/components/EditorialFigure";
 import { SiteFrame } from "@/components/SiteFrame";
+import { logo } from "@/lib/media";
 import { useLanguage } from "@/lib/language";
 
 export function InformationPage() {
@@ -10,15 +10,16 @@ export function InformationPage() {
 
   return (
     <SiteFrame>
-      <section className="info-hero band-saffron" aria-labelledby="details-title">
-        <p className="info-edition">07</p>
-        <div>
-          <p className="eyebrow">{event.recordEyebrow}</p>
-          <h2 id="details-title">{event.recordTitle}</h2>
-        </div>
-      </section>
-      <section className="details info-record">
-        <dl>
+      <section className="dossier" aria-labelledby="details-title">
+        <header className="dossier-head">
+          <img src={logo.src} alt="" width={84} height={84} />
+          <div>
+            <p className="eyebrow">{event.recordEyebrow}</p>
+            <h2 id="details-title">{event.recordTitle}</h2>
+            <p>{event.dateNote}</p>
+          </div>
+        </header>
+        <dl className="dossier-list">
           {event.rows.map((row) => (
             <div key={row.term}>
               <dt>{row.term}</dt>
@@ -26,9 +27,7 @@ export function InformationPage() {
             </div>
           ))}
         </dl>
-        <p className="date-note">{event.dateNote}</p>
       </section>
-      <EditorialFigure id="hall-wide" className="info-photo" />
     </SiteFrame>
   );
 }

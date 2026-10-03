@@ -26,6 +26,13 @@ export function PrakritiPage() {
           <img src={hero.src} alt={hero.alt} width={1024} height={576} />
         </figure>
       </section>
+      <section className="affiliate-band" aria-labelledby="prakriti-printed">
+        <p className="chapter-no">02</p>
+        <div>
+          <h2 id="prakriti-printed">{page.contextTitle}</h2>
+          <p>{page.context}</p>
+        </div>
+      </section>
     </SiteFrame>
   );
 }

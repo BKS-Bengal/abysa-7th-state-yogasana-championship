@@ -42,12 +42,16 @@ export type Copy = {
     lead: string;
     practice: string;
     sport: string;
+    session: string;
+    pathway: string;
     mottoNote: string;
   };
   organisation: {
     eyebrow: string;
     title: string;
     lead: string;
+    filmedTitle: string;
+    filmed: string;
     leadersEyebrow: string;
     presidentTerm: string;
     president: string;
@@ -61,6 +65,8 @@ export type Copy = {
     bangla: string;
     lead: string;
     note: string;
+    contextTitle: string;
+    context: string;
   };
   event: {
     eyebrow: string;
@@ -84,6 +90,22 @@ export type Copy = {
     em: string;
     hall: string;
     ground: string;
+    courtyardTitle: string;
+    courtyard: string;
+    arriveTitle: string;
+    arrive: string;
+    addressTitle: string;
+    address: string;
+    danceTitle: string;
+    dance: string;
+    bannerTitle: string;
+    banner: string;
+    morningTitle: string;
+    morning: string;
+    practiceTitle: string;
+    practice: string;
+    nightTitle: string;
+    night: string;
     interview: string;
     interviewEyebrow: string;
     interviewTitle: string;

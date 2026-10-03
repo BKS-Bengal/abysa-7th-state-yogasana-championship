@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { EditorialFigure } from "@/components/EditorialFigure";
 import { Hero } from "@/components/Hero";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { SiteFrame } from "@/components/SiteFrame";
@@ -55,7 +54,6 @@ export function HomePage() {
               ))}
             </ul>
           </div>
-          <EditorialFigure id="field-circle" />
         </div>
       </section>
     </SiteFrame>

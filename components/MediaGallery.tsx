@@ -6,46 +6,24 @@ import { ImageReveal } from "./ImageReveal";
 
 type Props = { onOpen: (id: string) => void };
 
-const groups: { id: string; ids: string[]; crop?: boolean }[] = [
-  {
-    id: "moments",
-    ids: [
-      "championship-dais",
-      "address",
-      "dais-speaker",
-      "dance-pair",
-      "dance-record",
-      "dance-turn",
-      "remembrance",
-      "ceremony-table",
-      "offering",
-    ],
-  },
-  {
-    id: "community",
-    ids: ["hall-assembly", "athletes-hall", "young-athletes", "from-the-floor", "hall-wide", "crossing-dais"],
-  },
-  {
-    id: "practice",
-    ids: [
-      "practice-ground",
-      "practice-warrior",
-      "practice-squat",
-      "practice-open",
-      "practice-rise",
-      "practice-lead",
-    ],
-    crop: true,
-  },
-  {
-    id: "atmosphere",
-    ids: ["field-circle", "courtyard"],
-  },
+export const galleryGroups: { id: string; ids: string[] }[] = [
+  { id: "hall", ids: ["table-address", "remembrance"] },
+  { id: "athletes", ids: ["portrait-blue", "portrait-yellow", "portrait-braid", "portrait-navy"] },
+  { id: "voices", ids: ["interview-sofa", "interview-corridor"] },
+  { id: "night", ids: ["night-officials", "night-floor"] },
 ];
+
+const span: Record<string, string> = {
+  "table-address": "span-pair",
+  remembrance: "span-pair",
+  "interview-sofa": "span-all",
+  "night-officials": "span-pair",
+  "night-floor": "span-all",
+};
 
 const byId = new Map(stills.map((item) => [item.id, item]));
 
-function Shot({ item, className, crop, onOpen }: { item: Still; className?: string; crop?: boolean; onOpen: (id: string) => void }) {
+function Shot({ item, onOpen, priority = false }: { item: Still; onOpen: (id: string) => void; priority?: boolean }) {
   const { copy } = useLanguage();
   const text = copy.captions[item.id];
   return (
@@ -53,8 +31,9 @@ function Shot({ item, className, crop, onOpen }: { item: Still; className?: stri
       {...item}
       alt={text?.alt ?? item.alt}
       caption={text?.caption ?? item.caption}
-      className={[className, crop ? "crop-mark" : ""].filter(Boolean).join(" ")}
+      className={span[item.id] ?? ""}
       onOpen={() => onOpen(item.id)}
+      priority={priority}
     />
   );
 }
@@ -70,7 +49,7 @@ export function GalleryView({ onOpen }: Props) {
           <em>{copy.gallery.em}</em>
         </h2>
       </header>
-      {groups.map((group) => {
+      {galleryGroups.map((group, groupIndex) => {
         const words = copy.gallery.groups.find((item) => item.id === group.id);
         const items = group.ids.map((id) => byId.get(id)).filter((item): item is Still => item != null);
         return (
@@ -78,14 +57,14 @@ export function GalleryView({ onOpen }: Props) {
             <header className="group-head">
               <p className="eyebrow">{words?.kicker}</p>
               <h3>
-                <span>{String(groups.indexOf(group) + 1).padStart(2, "0")}</span>
+                <span>{String(groupIndex + 1).padStart(2, "0")}</span>
                 {words?.title}
               </h3>
               <p>{words?.note}</p>
             </header>
             <div className="exhibit">
-              {items.map((item) => (
-                <Shot key={item.id} item={item} crop={group.crop} onOpen={onOpen} />
+              {items.map((item, index) => (
+                <Shot key={item.id} item={item} onOpen={onOpen} priority={groupIndex === 0 && index === 0} />
               ))}
             </div>
           </div>

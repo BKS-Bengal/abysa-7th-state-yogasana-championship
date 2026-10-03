@@ -1,44 +1,63 @@
 "use client";
 
 import { EditorialFigure } from "./EditorialFigure";
-import { ScrollReveal } from "./ScrollReveal";
 import { useLanguage } from "@/lib/language";
 
 export function EventIntro() {
   const { copy } = useLanguage();
   const event = copy.event;
+  const story = copy.story;
 
   return (
     <>
-      <section className="event-poster" aria-labelledby="event-title">
-        <div className="event-poster-copy">
-          <ScrollReveal>
-            <p className="edition">07</p>
-            <p className="eyebrow">{event.eyebrow}</p>
-            <h2 id="event-title" className="event-display">{event.title}</h2>
-          </ScrollReveal>
-          <blockquote>
-            <p lang="bn">{event.motto}</p>
-            <footer>{event.mottoNote}</footer>
-          </blockquote>
-        </div>
-        <EditorialFigure id="championship-dais" className="event-poster-photo" />
-        <div className="event-poster-note">
+      <section className="spread" aria-labelledby="event-title">
+        <EditorialFigure id="hall-wide" priority />
+        <div className="spread-copy">
+          <p className="chapter-no">01</p>
+          <p className="eyebrow">{event.eyebrow}</p>
+          <h2 id="event-title">{event.title}</h2>
           <p>{event.championship}</p>
-          <p>{event.present}</p>
         </div>
       </section>
-      <section className="significance band-oxblood" aria-labelledby="significance-title">
-        <div className="band-inner edit-split image-lead">
-          <EditorialFigure id="practice-lead" />
-          <div className="edit-copy">
-            <p className="eyebrow">{event.whyEyebrow}</p>
-            <h2 id="significance-title">
-              {event.whyTitle}
-              <em>{event.whyEm}</em>
-            </h2>
-            <p>{event.why}</p>
-          </div>
+      <section className="spread spread-flip spread-ivory" aria-labelledby="event-athletes">
+        <div className="spread-copy">
+          <p className="chapter-no">02</p>
+          <h2 id="event-athletes">{story.title}</h2>
+          <p>{story.hall}</p>
+        </div>
+        <EditorialFigure id="hall-athletes" />
+      </section>
+      <section className="plate-full" aria-labelledby="event-dais">
+        <EditorialFigure id="dais-address" />
+        <div className="plate-full-copy">
+          <p className="chapter-no">03</p>
+          <h2 id="event-dais">{story.addressTitle}</h2>
+          <p>{story.address}</p>
+        </div>
+      </section>
+      <section className="spread spread-oxblood" aria-labelledby="event-dance">
+        <EditorialFigure id="dance" />
+        <div className="spread-copy">
+          <p className="chapter-no">04</p>
+          <h2 id="event-dance">{story.danceTitle}</h2>
+          <p>{story.dance}</p>
+        </div>
+      </section>
+      <section className="spread spread-flip spread-ivory" aria-labelledby="event-banner">
+        <div className="spread-copy">
+          <p className="chapter-no">05</p>
+          <p className="eyebrow">{event.rows[2].term}</p>
+          <h2 id="event-banner">{story.bannerTitle}</h2>
+          <p>{story.banner}</p>
+        </div>
+        <EditorialFigure id="children-banner" />
+      </section>
+      <section className="plate-full plate-full-dark" aria-labelledby="event-night">
+        <EditorialFigure id="night-mats" />
+        <div className="plate-full-copy">
+          <p className="chapter-no">06</p>
+          <h2 id="event-night">{story.nightTitle}</h2>
+          <p>{story.night}</p>
         </div>
       </section>
     </>

@@ -1,6 +1,5 @@
 "use client";
 
-import { EditorialFigure } from "./EditorialFigure";
 import { useLanguage } from "@/lib/language";
 
 export function ClosingSection() {
@@ -9,8 +8,7 @@ export function ClosingSection() {
 
   return (
     <section className="closing band-charcoal" aria-labelledby="closing-title">
-      <div className="band-inner edit-split image-lead">
-        <EditorialFigure id="field-circle" />
+      <div className="band-inner edit-split">
         <div className="closing-copy edit-copy">
           <p className="eyebrow">{info.closeEyebrow}</p>
           <h2 id="closing-title" lang="bn">

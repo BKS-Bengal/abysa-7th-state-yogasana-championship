@@ -84,12 +84,13 @@ export function Header({ ready }: Props) {
       </div>
       <button
         type="button"
-        className="nav-toggle"
+        className={open ? "nav-toggle is-open" : "nav-toggle"}
         aria-expanded={open}
         aria-controls="event-nav"
+        aria-label={open ? copy.nav.close : copy.nav.menu}
         onClick={() => setOpen((value) => !value)}
       >
-        {open ? copy.nav.close : copy.nav.menu}
+        <span className="nav-toggle-bars" aria-hidden="true" />
       </button>
       <nav id="event-nav" className={open ? "is-open" : undefined} aria-label={copy.nav.event}>
         {routes.map((route) => {

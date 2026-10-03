@@ -9,37 +9,51 @@ export function StorySection() {
 
   return (
     <>
-      <section className="story-open band-indigo" aria-labelledby="story-open-title">
-        <p className="chapter-no">01</p>
-        <p className="eyebrow">{copy.yogasana.eyebrow}</p>
-        <h2 id="story-open-title">
-          {copy.yogasana.title}
-          <em>{copy.yogasana.em}</em>
-        </h2>
-        <p>{copy.yogasana.sport}</p>
-      </section>
-      <section className="story-hall band-oxblood" aria-labelledby="story-title">
-        <EditorialFigure id="hall-assembly" className="story-hall-photo" />
-        <div className="story-hall-copy">
-          <p className="chapter-no">02</p>
+      <section className="spread" aria-labelledby="story-arrive">
+        <EditorialFigure id="children-verandah" priority />
+        <div className="spread-copy">
+          <p className="chapter-no">01</p>
           <p className="eyebrow">{story.eyebrow}</p>
-          <h2 id="story-title">{story.title}</h2>
-          <p>{story.hall}</p>
+          <h2 id="story-arrive">{story.arriveTitle}</h2>
+          <p>{story.arrive}</p>
         </div>
       </section>
-      <section className="story-ground" aria-labelledby="story-ground-title">
-        <div className="story-ground-copy">
-          <p className="chapter-no">03</p>
-          <p className="eyebrow">{story.eyebrow}</p>
+      <section className="plate-full" aria-labelledby="story-ground-title">
+        <EditorialFigure id="field-circle" />
+        <div className="plate-full-copy">
+          <p className="chapter-no">02</p>
           <h2 id="story-ground-title">{story.em.trim()}</h2>
           <p>{story.ground}</p>
         </div>
-        <EditorialFigure id="practice-rise" className="story-ground-photo" />
       </section>
-      <section className="story-interview band-charcoal" aria-labelledby="story-interview-title">
-        <EditorialFigure id="interview-seated" className="story-interview-photo" />
-        <div className="story-interview-copy">
+      <section className="spread spread-flip spread-green" aria-labelledby="story-practice">
+        <div className="spread-copy">
+          <p className="chapter-no">03</p>
+          <h2 id="story-practice">{story.practiceTitle}</h2>
+          <p>{story.practice}</p>
+        </div>
+        <EditorialFigure id="practice-rise" />
+      </section>
+      <section className="spread spread-ivory" aria-labelledby="story-courtyard-title">
+        <EditorialFigure id="morning-havan" />
+        <div className="spread-copy">
           <p className="chapter-no">04</p>
+          <h2 id="story-courtyard-title">{story.courtyardTitle}</h2>
+          <p>{story.courtyard}</p>
+        </div>
+      </section>
+      <section className="spread spread-flip" aria-labelledby="story-morning">
+        <div className="spread-copy">
+          <p className="chapter-no">05</p>
+          <h2 id="story-morning">{story.morningTitle}</h2>
+          <p>{story.morning}</p>
+        </div>
+        <EditorialFigure id="morning-address" />
+      </section>
+      <section className="plate-full plate-full-dark" aria-labelledby="story-interview-title">
+        <EditorialFigure id="interview-banner" />
+        <div className="plate-full-copy">
+          <p className="chapter-no">06</p>
           <p className="eyebrow">{story.interviewEyebrow}</p>
           <h2 id="story-interview-title">{story.interviewTitle}</h2>
           <p>{story.interview}</p>

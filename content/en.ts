@@ -27,61 +27,95 @@ export const en: Copy = {
     bangla: "সপ্তম রাজ্য যোগাসন ক্রীড়া চ্যাম্পিয়নশিপ",
     championship: "Sports Championship 2026–27 · Men & Women",
     place: "Muluk, Bolpur, Birbhum",
-    context: "With Prakriti Jagaran Mancha. Presented by the All Bengal Yogasana Sports Association.",
-    leadEyebrow: "The morning",
-    leadTitle: "A state championship.",
-    leadEm: " A practice on the ground.",
-    lead: "The hall banner letters the 7th State Yogasana Sports Championship 2026–27. The photographs carry the morning of 2 October 2026 at Bharat Sevashram Sangha, Muluk.",
+    context: "From early practice to competition, every part of the day reflects preparation, discipline and participation.",
+    leadEyebrow: "Yogasana as sport",
+    leadTitle: "A championship built around practice, discipline and the next generation of athletes.",
+    leadEm: "",
+    lead: "Across West Bengal, young athletes come together to train, compete and be evaluated through a structured Yogasana championship. The event is not only about performance on the mat; it is about creating a disciplined sporting pathway for those who want to take Yogasana forward.",
   },
   event: {
     eyebrow: "The championship",
-    title: "7th State Yogasana Sports Championship",
+    title: "A state-wide competition, brought together in one place.",
     present:
       "All Bengal Yogasana Sports Association presents this gathering at Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum. The association is affiliated to Yogasana Bharat, New Delhi, and to World Yogasana.",
     championship:
-      "With it stands the 7th State Yogasana Sports Championship 2026–27, for men and women, as lettered on the hall banner. The programme is organised jointly with Karmyog and Bharatiya Krishak Samaj.",
+      "The championship brings together athletes from across West Bengal for a structured programme of practice, evaluation and selection. In the interview, the State President of the All Bengal Yogasana Sports Association describes a large gathering of athletes from the state's districts, supported by a substantial judging panel and a multi-day event structure.",
     motto: "সমত্বং যোগ উচ্যতে",
     mottoNote: "The line carried on the Yogasana Bharat seal.",
     whyEyebrow: "Why the day is held this way",
     whyTitle: "A championship in the hall.",
     whyEm: " A practice on the ground.",
     why: "The morning begins indoors, in the mandir, and moves out onto the ashram field. Yogasana is present as a state sport, and as a practice taken together.",
-    recordEyebrow: "The record",
-    recordTitle: "Event details",
+    recordEyebrow: "Championship information",
+    recordTitle: "The essential record.",
     dateNote:
       "This morning is the date carried on the photographs. The invitation artwork does not print a separate calendar date.",
     rows: [
-      { term: "Event", value: "7th State Yogasana Sports Championship 2026–27 (Men & Women), with Prakriti Jagaran Mancha" },
+      { term: "Event", value: "7th State Yogasana Sports Championship 2026–27" },
       { term: "Morning on the photographs", value: "2 October 2026, Muluk" },
-      { term: "Venue", value: "Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum" },
+      { term: "Venue", value: "Bharat Sevashram Sangha, Muluk, Bolpur" },
       { term: "Hall", value: "শ্রী শ্রী শিব মন্দির", lang: "bn" },
-      { term: "In the morning", value: "A programme in the hall, then practice on the grounds beside the health centre" },
+      { term: "The day", value: "It begins early: ceremony and practice, then the competitive programme." },
       { term: "Presented by", value: "All Bengal Yogasana Sports Association (ABYSA)" },
       { term: "Affiliations", value: "Yogasana Bharat, New Delhi · World Yogasana" },
       { term: "Jointly organised by", value: "Karmyog, for the 21st century · Bharatiya Krishak Samaj" },
       { term: "Interview", value: "Dr (Major) Narayan Bhattacharya, filmed in front of the banner" },
+      {
+        term: "Participant scale",
+        value:
+          "The interview describes approximately 550–600 athletes from 23 districts of West Bengal. Verify these figures against official event records before treating them as final event statistics.",
+      },
+      {
+        term: "Judging",
+        value:
+          "The interview describes a judging panel of approximately 64–65 judges. Verify before publication as an official figure.",
+      },
     ],
   },
   story: {
     eyebrow: "The day",
-    title: "In the hall.",
-    em: " Then on the ground.",
-    hall: "Sri Sri Shiv Mandir at Bharat Sevashram Sangha, Muluk, holds the gathering. The photographs show the championship dais, an address from the table, dance in the hall, and athletes seated on the floor.",
-    ground: "The morning then moves outside. On the grounds beside the health centre, the All Bengal Yogasana Sports Association team leads practice on the mats.",
-    interview: "An interview with Dr (Major) Narayan Bhattacharya was filmed in front of the Prakriti Jagaran banner.",
+    title: "A competition built at scale.",
+    em: "The day begins early.",
+    hall: "The event brings together hundreds of young athletes in one championship environment. The emphasis is not simply on participation, but on careful observation, judging and selection.",
+    ground:
+      "Practice starts before the competition itself. The interview describes a rhythm of early morning activity, flag hosting, yajna and Yogasana practice before the competitive programme begins.",
+    courtyardTitle: "The offering.",
+    courtyard: "On the morning of 3 October 2026 a small fire offering is held in the courtyard at Muluk.",
+    arriveTitle: "A different kind of venue.",
+    arrive:
+      "A championship is made of more than the moments on the mat. From the first hours of the day to the conversations that continue after practice, the championship is also a story about people, place, discipline and possibility. The championship takes place inside the green surroundings of Bharat Sevashram Sangha at Muluk, creating a setting very different from the usual image of a city sporting venue. The interview specifically reflects on the atmosphere of the campus, its greenery and the clean open grounds.",
+    addressTitle: "Time, attention and evaluation.",
+    address:
+      "With a large field of athletes, judging becomes a central part of the championship. The interview describes a process designed to give judges the time to assess athletes carefully rather than compressing a large competition into a single short session.",
+    danceTitle: "Dance in the hall.",
+    dance: "Dance is performed in the hall, in the same gathering as the competition.",
+    bannerTitle: "Before the banners.",
+    banner:
+      "On the morning of 2 October 2026, children sit before the championship banner and the Prakriti Jagaran banner. The championship is presented as a place where performance is only one part of the experience. Preparation, discipline, evaluation and the opportunity to progress all matter.",
+    morningTitle: "Know the path you are entering.",
+    morning:
+      "One of the strongest messages from the interview is that young athletes need clear information about the competitive route they are following. The speaker argues that athletes should understand the difference between participating in an event and entering a recognised sporting pathway. The photograph does not name the speaker.",
+    practiceTitle: "Hundreds of athletes, one shared experience.",
+    practice:
+      "Young athletes arrive from across the state and spend several days inside the same environment — practising, competing, eating and living together.",
+    nightTitle: "More than a competition day.",
+    night:
+      "For the athletes, the championship is also a shared experience — staying together, practising, eating together and spending several days inside the event environment. The interview places particular emphasis on giving participants proper accommodation, meals and facilities during the competition. The scale of the gathering also changes the way the event has to be managed — from accommodation and meals to judging, certificates, medals and the day-to-day care of participants.",
+    interview:
+      "The interview also opens a wider conversation about health, food and agriculture. The championship is therefore not only a competition to be watched. It is a space where practice, discipline, community and future possibilities meet.",
     interviewEyebrow: "Interview",
-    interviewTitle: "In front of the banner",
-    interviewNote: "Dr (Major) Narayan Bhattacharya.",
+    interviewTitle: "The conversation does not end at the mat.",
+    interviewNote: "Dr (Major) Narayan Bhattacharya, filmed before the Prakriti Jagaran banner.",
   },
   gallery: {
     eyebrow: "Photographs",
     title: "The day,",
     em: " in photographs.",
     groups: [
-      { id: "moments", kicker: "Moments", title: "The hall and the dais", note: "Address, dance, and the championship banner." },
-      { id: "community", kicker: "Community", title: "Who was in the room", note: "Athletes, the seated hall, and the corridor." },
-      { id: "practice", kicker: "Practice", title: "On the mats", note: "The association team leads the morning practice." },
-      { id: "atmosphere", kicker: "Atmosphere", title: "Muluk, outside", note: "The field and the courtyard, the morning of 2 October 2026." },
+      { id: "hall", kicker: "The hall", title: "At the table", note: "An address, and a framed portrait brought to the table." },
+      { id: "athletes", kicker: "Athletes", title: "Before the banner", note: "Portraits made on 3 October 2026." },
+      { id: "voices", kicker: "Voices", title: "Recorded conversation", note: "Interviews filmed during the championship." },
+      { id: "night", kicker: "After dark", title: "The evening session", note: "Officials and athletes under the lights." },
     ],
   },
   media: {
@@ -99,7 +133,7 @@ export const en: Copy = {
     organisersEyebrow: "Joint organisers",
     organisersTitle: "Printed on the artwork.",
     organisers:
-      "ABYSA presents the gathering and the 7th State Yogasana Sports Championship. Karmyog and Bharatiya Krishak Samaj are the joint organisers printed on the artwork.",
+      "The invitation names the All Bengal Yogasana Sports Association as presenting the championship, and names Karmyog and Bharatiya Krishak Samaj as joint organisers.",
     closeEyebrow: "Close",
     closeTitle: "প্রকৃতি জাগরণ মঞ্চ",
     closeName: "Prakriti Jagaran Mancha",
@@ -108,30 +142,42 @@ export const en: Copy = {
   },
   yogasana: {
     eyebrow: "The sport",
-    title: "Yogasana",
-    em: " in the hall, and on the mats.",
-    lead: "The 7th State Yogasana Sports Championship 2026–27, for men and women, is lettered on the hall banner at Sri Sri Shiv Mandir.",
-    practice: "On the morning carried by the photographs, 2 October 2026, the All Bengal Yogasana Sports Association team leads practice on the mats beside the health centre at Muluk.",
-    sport: "Indoors, the hall holds the championship gathering: the dais, an address, dance, and athletes seated on the floor. The same morning then moves onto the ashram field.",
-    mottoNote: "The line on the Yogasana Bharat seal. Yogasana Bharat, New Delhi, and World Yogasana are the affiliations named for the association.",
+    title: "From practice to performance.",
+    em: "",
+    lead: "Practice comes first.",
+    practice:
+      "Yogasana begins with discipline. The athletes seen here are not only demonstrating physical postures. They are preparing for a competitive sport in which practice, control, precision and evaluation come together.",
+    sport:
+      "The competition begins long before an athlete steps onto the mat. Repetition, control and disciplined practice build the foundation for performance. The interview describes Yogasana as an organised competitive discipline in which athletes move through district and state-level structures before progressing to higher levels of competition.",
+    session: "A sport, not only a practice.",
+    pathway:
+      "The championship environment turns practice into competition. Athletes are evaluated by judges, selected through competition and given the opportunity to move forward through the sporting pathway. The practice reaches beyond the mat. The interview also connects Yogasana with a wider idea of health: disciplined physical practice, healthier living and better food. The discussion eventually moves from the mat to the field — asking how Yogasana and agriculture might work together to support healthier lives and future generations. A strong sporting culture begins with strong habits: practice, discipline, health and a clear sense of direction.",
+    mottoNote: "The line on the Yogasana Bharat seal.",
   },
   organisation: {
     eyebrow: "The association",
-    title: "All Bengal Yogasana Sports Association",
-    lead: "ABYSA presents this gathering and the state championship. It is affiliated to Yogasana Bharat, New Delhi, and to World Yogasana.",
+    title: "Building a competitive pathway for Yogasana.",
+    lead: "The interview features Shyamal Ta, State President of the All Bengal Yogasana Sports Association, discussing the organisation of the championship and the wider competitive pathway for athletes.",
+    filmedTitle: "Organising the competition.",
+    filmed:
+      "The association's role extends beyond staging a competition. The interview describes a system involving athlete selection, judging, accommodation, event management and preparation for higher-level competition.",
     leadersEyebrow: "Event leadership",
-    presidentTerm: "President",
-    president: "Shyamal Jha",
+    presidentTerm: "State President",
+    president: "Shyamal Ta",
     secretaryTerm: "Secretary",
     secretary: "Papiya Bhattacharya (Roy)",
-    joint: "Karmyog and Bharatiya Krishak Samaj are the joint organisers printed on the invitation artwork.",
+    joint:
+      "One of the strongest themes in the interview is the importance of giving young athletes a clear understanding of where competitive Yogasana can lead. The emphasis is on helping athletes understand the recognised sporting route, so that practice and competition can become part of a longer-term development journey. The association is presented not simply as an event organiser, but as part of a broader effort to create a structured competitive environment for young athletes.",
   },
   prakriti: {
-    eyebrow: "Within the event",
-    title: "Prakriti Jagaran Mancha",
+    eyebrow: "Beyond the mat",
+    title: "A healthier life begins with more than exercise.",
     bangla: "প্রকৃতি জাগরণ মঞ্চ",
-    lead: "Prakriti Jagaran Mancha sits inside this gathering at Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum, alongside the state yogasana championship.",
-    note: "The invitation artwork carries the name, the association, Yogasana Bharat, World Yogasana, Karmyog and Bharatiya Krishak Samaj. It does not print a separate calendar date.",
+    lead: "The conversation around Yogasana eventually expands into a wider question: how do we build healthier lives for the next generation? The interview connects physical practice with food, agriculture and everyday wellbeing. The idea is simple but broad — a healthy body needs both disciplined movement and good food.",
+    note: "Prakriti Jagaran Mancha is named on the invitation and on a banner beside the championship. The invitation also names the association, Yogasana Bharat, World Yogasana, Karmyog and Bharatiya Krishak Samaj. It does not print a separate calendar date. The interview does not give the mancha a formal definition.",
+    contextTitle: "What we practise is connected to what we eat.",
+    context:
+      "The discussion links Yogasana with healthier food and agriculture, opening a wider conversation about how farming, nutrition and physical wellbeing can work together. Health, food and the future. The interview presents this connection as an opportunity to think beyond the competition itself: how can Yogasana, healthier food and better agricultural practices come together to support the wellbeing of future generations?",
   },
   captions: {
     "athletes-hall": {
@@ -168,7 +214,7 @@ export const en: Copy = {
     },
     remembrance: {
       alt: "A woman in a yellow saree holds a framed portrait at the ceremonial table.",
-      caption: "A framed portrait at the table in the hall.",
+      caption: "A framed portrait brought to the table.",
     },
     "ceremony-table": {
       alt: "People gathered at a long table under the sign of Sri Sri Shiv Mandir.",
@@ -236,19 +282,19 @@ export const en: Copy = {
     },
     "film-corridor": {
       alt: "The gathering seated before the 7th State Yogasana Sports Championship banner and the Prakriti Jagaran banner.",
-      caption: "The gathering seated before the championship banner and the Prakriti Jagaran banner, on the mandir verandah.",
+      caption: "The championship environment: the gathering before the banners.",
     },
     "film-athletes": {
       alt: "Athletes in orange seated in the hall at Sri Sri Shiv Mandir.",
-      caption: "Athletes in orange seated in the hall at Sri Sri Shiv Mandir.",
+      caption: "Athletes seated in the hall.",
     },
     "film-dais": {
       alt: "The championship dais seen from within the seated gathering.",
-      caption: "The championship dais, seen from within the seated gathering.",
+      caption: "The championship dais, from within the gathering.",
     },
     "film-ceremony": {
       alt: "People gathered at the long table inside Sri Sri Shiv Mandir.",
-      caption: "At the long table inside Sri Sri Shiv Mandir.",
+      caption: "The wider gathering, at the long table.",
     },
   },
 };
