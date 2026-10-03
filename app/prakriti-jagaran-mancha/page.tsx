@@ -4,7 +4,7 @@ import { PrakritiPage } from "@/components/pages/PrakritiPage";
 export const metadata: Metadata = {
   title: "Prakriti Jagaran Mancha",
   description:
-    "Prakriti Jagaran Mancha within the state yogasana gathering at Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum.",
+    "Prakriti Jagaran Mancha at the 7th State Yogasana Sports Championship, and the link between Yogasana, food and farming.",
 };
 
 export default function Page() {

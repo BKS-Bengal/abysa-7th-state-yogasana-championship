@@ -2930,3 +2930,48 @@ html[lang="bn"] .leaders-display dd {
   .dossier-head { grid-template-columns: 1fr; }
   .identity-cluster img { height: 64px; }
 }
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.4rem;
+  margin: 1.1rem 0 0;
+}
+
+.hero-actions a {
+  color: var(--on-dark-accent);
+  border-bottom: 1px solid currentColor;
+  text-decoration: none;
+}
+
+.programme {
+  background: #fbfbfa;
+  color: #161311;
+  padding: 3.2rem 0 3.6rem;
+}
+
+.programme h2,
+.programme h3 {
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.programme h2 { font-size: clamp(2.2rem, 4vw, 3.4rem); margin: 0.2rem 0 0.7rem; }
+.programme h3 { font-size: 1.35rem; margin: 1.6rem 0 0.45rem; }
+.programme p { max-width: 40rem; }
+
+.programme-days,
+.programme-during {
+  margin: 0.4rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.35rem 1.5rem;
+}
+
+.programme-during { grid-template-columns: repeat(2, minmax(0, 18rem)); }
+
+@media (max-width: 720px) {
+  .programme-during { grid-template-columns: 1fr; }
+}

@@ -2,15 +2,40 @@
 
 import { EditorialFigure } from "@/components/EditorialFigure";
 import { SiteFrame } from "@/components/SiteFrame";
-import { logo } from "@/lib/media";
+import { eventFacts } from "@/content/facts";
 import { useLanguage } from "@/lib/language";
 
 export function OrganisationPage() {
-  const { copy } = useLanguage();
+  const { copy, locale } = useLanguage();
   const page = copy.organisation;
 
   return (
     <SiteFrame>
+      <section className="affiliate-band" aria-labelledby="partners-title">
+        <div>
+          <p className="eyebrow">{page.eyebrow}</p>
+          <h2 id="partners-title">{page.partnersTitle}</h2>
+          <h3>{eventFacts.presentedBy[locale]}</h3>
+          <p>{page.abysaRole}</p>
+          <dl className="leaders leaders-display">
+            <div>
+              <dt>{page.presidentTerm}</dt>
+              <dd>{eventFacts.people.shyamal[locale]}</dd>
+            </div>
+            <div>
+              <dt>{page.secretaryTerm}</dt>
+              <dd>{eventFacts.people.papiya[locale]}</dd>
+            </div>
+          </dl>
+          <h3>{eventFacts.yogasanaBharat[locale]}</h3>
+          <p>{page.nationalRole}</p>
+          <h3>{eventFacts.worldYogasana[locale]}</h3>
+          <h3>{copy.information.organisersEyebrow}</h3>
+          <p>{page.jointRole}</p>
+          <p>{eventFacts.jointOrganisers[locale]}</p>
+          <p>{page.joint}</p>
+        </div>
+      </section>
       <section className="spread" aria-labelledby="org-title">
         <EditorialFigure id="organisers-court" priority />
         <div className="spread-copy">
@@ -27,34 +52,6 @@ export function OrganisationPage() {
           <p>{page.filmed}</p>
         </div>
         <EditorialFigure id="day-crew" />
-      </section>
-      <section className="leaders-stage band-oxblood" aria-labelledby="leaders-title">
-        <p className="chapter-no">03</p>
-        <p className="eyebrow">{page.leadersEyebrow}</p>
-        <h2 id="leaders-title" className="sr-only">
-          {page.leadersEyebrow}
-        </h2>
-        <dl className="leaders leaders-display">
-          <div>
-            <dt>{page.presidentTerm}</dt>
-            <dd>{page.president}</dd>
-          </div>
-          <div>
-            <dt>{page.secretaryTerm}</dt>
-            <dd>{page.secretary}</dd>
-          </div>
-        </dl>
-        <p className="leaders-note">{page.joint}</p>
-      </section>
-      <section className="affiliate-band" aria-labelledby="affiliate-title">
-        <img src={logo.src} alt={logo.alt} width={96} height={96} />
-        <div>
-          <p className="chapter-no">04</p>
-          <h2 id="affiliate-title">{copy.information.title}</h2>
-          {copy.information.title !== copy.event.motto ? <p lang="sa">{copy.event.motto}</p> : null}
-          <p>{copy.information.affiliation}</p>
-          <p>{copy.information.organisers}</p>
-        </div>
       </section>
     </SiteFrame>
   );

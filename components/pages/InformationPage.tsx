@@ -19,7 +19,7 @@ export function InformationPage() {
           <div>
             <p className="eyebrow">{event.recordEyebrow}</p>
             <h2 id="details-title">{event.recordTitle}</h2>
-            <p>{event.dateNote}</p>
+            {event.dateNote ? <p>{event.dateNote}</p> : null}
           </div>
         </header>
         <dl className="dossier-list">

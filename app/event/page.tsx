@@ -4,7 +4,7 @@ import { EventPage } from "@/components/pages/EventPage";
 export const metadata: Metadata = {
   title: "Event",
   description:
-    "Prakriti Jagaran Mancha and the 7th State Yogasana Sports Championship 2026–27 at Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum. Presented by the All Bengal Yogasana Sports Association.",
+    "What the 7th State Yogasana Sports Championship is, who competes, how it is judged, and where it is held in Muluk, Bolpur, Birbhum.",
 };
 
 export default function Page() {

@@ -99,7 +99,7 @@ export function Lightbox({ openId, onClose, ids }: Props) {
     >
       <div className="lightbox-bar">
         <p>
-          <span>{item.plate}</span>
+          <span>{copy.media.fig} {item.plate}</span>
           {caption}
         </p>
         <div className="lightbox-nav">
@@ -116,7 +116,7 @@ export function Lightbox({ openId, onClose, ids }: Props) {
       </div>
       <div className="lightbox-stage">
         {item.kind === "film" ? (
-          <VideoModal src={item.src} poster={item.poster} title={caption} />
+          <VideoModal src={item.src} poster={item.poster} title={caption} tracks={item.tracks} />
         ) : (
           <img src={item.src} alt={alt} width={item.width} height={item.height} />
         )}

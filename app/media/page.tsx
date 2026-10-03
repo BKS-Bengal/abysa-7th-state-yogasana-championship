@@ -4,7 +4,7 @@ import { MediaPage } from "@/components/pages/MediaPage";
 export const metadata: Metadata = {
   title: "Media",
   description:
-    "Four films from Prakriti Jagaran Mancha: the mandir corridor, the athletes, the dais, and the table inside Sri Sri Shiv Mandir.",
+    "Four films from the 7th State Yogasana Sports Championship.",
 };
 
 export default function Page() {
