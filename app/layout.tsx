@@ -35,14 +35,14 @@ const banglaQuote = Tiro_Bangla({
   display: "swap",
 });
 
-const title = "Prakriti Jagaran Mancha — প্রকৃতি জাগরণ মঞ্চ";
+const title = "7th State Yogasana Sports Championship 2026–27";
 const description =
-  "A gathering presented by the All Bengal Yogasana Sports Association at Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum, with the 7th State Yogasana Sports Championship 2026–27. Affiliated to Yogasana Bharat and World Yogasana.";
+  "The 7th State Yogasana Sports Championship 2026–27 at Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum, presented by the All Bengal Yogasana Sports Association, with Prakriti Jagaran Mancha.";
 
 export const metadata: Metadata = {
   title: {
     default: title,
-    template: "%s — Prakriti Jagaran Mancha",
+    template: "%s — State Yogasana Championship",
   },
   description,
   openGraph: {

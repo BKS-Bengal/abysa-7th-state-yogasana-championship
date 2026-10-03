@@ -1,6 +1,5 @@
 "use client";
 
-import { EditorialFigure } from "./EditorialFigure";
 import { useLanguage } from "@/lib/language";
 
 export function IdentitySection() {
@@ -10,8 +9,7 @@ export function IdentitySection() {
   return (
     <>
       <section className="identity" aria-labelledby="identity-title">
-        <div className="edit-split image-lead">
-          <EditorialFigure id="practice-open" />
+        <div className="edit-split">
           <div className="edit-copy">
             <p className="eyebrow">{info.eyebrow}</p>
             <h2 id="identity-title" lang="bn">
@@ -29,7 +27,6 @@ export function IdentitySection() {
             <h2 id="organisers-title">{info.organisersTitle}</h2>
             <p>{info.organisers}</p>
           </div>
-          <EditorialFigure id="championship-dais" />
         </div>
       </section>
     </>
