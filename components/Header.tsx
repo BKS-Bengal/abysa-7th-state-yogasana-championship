@@ -3,21 +3,10 @@
 import { useEffect, useId, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { contents } from "@/lib/contents";
 import { logo } from "@/lib/media";
 import { useLanguage } from "@/lib/language";
 import type { Locale } from "@/content/types";
-
-const routes = [
-  { href: "/", key: "home" },
-  { href: "/event", key: "event" },
-  { href: "/yogasana", key: "yogasana" },
-  { href: "/organisation", key: "organisation" },
-  { href: "/prakriti-jagaran-mancha", key: "prakriti" },
-  { href: "/story", key: "story" },
-  { href: "/gallery", key: "gallery" },
-  { href: "/media", key: "media" },
-  { href: "/information", key: "information" },
-] as const;
 
 type Props = { ready: boolean };
 
@@ -93,7 +82,7 @@ export function Header({ ready }: Props) {
         <span className="nav-toggle-bars" aria-hidden="true" />
       </button>
       <nav id="event-nav" className={open ? "is-open" : undefined} aria-label={copy.nav.event}>
-        {routes.map((route) => {
+        {contents.map((route) => {
           const current = pathname === route.href;
           const label = copy.nav[route.key];
           return (
@@ -104,6 +93,7 @@ export function Header({ ready }: Props) {
               className={current ? "is-active" : undefined}
               onClick={() => setOpen(false)}
             >
+              <span className="nav-index">{route.index}</span>
               {label}
             </Link>
           );

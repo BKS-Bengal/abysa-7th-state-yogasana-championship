@@ -39,6 +39,10 @@ export type Copy = {
     programmeTitle: string;
     programmeLead: string;
     duringTitle: string;
+    insideEyebrow: string;
+    insideTitle: string;
+    insideLead: string;
+    watchFilm: string;
   };
   yogasana: {
     eyebrow: string;
@@ -106,6 +110,7 @@ export type Copy = {
     where: string;
     experienceTitle: string;
     experience: string;
+    sportLink: string;
   };
   story: {
     eyebrow: string;
@@ -133,6 +138,11 @@ export type Copy = {
     interviewEyebrow: string;
     interviewTitle: string;
     interviewNote: string;
+    daysLabel: string;
+    daysLead: string;
+    platesEyebrow: string;
+    platesTitle: string;
+    days: { id: string; number: string; title: string; opening: string; passages: string[]; close: string }[];
   };
   gallery: {
     eyebrow: string;

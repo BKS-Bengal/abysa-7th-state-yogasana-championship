@@ -118,8 +118,8 @@ export function Hero() {
         <p className="hero-reveal hero-meta">{copy.home.place}</p>
         <p className="hero-reveal hero-context">{copy.home.context}</p>
         <p className="hero-reveal hero-actions">
-          <a href="#programme">{copy.home.ctaProgramme}</a>
-          <a href="/information">{copy.home.ctaVisit}</a>
+          <a href="#contents">{copy.home.ctaProgramme}</a>
+          <a href="/story">{copy.home.ctaVisit}</a>
         </p>
       </div>
       <div className="hero-frame" ref={frameRef}>

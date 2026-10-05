@@ -1,58 +1,71 @@
 "use client";
 
+import { Fragment } from "react";
+import { dayDate } from "@/content/facts";
 import { EditorialFigure } from "./EditorialFigure";
 import { useLanguage } from "@/lib/language";
 
+const dayFigures: Record<string, string[]> = {
+  "day-02": ["children-verandah", "field-circle", "practice-rise"],
+  "day-03": ["morning-address", "morning-havan", "indoor-session"],
+};
+
 export function StorySection() {
-  const { copy } = useLanguage();
+  const { copy, locale } = useLanguage();
   const story = copy.story;
 
   return (
     <>
-      <section className="spread" aria-labelledby="story-arrive">
-        <EditorialFigure id="children-verandah" priority />
-        <div className="spread-copy">
-          <p className="chapter-no">01</p>
-          <p className="eyebrow">{story.eyebrow}</p>
-          <h2 id="story-arrive">{story.arriveTitle}</h2>
-          <p>{story.arrive}</p>
-        </div>
+      <section className="chronicle-open" aria-labelledby="chronicle-title">
+        <p className="eyebrow">{story.daysLabel}</p>
+        <h2 id="chronicle-title">{story.daysLabel}</h2>
+        <p>{story.daysLead}</p>
+        <nav className="day-nav" aria-label={story.daysLabel}>
+          {story.days.map((day) => (
+            <a key={day.id} href={`#${day.id}`}>
+              <span>{day.number}</span>
+              {dayDate(day.id, locale)}
+            </a>
+          ))}
+        </nav>
       </section>
-      <section className="spread spread-ivory spread-story" aria-labelledby="story-ground-title">
-        <EditorialFigure id="field-circle" />
+      {story.days.map((day, index) => {
+        const next = story.days[index + 1];
+        const figures = dayFigures[day.id] ?? [];
+        return (
+          <article className={day.id} id={day.id} key={day.id}>
+            <div className="day-chapter">
+              <p className="chapter-no">{day.number}</p>
+              <p className="eyebrow">{dayDate(day.id, locale)}</p>
+              <h2>{day.title}</h2>
+              <p className="day-open">{day.opening}</p>
+              {figures.length === 0
+                ? day.passages.map((passage) => <p key={passage}>{passage}</p>)
+                : day.passages[0]
+                  ? <p>{day.passages[0]}</p>
+                  : null}
+            </div>
+            {figures.map((id, figureIndex) => (
+              <Fragment key={id}>
+                {figureIndex > 0 && day.passages[figureIndex] ? (
+                  <div className="day-chapter day-beat">
+                    <p>{day.passages[figureIndex]}</p>
+                  </div>
+                ) : null}
+                <EditorialFigure id={id} className="day-plate" priority={figureIndex === 0} />
+              </Fragment>
+            ))}
+            <div className="day-chapter">
+              <p className="day-close">{day.close}</p>
+              <a className="day-next" href={next ? `#${next.id}` : "#plates"}>
+                {next ? next.title : story.interviewTitle}
+              </a>
+            </div>
+          </article>
+        );
+      })}
+      <section className="spread spread-flip spread-story" id="plates" aria-labelledby="story-interview-title">
         <div className="spread-copy">
-          <p className="chapter-no">02</p>
-          <h2 id="story-ground-title">{story.em.trim()}</h2>
-          <p>{story.ground}</p>
-        </div>
-      </section>
-      <section className="spread spread-flip spread-green" aria-labelledby="story-practice">
-        <div className="spread-copy">
-          <p className="chapter-no">03</p>
-          <h2 id="story-practice">{story.practiceTitle}</h2>
-          <p>{story.practice}</p>
-        </div>
-        <EditorialFigure id="practice-rise" />
-      </section>
-      <section className="spread spread-ivory" aria-labelledby="story-courtyard-title">
-        <EditorialFigure id="morning-havan" />
-        <div className="spread-copy">
-          <p className="chapter-no">04</p>
-          <h2 id="story-courtyard-title">{story.courtyardTitle}</h2>
-          <p>{story.courtyard}</p>
-        </div>
-      </section>
-      <section className="spread spread-flip" aria-labelledby="story-morning">
-        <div className="spread-copy">
-          <p className="chapter-no">05</p>
-          <h2 id="story-morning">{story.morningTitle}</h2>
-          <p>{story.morning}</p>
-        </div>
-        <EditorialFigure id="morning-address" />
-      </section>
-      <section className="spread spread-flip spread-story" aria-labelledby="story-interview-title">
-        <div className="spread-copy">
-          <p className="chapter-no">06</p>
           <p className="eyebrow">{story.interviewEyebrow}</p>
           <h2 id="story-interview-title">{story.interviewTitle}</h2>
           <p>{story.interview}</p>
