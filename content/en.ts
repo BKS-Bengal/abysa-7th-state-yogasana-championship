@@ -170,7 +170,7 @@ export const en: Copy = {
   media: {
     eyebrow: "Films",
     title: "Four films from the championship.",
-    em: "Movement, atmosphere and recorded conversation from the championship.",
+    em: "Four films: the gathering, the hall of Sri Sri Shiv Mandir, the dais, and the long table.",
     play: "Play",
     fig: "Fig.",
   },
@@ -202,7 +202,7 @@ export const en: Copy = {
     mottoGloss: "Equanimity is Yoga",
     session: "Judged as a sport.",
     pathway:
-      "At the championship, practice became performance. Judges assessed athletes. Competition was the step between district work and higher Yogasana, and a state result can lead on to the national level.",
+      "At the championship, practice became performance. Judges assessed athletes. Artistic Yogasana was contested. Competition was the step between district work and higher Yogasana, and a state result can lead on to the national level.",
     mottoNote: "The line on the Yogasana Bharat seal.",
   },
   organisation: {
@@ -222,6 +222,7 @@ export const en: Copy = {
     partnersTitle: "Partners",
     abysaRole: "Presents and runs the state championship: selection, judging, accommodation, and preparation for higher-level competition.",
     nationalRole: "National affiliation of the All Bengal Yogasana Sports Association.",
+    worldRole: "The World Yogasana mark is carried on the championship banner with Yogasana Bharat.",
     jointRole: "Joint organisers.",
   },
   prakriti: {
