@@ -1,6 +1,6 @@
 "use client";
 
-import { hero } from "@/lib/media";
+import { prakritiArt } from "@/lib/media";
 import { SiteFrame } from "@/components/SiteFrame";
 import { useLanguage } from "@/lib/language";
 
@@ -23,7 +23,7 @@ export function PrakritiPage() {
           <span className="prakriti-corner tr" aria-hidden="true" />
           <span className="prakriti-corner bl" aria-hidden="true" />
           <span className="prakriti-corner br" aria-hidden="true" />
-          <img src={hero.src} alt={hero.alt} width={1024} height={576} />
+          <img src={prakritiArt.src} alt={prakritiArt.alt} width={prakritiArt.width} height={prakritiArt.height} />
         </figure>
         <div className="prakriti-copy">
           {page.definition ? <p className="prakriti-lead">{page.definition}</p> : null}

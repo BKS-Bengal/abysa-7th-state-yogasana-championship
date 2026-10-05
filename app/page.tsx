@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title,
     description,
-    images: [{ url: "/assets/hero/prakriti-jagaran.webp", width: 1024, height: 576, alt: "Artwork for the 7th State Yogasana Sports Championship at Muluk, Bolpur, Birbhum." }],
+    images: [{ url: "/assets/hero/championship-banner.webp", width: 3456, height: 2304, alt: "Official banner for the 7th State Yogasana Sports Championship 2026–27 at Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum." }],
   },
 };
 

@@ -3,6 +3,7 @@
 import { EditorialFigure } from "@/components/EditorialFigure";
 import { SiteFrame } from "@/components/SiteFrame";
 import { eventFacts } from "@/content/facts";
+import { leadershipGroups, portraits, type LeadershipId } from "@/content/leadership";
 import { useLanguage } from "@/lib/language";
 
 export function OrganisationPage() {
@@ -17,16 +18,6 @@ export function OrganisationPage() {
           <h2 id="partners-title">{page.partnersTitle}</h2>
           <h3>{eventFacts.presentedBy[locale]}</h3>
           <p>{page.abysaRole}</p>
-          <dl className="leaders leaders-display">
-            <div>
-              <dt>{page.presidentTerm}</dt>
-              <dd>{eventFacts.people.shyamal[locale]}</dd>
-            </div>
-            <div>
-              <dt>{page.secretaryTerm}</dt>
-              <dd>{eventFacts.people.papiya[locale]}</dd>
-            </div>
-          </dl>
           <h3>{eventFacts.yogasanaBharat[locale]}</h3>
           <p>{page.nationalRole}</p>
           <h3>{eventFacts.worldYogasana[locale]}</h3>
@@ -37,6 +28,35 @@ export function OrganisationPage() {
           <p>{page.joint}</p>
         </div>
       </section>
+      {leadershipGroups.map((group) => {
+        const institutional = group.id === "institutional";
+        return (
+          <section className="roster" key={group.id} aria-labelledby={`${group.id}-leadership`}>
+            <p className="eyebrow">{institutional ? page.institutionalLeadership : page.eventLeadership}</p>
+            <h2 id={`${group.id}-leadership`}>
+              {institutional ? page.institutionalLeadershipTitle : page.eventLeadershipTitle}
+            </h2>
+            {institutional ? <p className="roster-note">{page.institutionalNote}</p> : null}
+            <ul>
+              {group.members.map((id) => {
+                const person = page.profiles[id];
+                const photo = portraits[id as LeadershipId];
+                if (!person) return null;
+                return (
+                  <li key={id}>
+                    <img src={photo.src} alt={person.alt} width={photo.width} height={photo.height} />
+                    <div>
+                      <h3>{person.name}</h3>
+                      <p>{person.role}</p>
+                      {person.detail ? <p>{person.detail}</p> : null}
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+        );
+      })}
       <section className="spread" aria-labelledby="org-title">
         <EditorialFigure id="organisers-court" priority />
         <div className="spread-copy">
