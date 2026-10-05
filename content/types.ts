@@ -71,6 +71,7 @@ export type Copy = {
     partnersTitle: string;
     abysaRole: string;
     nationalRole: string;
+    worldRole: string;
     jointRole: string;
   };
   prakriti: {

@@ -30,6 +30,7 @@ export function OrganisationPage() {
           <h3>{eventFacts.yogasanaBharat[locale]}</h3>
           <p>{page.nationalRole}</p>
           <h3>{eventFacts.worldYogasana[locale]}</h3>
+          <p>{page.worldRole}</p>
           <h3>{copy.information.organisersEyebrow}</h3>
           <p>{page.jointRole}</p>
           <p>{eventFacts.jointOrganisers[locale]}</p>
