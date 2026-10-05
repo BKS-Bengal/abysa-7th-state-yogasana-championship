@@ -20,14 +20,18 @@ export function YogasanaPage() {
             {page.title}
             <em>{page.em}</em>
           </h2>
-          <p>{page.practice}</p>
+          {page.practice.split(/\n\n+/).map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
         </div>
       </section>
       <section className="spread spread-flip spread-ivory" aria-labelledby="yogasana-athlete">
         <div className="spread-copy">
           <p className="chapter-no">02</p>
           <h2 id="yogasana-athlete">{page.lead}</h2>
-          <p>{page.sport}</p>
+          {page.sport.split(/\n\n+/).map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
         </div>
         <EditorialFigure id="portrait-jersey" />
       </section>

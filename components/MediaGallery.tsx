@@ -47,10 +47,8 @@ export function GalleryView({ onOpen }: Props) {
     <section className="gallery tone-photo" aria-labelledby="gallery-title">
       <header className="chapter-head">
         <p className="eyebrow">{copy.gallery.eyebrow}</p>
-        <h2 id="gallery-title">
-          {copy.gallery.title}
-          <em>{copy.gallery.em}</em>
-        </h2>
+        <h2 id="gallery-title">{copy.gallery.title}</h2>
+        {copy.gallery.em ? <p className="lede">{copy.gallery.em}</p> : null}
       </header>
       {galleryGroups.map((group, groupIndex) => {
         const words = copy.gallery.groups.find((item) => item.id === group.id);
@@ -84,10 +82,8 @@ export function MediaView({ onOpen }: Props) {
       <div className="band-inner">
       <header className="chapter-head">
         <p className="eyebrow">{copy.media.eyebrow}</p>
-        <h2 id="media-title">
-          {copy.media.title}
-          <em>{copy.media.em}</em>
-        </h2>
+        <h2 id="media-title">{copy.media.title}</h2>
+        {copy.media.em ? <p className="lede">{copy.media.em}</p> : null}
       </header>
       <div className="cinema">
         {films.map((film, index) => {

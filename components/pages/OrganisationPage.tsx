@@ -42,14 +42,18 @@ export function OrganisationPage() {
           <p className="chapter-no">01</p>
           <p className="eyebrow">{page.eyebrow}</p>
           <h2 id="org-title">{page.title}</h2>
-          <p>{page.lead}</p>
+          {page.lead.split(/\n\n+/).map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
         </div>
       </section>
       <section className="spread spread-flip spread-ivory" aria-labelledby="org-crew">
         <div className="spread-copy">
           <p className="chapter-no">02</p>
           <h2 id="org-crew">{page.filmedTitle}</h2>
-          <p>{page.filmed}</p>
+          {page.filmed.split(/\n\n+/).map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
         </div>
         <EditorialFigure id="day-crew" />
       </section>

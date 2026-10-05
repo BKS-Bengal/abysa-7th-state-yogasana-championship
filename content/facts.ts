@@ -41,7 +41,6 @@ export const eventFacts = {
   people: {
     shyamal: { en: "Shyamal Ta", bn: "শ্যামল তা" },
     papiya: { en: "Papiya Bhattacharya (Roy)", bn: "পাপিয়া ভট্টাচার্য (রায়)" },
-    narayan: { en: "Dr (Major) Narayan Bhattacharya", bn: "ডা. (মেজর) নারায়ণ ভট্টাচার্য" },
   },
   motto: "समत्वं योग उच्यते",
   /** Exact quotation was not supplied. */
