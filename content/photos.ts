@@ -73,7 +73,7 @@ export const publishedPhotos: PhotoRecord[] = [
     section: "inside",
     theme: "documentation",
     alt: "A video camera on a tripod stands beside a sound desk and an open laptop on the hall floor.",
-    caption: "A camera, sound desk and laptop set up on the floor of the hall.",
+    caption: "Recording equipment set up on the hall floor during the championship.",
     usedOnce: true,
   },
   {
@@ -86,7 +86,7 @@ export const publishedPhotos: PhotoRecord[] = [
     section: "experience",
     theme: "recognition",
     alt: "An athlete in an orange shirt holds a medal while officials stand beside her in the hall.",
-    caption: "An athlete holds a medal during the recognition in the hall.",
+    caption: "An athlete receives a medal in the hall.",
     usedOnce: true,
   },
   {
@@ -99,7 +99,7 @@ export const publishedPhotos: PhotoRecord[] = [
     section: "recognition",
     theme: "recognition",
     alt: "A medal is placed over an athlete's head in the hall, while a certificate is held beside him.",
-    caption: "A medal is placed over an athlete's head in the hall.",
+    caption: "A medal is placed during recognition in the hall.",
     usedOnce: true,
   },
   {
@@ -112,7 +112,7 @@ export const publishedPhotos: PhotoRecord[] = [
     section: "recognition",
     theme: "recognition",
     alt: "A young athlete in orange holds a certificate in the hall.",
-    caption: "A young athlete holds a certificate in the hall.",
+    caption: "An athlete holds a certificate presented in the hall.",
     usedOnce: true,
   },
 ];

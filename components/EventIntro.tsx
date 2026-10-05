@@ -16,7 +16,7 @@ export function EventIntro() {
           <p className="chapter-no">01</p>
           <p className="eyebrow">{event.eyebrow}</p>
           <h2 id="event-title">{event.whatTitle}</h2>
-          <p>{event.what}</p>
+          <Paragraphs text={event.what} />
           <p><Link href="/yogasana">{event.sportLink}</Link></p>
         </div>
       </section>
@@ -24,7 +24,7 @@ export function EventIntro() {
         <div className="spread-copy">
           <p className="chapter-no">02</p>
           <h2 id="event-athletes">{event.whoTitle}</h2>
-          <p>{event.who}</p>
+          <Paragraphs text={event.who} />
         </div>
         <EditorialFigure id="hall-athletes" />
       </section>
@@ -33,7 +33,7 @@ export function EventIntro() {
         <div className="plate-full-copy">
           <p className="chapter-no">03</p>
           <h2 id="event-dais">{event.judgedTitle}</h2>
-          <p>{event.judged}</p>
+          <Paragraphs text={event.judged} />
         </div>
       </section>
       <section className="spread spread-oxblood" aria-labelledby="event-dance">
@@ -41,14 +41,14 @@ export function EventIntro() {
         <div className="spread-copy">
           <p className="chapter-no">04</p>
           <h2 id="event-dance">{event.gatheringTitle}</h2>
-          <p>{event.gathering}</p>
+          <Paragraphs text={event.gathering} />
         </div>
       </section>
       <section className="spread spread-flip spread-ivory" aria-labelledby="event-banner">
         <div className="spread-copy">
           <p className="chapter-no">05</p>
           <h2 id="event-banner">{event.whereTitle}</h2>
-          <p>{event.where}</p>
+          <Paragraphs text={event.where} />
         </div>
         <EditorialFigure id="children-banner" />
       </section>
@@ -57,10 +57,14 @@ export function EventIntro() {
         <div className="plate-full-copy">
           <p className="chapter-no">06</p>
           <h2 id="event-night">{event.experienceTitle}</h2>
-          <p>{event.experience}</p>
+          <Paragraphs text={event.experience} />
         </div>
         <EditorialFigure id="recognition-stand" />
       </section>
     </>
   );
+}
+
+function Paragraphs({ text }: { text: string }) {
+  return text.split(/\n\n+/).map((paragraph) => <p key={paragraph}>{paragraph}</p>);
 }

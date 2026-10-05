@@ -17,7 +17,9 @@ export function HomePage() {
         <div className="band-inner">
           <p className="eyebrow">{copy.home.leadEyebrow}</p>
           <h2 id="contents-title">{copy.home.leadTitle}</h2>
-          <p>{copy.home.lead}</p>
+          {copy.home.lead.split(/\n\n+/).map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
           <h3>{copy.home.programmeTitle}</h3>
           <p>{copy.home.programmeLead}</p>
           <ol className="contents-list">
