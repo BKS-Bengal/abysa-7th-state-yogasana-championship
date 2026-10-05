@@ -29,6 +29,7 @@ export const en: Copy = {
     championship: "2026–27",
     place: placeLine("en"),
     context: "The 7th State Yogasana Sports Championship, held at Bharat Sevashram Sangha in Muluk.",
+    heroAlt: "Official banner for the 7th State Yogasana Sports Championship 2026–27 at Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum.",
     leadEyebrow: "The championship",
     leadTitle: "Competitive Yogasana, over four days.",
     leadEm: "",
@@ -96,10 +97,10 @@ export const en: Copy = {
     practice: "Athletes practise together on the mats. The association team leads the session.",
     nightTitle: "",
     night: "",
-    interview: "Shyamal Ta, State President of the All Bengal Yogasana Sports Association, speaks here about Yogasana together with healthier food, better farming, and the lives of the next generation.",
+    interview: "The recorded conversation holds Yogasana together with healthier food, better farming, and the lives of the next generation.",
     interviewEyebrow: "A conversation",
     interviewTitle: "Beyond the mat.",
-    interviewNote: "Shyamal Ta, State President",
+    interviewNote: "A conversation recorded at the championship.",
     daysLabel: "The four days",
     daysLead: "From 1 to 4 October 2026 the championship occupied Bharat Sevashram Sangha at Muluk: the hall of Sri Sri Shiv Mandir, the courtyard, the field, and the rooms where athletes stayed.",
     platesEyebrow: "Plates",
@@ -135,8 +136,8 @@ export const en: Copy = {
         title: "From the courtyard to the hall",
         opening: "On 3 October the morning opened in the courtyard at Muluk.",
         passages: [
-          "A speaker addressed the gathering seated on the mats. The address belonged to the working morning of the championship: athletes and officials together, before the day moved into the hall.",
-          "A fire offering followed in the same courtyard. Athletes and officials sat around a small fire, hands folded. The offering stayed with the morning address, before the day turned to portraits, recording, and the indoor session.",
+          "Shyamal Ta, State President of the All Bengal Yogasana Sports Association, addressed the gathering seated on the mats. The address belonged to the working morning of the championship: athletes and officials together, before the day moved into the hall.",
+          "A fire offering followed in the same courtyard. Shyamal Ta sat beside the fire with athletes and officials, microphone in hand. The offering stayed with the morning address, before the day turned to portraits, recording, and the indoor session.",
           "Athletes stood for portraits before the championship banner, and the hall was filmed. By evening, young athletes sat together indoors, with officials behind them.",
         ],
         close: "By evening, the gathering had moved from the open courtyard into the hall.",
@@ -224,6 +225,37 @@ export const en: Copy = {
     nationalRole: "National affiliation of the All Bengal Yogasana Sports Association.",
     worldRole: "The World Yogasana mark is carried on the championship banner with Yogasana Bharat.",
     jointRole: "Joint organisers.",
+    eventLeadership: "Event leadership",
+    eventLeadershipTitle: "All Bengal Yogasana Sports Association",
+    institutionalLeadership: "Institutional leadership",
+    institutionalLeadershipTitle: "Yogasana Bharat and World Yogasana",
+    institutionalNote: "Udit Seth and Jaideep Arya are named on the official championship banner, with the national and world offices.",
+    profiles: {
+      "shyamal-ta": {
+        name: "Shyamal Ta",
+        role: "State President, All Bengal Yogasana Sports Association",
+        detail: "Executive committee member, Yogasana Bharat",
+        alt: "Portrait of Shyamal Ta, State President of the All Bengal Yogasana Sports Association, from the official championship banner.",
+      },
+      "papiya-bhattacharya-roy": {
+        name: "Papiya Bhattacharya (Roy)",
+        role: "General Secretary, All Bengal Yogasana Sports Association",
+        detail: "",
+        alt: "Portrait of Papiya Bhattacharya (Roy), General Secretary of the All Bengal Yogasana Sports Association, from the official championship banner.",
+      },
+      "udit-seth": {
+        name: "Udit Seth",
+        role: "President, Yogasana Bharat",
+        detail: "",
+        alt: "Portrait of Udit Seth, President of Yogasana Bharat, from the official championship banner.",
+      },
+      "jaideep-arya": {
+        name: "Jaideep Arya",
+        role: "General Secretary, World Yogasana and Yogasana Bharat",
+        detail: "",
+        alt: "Portrait of Jaideep Arya, General Secretary of World Yogasana and Yogasana Bharat, from the official championship banner.",
+      },
+    },
   },
   prakriti: {
     eyebrow: "Beyond the mat",
@@ -234,7 +266,7 @@ export const en: Copy = {
     definition: "",
     contextTitle: "Beside the sport.",
     context:
-      "The practice on the mat and the question of how people eat and farm are one concern for future generations. Shyamal Ta, State President of the All Bengal Yogasana Sports Association, speaks to that connection in a conversation recorded at the championship.",
+      "The practice on the mat and the question of how people eat and farm are one concern for future generations. A conversation recorded at the championship holds that connection beside the sport.",
   },
   captions: {
     "athletes-hall": {
@@ -330,8 +362,8 @@ export const en: Copy = {
       caption: "The association team leads morning practice at Muluk.",
     },
     "interview-seated": {
-      alt: "Shyamal Ta, State President of the All Bengal Yogasana Sports Association, being filmed in front of the Prakriti Jagaran banner.",
-      caption: "Shyamal Ta, State President, in conversation before the Prakriti Jagaran banner.",
+      alt: "A man is filmed in conversation before the Prakriti Jagaran banner.",
+      caption: "A recorded conversation before the Prakriti Jagaran banner.",
     },
     "interview-camera": {
       alt: "A camera on a tripod set up before the event banner.",
@@ -402,16 +434,16 @@ export const en: Copy = {
       caption: "An athlete is recorded before the championship banner on the morning of 3 October.",
     },
     "interview-banner": {
-      alt: "Shyamal Ta, State President of the All Bengal Yogasana Sports Association, sits in conversation before the Prakriti Jagaran banner.",
-      caption: "Shyamal Ta, State President, in conversation before the Prakriti Jagaran banner.",
+      alt: "A man speaks in a recorded conversation before the Prakriti Jagaran banner.",
+      caption: "A recorded conversation before the Prakriti Jagaran banner.",
     },
     "interview-sofa": {
       alt: "Two men sit for a filmed conversation in front of the championship banner.",
       caption: "A conversation recorded before the championship banner.",
     },
     "organisers-court": {
-      alt: "A group stands in the courtyard in front of the ashram building.",
-      caption: "Officials and organisers gathered in the courtyard of the ashram.",
+      alt: "Shyamal Ta, State President of the All Bengal Yogasana Sports Association, stands with officials and organisers in the courtyard at Bharat Sevashram Sangha, Muluk.",
+      caption: "Shyamal Ta, State President of the All Bengal Yogasana Sports Association, with officials and organisers in the courtyard at Bharat Sevashram Sangha, Muluk.",
     },
   },
 };

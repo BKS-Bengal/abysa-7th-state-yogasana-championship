@@ -34,6 +34,7 @@ export type Copy = {
     leadEm: string;
     lead: string;
     context: string;
+    heroAlt: string;
     ctaProgramme: string;
     ctaVisit: string;
     programmeTitle: string;
@@ -73,6 +74,12 @@ export type Copy = {
     nationalRole: string;
     worldRole: string;
     jointRole: string;
+    eventLeadership: string;
+    eventLeadershipTitle: string;
+    institutionalLeadership: string;
+    institutionalLeadershipTitle: string;
+    institutionalNote: string;
+    profiles: Record<string, { name: string; role: string; detail: string; alt: string }>;
   };
   prakriti: {
     eyebrow: string;

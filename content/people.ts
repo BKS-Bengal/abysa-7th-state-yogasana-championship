@@ -8,6 +8,15 @@
  * - Papiya Bhattacharya (Roy): General Secretary, ABYSA. Printed on the championship banner.
  *   Do not replace the name with Papia Roy Chowdhury.
  * - Shyamal Ta is also printed as an executive committee member of Yogasana Bharat. Publish that once.
+ * - His labeled banner portrait (rectangular glasses, thick moustache) matches the living man in
+ *   morning-address, morning-havan, organisers-court, and day-crew. Name him only in those frames.
+ * - The grey-haired speaker in interview-banner does not match that portrait. Do not name him Shyamal.
+ * - Papiya Bhattacharya (Roy) is printed on the banner. The women at the dais and the long table
+ *   were compared with that portrait and do not match clearly enough to name.
+ * - Udit Seth and Jaideep Arya are printed on the banner with national and world offices.
+ *   Publish those offices. Do not say they attended, and do not call them a committee.
+ * - Narendra Modi, Rabindranath Tagore, and the unlabeled namaste portrait on the banner
+ *   are not leadership profiles. Do not publish Suvendu Adhikari.
  * - Dr Major Narayan Bhattacharya / Mukhopadhyay: inauguration guest in the brief only. Not published.
  * - Mahacharya Sourabh J. Sarkar: independently State President, Bharatiya Krishak Samaj, West Bengal, and associated with Karmyog.
  *   Attendance, lamp lighting, and leadership of a 2 October yajna are brief-only. Do not publish him as present.
@@ -26,7 +35,7 @@ export const people = [
     name: "Shyamal Ta",
     role: "State President",
     organisation: "All Bengal Yogasana Sports Association",
-    source: "Introduced as State President in the recorded conversation at Muluk. The verified spelling is Ta.",
+    source: "Labeled on the championship banner as President, ABYSA, and EC member, Yogasana Bharat. The same face is in the 3 October courtyard address, the fire offering, the organisers’ group, and the hall recording. Not the speaker in interview-banner.",
     verified: true,
   },
   {
@@ -34,7 +43,23 @@ export const people = [
     name: "Papiya Bhattacharya (Roy)",
     role: "General Secretary",
     organisation: "All Bengal Yogasana Sports Association",
-    source: "Printed on the championship banner as General Secretary, ABYSA. Not identified in a particular frame.",
+    source: "Printed on the championship banner as General Secretary, ABYSA. Compared with the dais and long-table photographs; not a clear enough face match to name in a frame.",
+    verified: true,
+  },
+  {
+    id: "udit-seth",
+    name: "Udit Seth",
+    role: "President",
+    organisation: "Yogasana Bharat",
+    source: "Labeled on the championship banner. Portrait is from that artwork. Not documented as present at Muluk.",
+    verified: true,
+  },
+  {
+    id: "jaideep-arya",
+    name: "Jaideep Arya",
+    role: "General Secretary",
+    organisation: "World Yogasana and Yogasana Bharat",
+    source: "Labeled on the championship banner. Portrait is from that artwork. Not documented as present at Muluk.",
     verified: true,
   },
 ] as const;
