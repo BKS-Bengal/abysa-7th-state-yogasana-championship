@@ -1,4 +1,6 @@
-﻿export type Still = {
+﻿import { publishedStills } from "@/content/photos";
+
+export type Still = {
   id: string;
   src: string;
   alt: string;
@@ -34,7 +36,7 @@ export const logo = {
   alt: "Yogasana Bharat seal, with the line समत्वं योग उच्यते",
 };
 
-export const stills: Still[] = [
+const archive: Still[] = [
   { id: "children-verandah", src: "/assets/gallery/children-verandah.webp", plate: "01", width: 1280, height: 960, alt: "Young athletes in orange sit along the mandir verandah, with cameras set up in the foreground.", caption: "Young athletes seated along the mandir verandah at Bharat Sevashram Sangha, Muluk." },
   { id: "organisers-court", src: "/assets/gallery/organisers-court.webp", plate: "02", width: 1280, height: 960, alt: "A group stands in the courtyard in front of the ashram building.", caption: "A group in the courtyard of the ashram." },
   { id: "practice-low", src: "/assets/gallery/practice-low.webp", plate: "03", width: 1280, height: 960, alt: "Practitioners hold a low posture on striped mats beside the health centre.", caption: "Morning practice on the mats beside the health centre at Muluk." },
@@ -63,6 +65,8 @@ export const stills: Still[] = [
   { id: "night-mats", src: "/assets/gallery/night-mats.webp", plate: "26", width: 1280, height: 960, alt: "Athletes in red West Bengal kits stand on numbered mats at night.", caption: "Athletes in West Bengal kits, on the mats after dark." },
   { id: "night-asana", src: "/assets/gallery/night-asana.webp", plate: "27", width: 800, height: 600, alt: "An athlete holds a standing balance on a mat at night, with judges seated behind.", caption: "A standing balance during the evening session." },
 ];
+
+export const stills: Still[] = [...archive, ...publishedStills];
 
 export const films: Film[] = [
   {
@@ -107,10 +111,10 @@ export const films: Film[] = [
   },
 ];
 
-export const introStill = stills[0];
-export const hallStills = stills.slice(1, 15);
-export const groundStills = stills.slice(15, 17);
-export const practiceStills = stills.slice(17);
+export const introStill = archive[0];
+export const hallStills = archive.slice(1, 15);
+export const groundStills = archive.slice(15, 17);
+export const practiceStills = archive.slice(17);
 
 export const plates = [
   ...stills.map((item) => ({

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { InformationPage } from "@/components/pages/InformationPage";
 
 export const metadata: Metadata = {
-  title: "Information",
+  title: "About",
   description:
     "Venue, hall, organisers and affiliations for the 7th State Yogasana Sports Championship at Muluk, Bolpur, Birbhum.",
 };

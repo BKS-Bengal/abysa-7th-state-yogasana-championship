@@ -1,5 +1,6 @@
 "use client";
 
+import { filmLinks } from "@/content/photos";
 import { stills } from "@/lib/media";
 import { useLanguage } from "@/lib/language";
 
@@ -16,9 +17,10 @@ export function EditorialFigure({ id, className, priority = false }: Props) {
   const text = copy.captions[id];
   const portrait = still.height > still.width;
   const classes = ["edit-figure", portrait ? "edit-portrait" : "", className].filter(Boolean).join(" ");
+  const film = filmLinks[id];
 
   return (
-    <figure className={classes}>
+    <figure className={classes} data-still={id}>
       <img
         src={still.src}
         alt={text?.alt ?? still.alt}
@@ -30,7 +32,14 @@ export function EditorialFigure({ id, className, priority = false }: Props) {
       />
       <figcaption>
         <span>{copy.media.fig} {still.plate}</span>
-        <p>{text?.caption ?? still.caption}</p>
+        <p>
+          {text?.caption ?? still.caption}
+          {film ? (
+            <a className="film-link" href={film} target="_blank" rel="noopener noreferrer">
+              {copy.home.watchFilm}
+            </a>
+          ) : null}
+        </p>
       </figcaption>
     </figure>
   );

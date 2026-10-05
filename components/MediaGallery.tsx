@@ -7,10 +7,11 @@ import { ImageReveal } from "./ImageReveal";
 type Props = { onOpen: (id: string) => void };
 
 export const galleryGroups: { id: string; ids: string[] }[] = [
-  { id: "hall", ids: ["table-address", "remembrance"] },
-  { id: "athletes", ids: ["portrait-blue", "portrait-yellow", "portrait-braid", "portrait-navy"] },
-  { id: "voices", ids: ["interview-sofa", "interview-corridor"] },
-  { id: "night", ids: ["night-officials", "night-floor"] },
+  { id: "day-01", ids: [] },
+  { id: "day-02", ids: [] },
+  { id: "day-03", ids: ["portrait-navy", "portrait-braid", "portrait-yellow", "portrait-blue", "interview-sofa"] },
+  { id: "day-04", ids: [] },
+  { id: "wider", ids: ["table-address", "remembrance", "medal-placed", "certificate-youth", "interview-corridor", "night-officials", "night-floor"] },
 ];
 
 const span: Record<string, string> = {
@@ -19,6 +20,8 @@ const span: Record<string, string> = {
   "interview-sofa": "span-all",
   "night-officials": "span-pair",
   "night-floor": "span-all",
+  "medal-placed": "span-all",
+  "certificate-youth": "span-all",
 };
 
 const byId = new Map(stills.map((item) => [item.id, item]));

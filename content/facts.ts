@@ -14,10 +14,10 @@ export type ProgrammeDay = {
  * Do not infer status, dates, scale, travel, contact, or results.
  */
 export const eventFacts = {
-  status: undefined as EventStatus | undefined,
+  status: "completed" as EventStatus | undefined,
   title: "7th State Yogasana Sports Championship",
   season: "2026–27",
-  dates: undefined as string | undefined,
+  dates: "1–4 October 2026",
   monthYear: { en: "October 2026", bn: "অক্টোবর ২০২৬" },
   place: { en: "Muluk, Bolpur, Birbhum", bn: "মুলুক, বোলপুর, বীরভূম" },
   venue: {
@@ -48,8 +48,15 @@ export const eventFacts = {
   quote: undefined as { text: string; attribution: string } | undefined,
   /** Organisers have not supplied a definition. */
   prakritiDefinition: undefined as Partial<Record<Locale, string>> | undefined,
-  /** Day, theme and times are unconfirmed, so no day is published. */
-  days: [] as ProgrammeDay[],
+  /**
+   * The championship banner prints this span. Activities are not assigned to a day.
+   */
+  days: [
+    { id: "day-01", date: "1 October 2026" },
+    { id: "day-02", date: "2 October 2026" },
+    { id: "day-03", date: "3 October 2026" },
+    { id: "day-04", date: "4 October 2026" },
+  ] as ProgrammeDay[],
   scale: {
     athletes: undefined as string | undefined,
     districts: undefined as string | undefined,
@@ -128,7 +135,7 @@ export function informationRows(locale: Locale): FactRow[] {
   const contact = [f.contact?.name, f.contact?.phone, f.contact?.email].filter(Boolean).join(" · ");
   const rows: FactRow[] = [
     { term: L.event, value: `${f.title} ${f.season}` },
-    { term: L.dates, value: f.dates ?? "" },
+    { term: L.dates, value: dateLine[locale] },
     { term: L.venue, value: f.venue[locale] },
     { term: L.hall, value: `${f.hall.en} (${f.hall.bn})` },
     { term: L.who, value: f.whoCompetes[locale] },
@@ -151,9 +158,19 @@ export function summaryRows(locale: Locale): FactRow[] {
   return informationRows(locale).filter((row) => keep.has(row.term));
 }
 
+const dateLine: Record<Locale, string> = {
+  en: "1–4 October 2026",
+  bn: "১–৪ অক্টোবর ২০২৬",
+};
+
 export function placeLine(locale: Locale) {
-  const dates = eventFacts.dates;
-  const month = eventFacts.monthYear[locale];
   const place = eventFacts.place[locale];
-  return dates ? `${dates} · ${place}` : `${month} · ${place}`;
+  return `${dateLine[locale]} · ${place}`;
+}
+
+export function dayDate(id: string, locale: Locale) {
+  const index = eventFacts.days.findIndex((day) => day.id === id);
+  const bn = ["১ অক্টোবর ২০২৬", "২ অক্টোবর ২০২৬", "৩ অক্টোবর ২০২৬", "৪ অক্টোবর ২০২৬"];
+  if (locale === "bn" && bn[index]) return bn[index];
+  return eventFacts.days[index]?.date ?? "";
 }

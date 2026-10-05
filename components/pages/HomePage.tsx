@@ -1,51 +1,46 @@
 "use client";
 
+import { EditorialFigure } from "@/components/EditorialFigure";
 import { Hero } from "@/components/Hero";
 import { SiteFrame } from "@/components/SiteFrame";
-import { eventFacts } from "@/content/facts";
+import { homeMomentIds } from "@/content/photos";
+import { contents } from "@/lib/contents";
 import { useLanguage } from "@/lib/language";
 
 export function HomePage() {
-  const { copy, locale } = useLanguage();
-  const days = eventFacts.days.filter((day) => day.date || day.theme || (day.moments && day.moments.length > 0));
+  const { copy } = useLanguage();
 
   return (
     <SiteFrame intro>
       <Hero />
-      <section className="programme" id="programme" aria-labelledby="programme-title">
+      <section className="programme" id="contents" aria-labelledby="contents-title">
         <div className="band-inner">
           <p className="eyebrow">{copy.home.leadEyebrow}</p>
-          <h2 id="programme-title">{copy.home.programmeTitle}</h2>
-          <p>{copy.home.programmeLead}</p>
-          {days.length > 0 ? (
-            <ol className="programme-days">
-              {days.map((day, index) => (
-                <li key={day.id}>
-                  <h3>
-                    {locale === "bn" ? `দিন ${index + 1}` : `Day ${index + 1}`}
-                    {day.date ? <span>{day.date}</span> : null}
-                  </h3>
-                  {day.theme ? <p>{day.theme}</p> : null}
-                  {day.moments && day.moments.length > 0 ? (
-                    <ul>
-                      {day.moments.map((moment) => (
-                        <li key={moment}>{moment}</li>
-                      ))}
-                    </ul>
-                  ) : null}
-                </li>
-              ))}
-            </ol>
-          ) : null}
-          <h3>{copy.home.duringTitle}</h3>
-          <ul className="programme-during">
-            {eventFacts.during[locale].map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-          <h3>{copy.home.leadTitle}</h3>
+          <h2 id="contents-title">{copy.home.leadTitle}</h2>
           <p>{copy.home.lead}</p>
+          <h3>{copy.home.programmeTitle}</h3>
+          <p>{copy.home.programmeLead}</p>
+          <ol className="contents-list">
+            {contents.map((chapter) => (
+              <li key={chapter.href}>
+                <a href={chapter.href}>
+                  <span>{chapter.index}</span>
+                  {copy.nav[chapter.key]}
+                </a>
+              </li>
+            ))}
+          </ol>
         </div>
+      </section>
+      <section className="inside" aria-labelledby="inside-title">
+        <div className="inside-head">
+          <p className="eyebrow">{copy.home.insideEyebrow}</p>
+          <h2 id="inside-title">{copy.home.insideTitle}</h2>
+          <p>{copy.home.insideLead}</p>
+        </div>
+        {homeMomentIds.map((id) => (
+          <EditorialFigure key={id} id={id} />
+        ))}
       </section>
     </SiteFrame>
   );

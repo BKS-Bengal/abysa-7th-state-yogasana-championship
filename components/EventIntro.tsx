@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { EditorialFigure } from "./EditorialFigure";
 import { useLanguage } from "@/lib/language";
 
@@ -16,6 +17,7 @@ export function EventIntro() {
           <p className="eyebrow">{event.eyebrow}</p>
           <h2 id="event-title">{event.whatTitle}</h2>
           <p>{event.what}</p>
+          <p><Link href="/yogasana">{event.sportLink}</Link></p>
         </div>
       </section>
       <section className="spread spread-flip spread-ivory" aria-labelledby="event-athletes">
@@ -57,6 +59,7 @@ export function EventIntro() {
           <h2 id="event-night">{event.experienceTitle}</h2>
           <p>{event.experience}</p>
         </div>
+        <EditorialFigure id="recognition-stand" />
       </section>
     </>
   );
