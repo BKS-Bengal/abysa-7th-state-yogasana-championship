@@ -86,7 +86,7 @@ export const publishedPhotos: PhotoRecord[] = [
     section: "experience",
     theme: "recognition",
     alt: "An athlete in an orange shirt holds a medal while officials stand beside her in the hall.",
-    caption: "An athlete receives a medal in the hall.",
+    caption: "An athlete receives a medal during recognition in the hall.",
     usedOnce: true,
   },
   {
@@ -99,7 +99,7 @@ export const publishedPhotos: PhotoRecord[] = [
     section: "recognition",
     theme: "recognition",
     alt: "A medal is placed over an athlete's head in the hall, while a certificate is held beside him.",
-    caption: "A medal is placed during recognition in the hall.",
+    caption: "A medal is placed as a certificate is held beside the athlete, during recognition in the hall.",
     usedOnce: true,
   },
   {
