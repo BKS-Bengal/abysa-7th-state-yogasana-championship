@@ -7,11 +7,9 @@ import { ImageReveal } from "./ImageReveal";
 type Props = { onOpen: (id: string) => void };
 
 export const galleryGroups: { id: string; ids: string[] }[] = [
-  { id: "day-01", ids: [] },
-  { id: "day-02", ids: [] },
-  { id: "day-03", ids: ["portrait-navy", "portrait-braid", "portrait-yellow", "portrait-blue", "interview-sofa"] },
-  { id: "day-04", ids: [] },
-  { id: "wider", ids: ["table-address", "remembrance", "medal-placed", "certificate-youth", "interview-corridor", "night-officials", "night-floor"] },
+  { id: "recorded", ids: ["portrait-navy", "portrait-braid", "portrait-yellow", "portrait-blue"] },
+  { id: "recognition", ids: ["medal-placed", "certificate-youth"] },
+  { id: "hall", ids: ["table-address", "remembrance", "interview-sofa", "interview-corridor", "night-officials", "night-floor"] },
 ];
 
 const span: Record<string, string> = {

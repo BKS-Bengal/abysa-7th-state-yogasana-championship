@@ -40,6 +40,12 @@
  * - Fire offering is dated 3 October in the courtyard photograph, not 2 October.
  *   Do not retitle it Prakriti Jagaran Yajna or Shanti Yajna.
  * - Official English title remains 7th State, not "Seven State".
+ * - Abhay Barman (Paschim Bardhaman): said on camera he was competing here, and that he treats
+ *   Yogasana as a possible career. Do not publish his medal, cash-award, or government-job claims as facts.
+ * - Shyamal Ta, filmed at Muluk, described mornings as flag, yagna, practice, then competition.
+ *   Do not retitle the 3 October photograph, and do not publish his athlete or judge totals.
+ * - Do not publish the yagna discourse (ghee, disease, conversion, fees) as event fact.
+ * - Kartik Maharaj and Hironmoy are named in that discourse as coming; not independently verified. Do not publish.
  * - A state result can lead toward national competition (reported for this meet). Do not publish a results table or a minor's name.
  */
 export const people = [
