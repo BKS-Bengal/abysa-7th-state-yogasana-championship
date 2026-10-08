@@ -34,6 +34,8 @@ export function EventIntro() {
           <p className="chapter-no">03</p>
           <h2 id="event-dais">{event.judgedTitle}</h2>
           <Paragraphs text={event.judged} />
+          <h3>{event.judgingTitle}</h3>
+          <Paragraphs text={event.judging} />
         </div>
       </section>
       <section className="spread spread-oxblood" aria-labelledby="event-dance">
