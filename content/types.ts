@@ -88,8 +88,7 @@ export type Copy = {
     lead: string;
     note: string;
     definition: string;
-    contextTitle: string;
-    context: string;
+    sections: { title: string; body: string }[];
   };
   event: {
     eyebrow: string;
@@ -112,6 +111,8 @@ export type Copy = {
     who: string;
     judgedTitle: string;
     judged: string;
+    judgingTitle: string;
+    judging: string;
     gatheringTitle: string;
     gathering: string;
     whereTitle: string;
