@@ -75,7 +75,7 @@ export const en: Copy = {
     whereTitle: "The four days",
     where: "1 October opened in the hall. 2 October gathered athletes on the verandah and the field, then onto the mats. 3 October began in the courtyard, with an address and a fire offering, then portraits, recording, and an indoor evening. 4 October closed on performance, judging, and recognition.",
     experienceTitle: "Recognition",
-    experience: "Recognition in the hall was a medal placed, and a certificate held beside the athlete.",
+    experience: "In the hall, officials of the championship placed the medals and held the certificates beside the athletes.",
   },
   story: {
     eyebrow: "The grounds",
@@ -156,7 +156,7 @@ export const en: Copy = {
         opening: "On 4 October the championship closed at the same ashram.",
         passages: [
           "The last day was performance in the hall of Sri Sri Shiv Mandir, before the judging panel.",
-          "A medal was placed. A certificate was held beside the athlete.",
+          "Officials of the championship placed the medals and held the certificates beside the athletes.",
           "Athletes had stayed and eaten at the Sangha across the four days. The championship closed on that shared time, and on the recognition in the hall.",
         ],
         close: "The championship closed on the four days at Muluk.",
@@ -169,7 +169,7 @@ export const en: Copy = {
     em: "Athletes before the banner, recognition in the hall, and the evening.",
     groups: [
       { id: "recorded", kicker: "People", title: "Athletes recorded", note: "On 3 October, athletes stood before the championship banner while the gathering was recorded." },
-      { id: "recognition", kicker: "Recognition", title: "Medal and certificate", note: "A medal is placed over an athlete, a certificate held beside him. Another frame shows an athlete holding a certificate." },
+      { id: "recognition", kicker: "Recognition", title: "Medals and certificates", note: "Officials of the championship place the medals and hold the certificates beside the athletes." },
       { id: "hall", kicker: "The hall", title: "Table, conversation, evening", note: "An address from the long table, a framed portrait brought forward, two recorded conversations, and the evening in the hall." },
     ],
   },
@@ -428,6 +428,38 @@ export const en: Copy = {
     "certificate-youth": {
       alt: "A young athlete in orange holds a certificate in the hall.",
       caption: "An athlete holds a certificate presented in the hall.",
+    },
+    "recognition-steps": {
+      alt: "Athletes sit on the hall steps with officials of the championship standing behind them.",
+      caption: "Athletes and officials gathered in the hall for recognition.",
+    },
+    "recognition-medal": {
+      alt: "Officials place a medal over an athlete in an orange shirt while a certificate is held beside him.",
+      caption: "Officials of the championship place a medal over an athlete.",
+    },
+    "recognition-saree": {
+      alt: "Officials stand with an athlete in a yellow saree as a certificate is held in the hall.",
+      caption: "A certificate is held beside an athlete, with officials of the championship.",
+    },
+    "recognition-blue": {
+      alt: "Officials stand with an athlete in blue as a certificate is held in the hall.",
+      caption: "Officials hold a certificate beside an athlete in the hall.",
+    },
+    "recognition-gold": {
+      alt: "Officials stand with an athlete in yellow as a certificate is held in the hall.",
+      caption: "A certificate is held beside an athlete in yellow.",
+    },
+    "recognition-orange": {
+      alt: "Officials stand with an athlete in orange as a certificate is held in the hall.",
+      caption: "Officials hold a certificate beside an athlete in orange.",
+    },
+    "recognition-pair": {
+      alt: "Two athletes stand with officials as certificates are held in the hall.",
+      caption: "Certificates are held beside two athletes, with officials of the championship.",
+    },
+    "recognition-line": {
+      alt: "Officials and an athlete stand in a line in the hall during recognition.",
+      caption: "Officials and an athlete during recognition in the hall.",
     },
     "portrait-blue": {
       alt: "An athlete waits with folded hands before the championship banner.",

@@ -8,7 +8,7 @@ type Props = { onOpen: (id: string) => void };
 
 export const galleryGroups: { id: string; ids: string[] }[] = [
   { id: "recorded", ids: ["portrait-navy", "portrait-braid", "portrait-yellow", "portrait-blue"] },
-  { id: "recognition", ids: ["medal-placed", "certificate-youth"] },
+  { id: "recognition", ids: ["recognition-steps", "recognition-medal", "medal-placed", "recognition-stand", "certificate-youth", "recognition-saree", "recognition-blue", "recognition-gold", "recognition-orange", "recognition-pair", "recognition-line"] },
   { id: "hall", ids: ["table-address", "remembrance", "interview-sofa", "interview-corridor", "night-officials", "night-floor"] },
 ];
 
