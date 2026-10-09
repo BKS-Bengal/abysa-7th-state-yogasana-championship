@@ -55,6 +55,13 @@ export function StorySection() {
                 <EditorialFigure id={id} className="day-plate" priority={figureIndex === 0} />
               </Fragment>
             ))}
+            {figures.length > 0
+              ? day.passages.slice(figures.length).map((passage) => (
+                  <div className="day-chapter day-beat" key={passage}>
+                    <p>{passage}</p>
+                  </div>
+                ))
+              : null}
             <div className="day-chapter">
               <p className="day-close">{day.close}</p>
               <a className="day-next" href={next ? `#${next.id}` : "#plates"}>

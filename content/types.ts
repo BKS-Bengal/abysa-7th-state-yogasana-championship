@@ -44,6 +44,9 @@ export type Copy = {
     insideTitle: string;
     insideLead: string;
     watchFilm: string;
+    filmsEyebrow: string;
+    filmsTitle: string;
+    filmsLead: string;
   };
   yogasana: {
     eyebrow: string;
@@ -63,6 +66,8 @@ export type Copy = {
     lead: string;
     filmedTitle: string;
     filmed: string;
+    voicesTitle: string;
+    voices: string;
     leadersEyebrow: string;
     presidentTerm: string;
     president: string;
