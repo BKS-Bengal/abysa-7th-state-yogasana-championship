@@ -93,15 +93,15 @@ export const remoteFilms: RemoteFilm[] = [
     embed: "https://www.youtube-nocookie.com/embed/_p_k4tdwbeU",
     plate: "47",
     caption: "Shyamal Ta and the speakers with him, on the Vedic yajna.",
-    alt: "Shyamal Ta and the speakers with him, in a recording made around the championship, on the Vedic yajna and the morning order of the meet.",
+    alt: "Shyamal Ta and the speakers with him discuss the Vedic yajna as a work offered without choosing a recipient, the morning order of flag, yajna, practice and competition, and the meals they describe as simple food.",
   },
   {
     id: "yt-shyamal",
     youtube: "https://www.youtube.com/watch?v=p6AdZy0HIi4",
     embed: "https://www.youtube-nocookie.com/embed/p6AdZy0HIi4",
     plate: "48",
-    caption: "Shyamal Ta, in a recorded conversation at Muluk.",
-    alt: "Shyamal Ta speaks during the championship about the mornings, the association, and the route from district competition.",
+    caption: "Shyamal Ta with Amit Singh, recorded at Muluk.",
+    alt: "Amit Singh of Karmyog TV speaks with Shyamal Ta at Bharat Sevashram Sangha, Muluk, about the green grounds, the route from district competition, the mornings, and food and farming.",
   },
   {
     id: "yt-abhay",
@@ -109,7 +109,7 @@ export const remoteFilms: RemoteFilm[] = [
     embed: "https://www.youtube-nocookie.com/embed/RLgAz4onoSM",
     plate: "49",
     caption: "Abhay Barman on competing here.",
-    alt: "Abhay Barman of Paschim Bardhaman speaks of competing at this championship, and of Yogasana as a practice and a possible career.",
+    alt: "Abhay Barman of Paschim Bardhaman speaks of competing at this championship, of medals he says he won earlier, and of asking young athletes to take the route from district to state.",
   },
 ];
 

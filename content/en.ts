@@ -69,7 +69,7 @@ export const en: Copy = {
     judgedTitle: "Competition",
     judged: "Artistic Yogasana was contested. What had been prepared on the mats was performed in the hall of Sri Sri Shiv Mandir. The dais and the long table faced that same room.",
     judgingTitle: "Judging",
-    judging: "A judging panel assessed the performances. District judging had already shaped who reached this state meet.",
+    judging: "A judging panel assessed the performances. District judging had already shaped who reached this state meet. In a conversation recorded at Muluk, Shyamal Ta said the championship was spread over days so that each performance could be watched with care, and he set that against meets he said were finished in a single day.",
     gatheringTitle: "Around the competition",
     gathering: "Dance sat in the same hall as the sport. Beyond the hall, the championship used a verandah, a field, and a courtyard. Shyamal Ta described the mornings there: the flag, a yajna, then practice, then the competition.",
     whereTitle: "The four days",
@@ -99,12 +99,12 @@ export const en: Copy = {
     practice: "Athletes practise together on the mats. The association team leads the session.",
     nightTitle: "",
     night: "",
-    interview: "Later in the championship a conversation was recorded before the Prakriti Jagran Yatra banner. It set the mat beside food, farming, and the lives that follow.",
+    interview: "Later in the championship two men were recorded before the banner that carries the name Prakriti Jagran Yatra. The talk that set the mat beside food and farming is a separate one: Shyamal Ta with Amit Singh of Karmyog TV, kept with the films.",
     interviewEyebrow: "A conversation",
     interviewTitle: "Beyond the mat.",
     interviewNote: "A conversation from later in the championship.",
     daysLabel: "The four days",
-    daysLead: "From 1 to 4 October 2026 the championship occupied Bharat Sevashram Sangha at Muluk: the hall of Sri Sri Shiv Mandir, the courtyard, the field, and the rooms where athletes stayed.",
+    daysLead: "From 1 to 4 October 2026 the championship occupied Bharat Sevashram Sangha at Muluk: the hall of Sri Sri Shiv Mandir, the courtyard, the open green field, and the rooms where athletes stayed. It is an ashram, not a city sports ground.",
     platesEyebrow: "Plates",
     platesTitle: "The visual record",
     days: [
@@ -114,15 +114,15 @@ export const en: Copy = {
         title: "The championship opens",
         opening: "On 1 October 2026 the championship opened at Bharat Sevashram Sangha in Muluk, Bolpur, Birbhum.",
         passages: [
-          "The association had asked colleges and universities in West Bengal for a ground. None offered one. Bharat Sevashram Sangha took the meet in, through the interest of Swami Shanti Maharaj. The chair asked whoever led the association afterwards not to leave the Sangha.",
+          "The association had asked colleges and universities in West Bengal for a ground. None offered one. Bharat Sevashram Sangha took the meet in, through the interest of Swami Shanti Maharaj. The chair asked whoever led the association afterwards not to leave the Sangha. He said the association was joined to the national federation of the Government of India, and that the other yoga organisations in West Bengal were not. Those were his words from the opening. The championship banner names Yogasana Bharat and World Yogasana. He also said the association’s own programmes were already running somewhere in Bengal every day, and on some days in three or four places.",
           "Sourav J. Sarkar was introduced as Mahacharya, and as State President of Bharatiya Krishak Samaj in West Bengal. The chair said he was an IIT student, and spoke of science in the farming of the Gangetic plain. He recalled Vivekananda’s line that one who would be a king must first learn to be a subject.",
           "The chair said the previous year’s state championship had drawn about three hundred athletes, and that this year, even after he asked the districts to send no more, the gathering had passed six hundred. Those were his words from the opening. Rooms and meals at the ashram were already stretched. Standing in Birbhum, he said an opening could not leave Rabindranath aside. He introduced Kalyan Mukhopadhyay, a retired IPS officer who had long handled the West Bengal police.",
           "A woman who had arranged district judging from home was thanked. She said the women with her were homemakers, learning the work as they were asked to do it. A Vedic invocation was then chanted in the hall.",
-          "Swami Shanti Maharaj welcomed the districts. He noted that the lodging was imperfect, and recalled Swami Paramananda’s point that a seeker’s practice does not run on comfort. He returned the word yoga to yuj: to join, and to bring the mind under control.",
-          "A rhythmic, artistic presentation followed in the hall. The chair thanked the dancers for that artistic and rhythmic work.",
+          "Swami Shanti Maharaj welcomed the districts, and offered respect to the district and state office-bearers who had come. He noted that the lodging was imperfect, and recalled Swami Paramananda’s point that a seeker’s practice does not run on comfort. He called the ashram a place of practice, and returned the word yoga to yuj: to join, and to bring the mind under control.",
+          "A rhythmic, artistic presentation followed in the hall. The chair thanked the dancers for that artistic and rhythmic work. He then spoke of the Sangha as he had first heard of it: monks who travel, receive what people give, and return to serve.",
           "Kalyan Mukhopadhyay said a yogasana is complete only when the body, the mind, and one’s bearing are all held. He described police standing from morning into the afternoon heat, still expected to stay restrained, and said that control is what the police need at every hour. He asked people in Yogasana to work with the police, and to teach them to be calmer, and still firm.",
           "Supriyo Mukherjee, asked to help the meet be seen, said media had taken kabaddi from a village game to a paid public sport, and that he would look at what might be done for competitive Yogasana. He also said he had not known of West Bengal’s results in the sport until that day. He announced no result of this meet.",
-          "Rina-ji said practice has to continue, whether or not anyone wins. Major Saheb quoted Rabindranath: “বিশ্ব সাথে যেথায় তুমি বিহারো.” He named the four paths Vivekananda speaks of — raja, jnana, karma, and bhakti — and asked that yoga be of the mind as well as the body. He left one line in English: “I for Illness, We for Wellness.” The thanks then turned to Papiya Bhattacharya (Roy), General Secretary.",
+          "Rina-ji said practice has to continue, whether or not anyone wins. Major Saheb quoted Rabindranath: “বিশ্ব সাথে যেথায় তুমি বিহারো.” He named the four paths Vivekananda speaks of — raja, jnana, karma, and bhakti — and asked that yoga be of the mind as well as the body. He left one line in English: “I for Illness, We for Wellness.” He closed with the peace chant. The thanks then turned to Papiya Bhattacharya (Roy), General Secretary.",
         ],
         close: "From that opening, the championship moved into its working days.",
       },
@@ -206,7 +206,7 @@ export const en: Copy = {
     practice:
       "On the mat at Muluk, Yogasana was repetition, control, and precision. Beside the health centre, the association team led from the front. The postures prepared a performance. The performance itself waited for the hall.",
     sport:
-      "Competitive Yogasana is that work performed in public. Artistic Yogasana was the form contested at this meet. The portrait before the championship banner is an athlete of the gathering.\n\nAbhay Barman of Paschim Bardhaman spoke of competing here. He also spoke of medals he said he had won earlier, at a world meet and an Asian meet, and of Yogasana as a possible career as well as a practice. Those earlier medals are his account. They are not the result of this championship.",
+      "Competitive Yogasana is that work performed in public. Artistic Yogasana was the form contested at this meet. The portrait before the championship banner is an athlete of the gathering.\n\nAbhay Barman of Paschim Bardhaman spoke of competing here. He said that when he began, Yogasana had seemed only a practice for health, and that he now also saw a possible career in it. He spoke of medals he said he had won earlier, at a world meet in Ahmedabad and at an Asian meet. Those earlier medals are his account. They are not the result of this championship. He asked young athletes to come and compete with the association, from the district to the state and on, and he thanked the association’s workers and Shyamal Ta.",
     mottoGloss: "Equanimity is Yoga",
     session: "Judged as a sport.",
     pathway:
@@ -274,7 +274,7 @@ export const en: Copy = {
     sections: [
       {
         title: "The mornings he described",
-        body: "Shyamal Ta described the mornings of this championship as the flag, a Vedic yajna, then practice, then the competition. That was his account of how a day at Muluk began. It is not a second name for the championship, and it is not the name of one particular fire.",
+        body: "Shyamal Ta described the mornings of this championship as beginning near sunrise, about five o’clock, with the national flag, then a Vedic yajna at which he said athletes, judges and officials were present, then practice, then the competition. That was his account of how a day at Muluk began. It is not a second name for the championship, and it is not the name of one particular fire.",
       },
       {
         title: "The morning of 3 October",
@@ -283,16 +283,17 @@ export const en: Copy = {
       },
       {
         title: "Food, farming, and the young",
-        body: "At the opening, the chair introduced Sourav J. Sarkar as Mahacharya and as State President of Bharatiya Krishak Samaj, and said he was an IIT student. He spoke of science in the cultivation of the Gangetic plain. Bharatiya Krishak Samaj was a joint organiser, and the farmers’ organisation in that room.\n\nA conversation recorded later, before the Prakriti Jagran Yatra banner, returned to the meal and to the next generation. The Yatra, in that conversation, set the mat beside food, farming, and the lives that follow the four days.",
+        body: "The opening in the hall had already set Sourav J. Sarkar, State President of Bharatiya Krishak Samaj, beside the sport, and with him the chair’s words on science in the farming of the Gangetic plain.\n\nAmit Singh of Karmyog TV later recorded a conversation with Shyamal Ta at the Sangha. Singh spoke of the green, open grounds. Shyamal Ta described athletes coming through district competition from across West Bengal. Asked about joining Yogasana with cultivation, he said Kartik Maharaj had stood before the athletes and told them to rise early, to practise, to learn the discipline of the Vedic yajna, and to eat food grown without poison. That is Shyamal Ta’s account of what was said. He tied the mat to the meal, and the meal to the field.\n\nA separate sitting was recorded before the banner that carries this programme’s name. Two men sat for the camera there. The children of the gathering sat before the same banners.",
         figures: ["interview-banner", "children-banner"],
+        link: { href: "https://www.youtube.com/watch?v=p6AdZy0HIi4", label: "Open Shyamal Ta’s conversation" },
       },
       {
         title: "What the name carries",
-        body: "In the Karmyog account that uses this name, Prakriti Jagran Yatra is a journey through earth, water, fire, air, and sky, then the sun and the moon, the living world, the body, the breath, the mind, and the whole. That is how the name is carried. It is the name beside this championship. It is not the name of the fire on the morning of 3 October, and it is not a second title for the meet.",
+        body: "In the Karmyog account that uses this name, Prakriti Jagran Yatra is a journey through earth, water, fire, air, and sky, then the sun, the moon, and the cosmos, the living world, the body, the breath, the mind, consciousness, the self, and the whole. The same account asks auspiciousness for each of them, and speaks of the good, the true, and the beautiful. That is how the name is carried there. It is the name beside this championship. It is not the name of the fire on the morning of 3 October, and it is not a second title for the meet.",
       },
       {
         title: "The recorded talk",
-        body: "A recording made around this championship keeps Shyamal Ta, and the speakers with him, on the Vedic yajna. They speak of it as a work offered without choosing who should receive it, and of the morning order he described elsewhere: the flag, a yajna, practice, then the competition. The recording is their discourse. It sits with the Yatra because the same days held both the sport and that talk.",
+        body: "A recording made around this championship keeps Shyamal Ta, and the speakers with him, on the Vedic yajna. They cite the line that yajna is the highest work, and they speak of it as an offering made without choosing who should receive it. They also speak of the morning order he described elsewhere: the flag, a yajna, practice, then the competition, and of the meals at a championship as simple food, set against what is sold in the market. The recording is their discourse. It sits with the Yatra because the same days held both the sport and that talk.",
         link: { href: "https://www.youtube.com/watch?v=_p_k4tdwbeU", label: "Open the recording" },
       },
       {
@@ -419,15 +420,15 @@ export const en: Copy = {
       caption: "The long table during the championship gathering.",
     },
     "yt-yajna": {
-      alt: "Shyamal Ta and the speakers with him, in a recording made around the championship, on the Vedic yajna and the morning order of the meet.",
+      alt: "Shyamal Ta and the speakers with him discuss the Vedic yajna as a work offered without choosing a recipient, the morning order of flag, yajna, practice and competition, and the meals they describe as simple food.",
       caption: "Shyamal Ta and the speakers with him, on the Vedic yajna.",
     },
     "yt-shyamal": {
-      alt: "Shyamal Ta speaks during the championship about the mornings, the association, and the route from district competition.",
-      caption: "Shyamal Ta, in a recorded conversation at Muluk.",
+      alt: "Amit Singh of Karmyog TV speaks with Shyamal Ta at Bharat Sevashram Sangha, Muluk, about the green grounds, the route from district competition, the mornings, and food and farming.",
+      caption: "Shyamal Ta with Amit Singh, recorded at Muluk.",
     },
     "yt-abhay": {
-      alt: "Abhay Barman of Paschim Bardhaman speaks of competing at this championship, and of Yogasana as a practice and a possible career.",
+      alt: "Abhay Barman of Paschim Bardhaman speaks of competing at this championship, of medals he says he won earlier, and of asking young athletes to take the route from district to state.",
       caption: "Abhay Barman on competing here.",
     },
     "indoor-session": {
