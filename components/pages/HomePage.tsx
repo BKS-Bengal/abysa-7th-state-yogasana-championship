@@ -9,6 +9,7 @@ import { remoteFilms } from "@/lib/media";
 import { useLanguage } from "@/lib/language";
 
 const homeFilmIds = ["yt-shyamal", "yt-abhay", "yt-yajna"];
+const moreFilmIds = ["yt-mahacharya", "yt-short-meet", "yt-short-yajna", "yt-short-line"];
 
 export function HomePage() {
   const { copy } = useLanguage();
@@ -56,6 +57,7 @@ export function HomePage() {
                   <iframe
                     src={film.embed}
                     title={title}
+                    loading={id === homeFilmIds[0] ? "eager" : "lazy"}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
                   />
@@ -65,6 +67,25 @@ export function HomePage() {
                     <a href={film.youtube} target="_blank" rel="noreferrer">{copy.media.open}</a>
                   </span>
                 </article>
+              );
+            })}
+          </div>
+          <div className="cinema cinema-more">
+            {moreFilmIds.map((id) => {
+              const film = remoteFilms.find((item) => item.id === id);
+              if (!film) return null;
+              const text = copy.captions[film.id];
+              const title = text?.caption ?? film.caption;
+              const detail = text?.alt ?? film.alt;
+              return (
+                <a key={film.id} className={film.vertical ? "film short film-card" : "film feature film-card"} href={film.youtube} target="_blank" rel="noreferrer">
+                  <img src={film.poster} alt="" width={film.vertical ? 360 : 1280} height={film.vertical ? 640 : 720} loading="lazy" />
+                  <span className="film-meta">
+                    <strong>{title}</strong>
+                    <p>{detail}</p>
+                    <span>{copy.media.open}</span>
+                  </span>
+                </a>
               );
             })}
           </div>

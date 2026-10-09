@@ -1,6 +1,7 @@
 "use client";
 
-import { films, remoteFilms, stills, type Still } from "@/lib/media";
+import { useState } from "react";
+import { films, remoteFilms, stills, type RemoteFilm, type Still } from "@/lib/media";
 import { useLanguage } from "@/lib/language";
 import { ImageReveal } from "./ImageReveal";
 
@@ -23,6 +24,38 @@ const span: Record<string, string> = {
 };
 
 const byId = new Map(stills.map((item) => [item.id, item]));
+
+function RemoteFilmCard({ film }: { film: RemoteFilm }) {
+  const { copy } = useLanguage();
+  const [playing, setPlaying] = useState(false);
+  const text = copy.captions[film.id];
+  const title = text?.caption ?? film.caption;
+  const detail = text?.alt ?? film.alt;
+  const shape = film.vertical ? "film short" : "film feature";
+  return (
+    <article className={shape}>
+      {playing ? (
+        <iframe
+          src={`${film.embed}?autoplay=1`}
+          title={title}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        />
+      ) : (
+        <button type="button" className="plate-button" onClick={() => setPlaying(true)} aria-label={`${title}. ${copy.media.play}`}>
+          <img src={film.poster} alt="" width={film.vertical ? 360 : 1280} height={film.vertical ? 640 : 720} loading="lazy" />
+          <span className="film-play">{copy.media.play}</span>
+        </button>
+      )}
+      <span className="film-meta">
+        <span>{copy.media.fig} {film.plate}</span>
+        <strong>{title}</strong>
+        <p>{detail}</p>
+        <a href={film.youtube} target="_blank" rel="noreferrer">{copy.media.open}</a>
+      </span>
+    </article>
+  );
+}
 
 function Shot({ item, onOpen, priority = false }: { item: Still; onOpen: (id: string) => void; priority?: boolean }) {
   const { copy } = useLanguage();
@@ -104,27 +137,9 @@ export function MediaView({ onOpen }: Props) {
             </button>
           );
         })}
-        {remoteFilms.map((film) => {
-          const text = copy.captions[film.id];
-          const title = text?.caption ?? film.caption;
-          const detail = text?.alt ?? film.alt;
-          return (
-            <article key={film.id} className="film feature">
-              <iframe
-                src={film.embed}
-                title={title}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              />
-              <span className="film-meta">
-                <span>{copy.media.fig} {film.plate}</span>
-                <strong>{title}</strong>
-                <p>{detail}</p>
-                <a href={film.youtube} target="_blank" rel="noreferrer">{copy.media.open}</a>
-              </span>
-            </article>
-          );
-        })}
+        {remoteFilms.map((film) => (
+          <RemoteFilmCard key={film.id} film={film} />
+        ))}
       </div>
       </div>
     </section>

@@ -47,6 +47,12 @@ export type Copy = {
     filmsEyebrow: string;
     filmsTitle: string;
     filmsLead: string;
+    featureEyebrow: string;
+    featureTitle: string;
+    featureName: string;
+    featureRole: string;
+    featureOrg: string;
+    featureBody: string;
   };
   yogasana: {
     eyebrow: string;

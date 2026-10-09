@@ -57,15 +57,15 @@ const archive: Still[] = [
   { id: "children-banner", src: "/assets/gallery/children-banner.webp", plate: "09", width: 1280, height: 960, alt: "Children in orange sit before the championship banner and the Prakriti Jagran Yatra banner.", caption: "Children seated before the championship banner and the Prakriti Jagran Yatra banner." },
   { id: "hall-wide", src: "/assets/gallery/hall-wide.webp", plate: "10", width: 1280, height: 960, alt: "A wide view of the hall, with the gathering seated before the dais and the Sri Sri Shiv Mandir sign.", caption: "The hall at Sri Sri Shiv Mandir, during the championship gathering." },
   { id: "dais-address", src: "/assets/gallery/dais-address.webp", plate: "11", width: 1280, height: 960, alt: "A speaker with a microphone stands at the championship dais.", caption: "An address from the dais, beneath the championship banner." },
-  { id: "table-address", src: "/assets/gallery/table-address.webp", plate: "12", width: 960, height: 1280, alt: "A speaker in yellow stands at a microphone beside the long table.", caption: "An address during the event proceedings." },
-  { id: "dance", src: "/assets/gallery/dance.webp", plate: "13", width: 1280, height: 960, alt: "Dancers in cream and red costumes perform in the hall while phones record them.", caption: "Dance in the hall, recorded from the floor." },
-  { id: "remembrance", src: "/assets/gallery/remembrance.webp", plate: "14", width: 1280, height: 960, alt: "A framed portrait is held at the long table during the championship gathering.", caption: "A framed portrait is brought to the long table during the championship gathering." },
+  { id: "table-address", src: "/assets/gallery/table-address.webp", plate: "12", width: 960, height: 1280, alt: "Sourabh J. Sarkar, in yellow, stands with a microphone beside the long table.", caption: "Sourabh J. Sarkar addressing the gathering." },
+  { id: "dance", src: "/assets/gallery/dance.webp", plate: "13", width: 1280, height: 960, alt: "Two dancers in cream, red and gold perform in the hall of Sri Sri Shiv Mandir while the gathering watches.", caption: "Inaugural dance in the hall." },
+  { id: "remembrance", src: "/assets/gallery/remembrance.webp", plate: "14", width: 1280, height: 960, alt: "A woman in a yellow saree holds a framed portrait of Rabindranath Tagore at the long table, with a second portrait lying on the table.", caption: "Portraits of Rabindranath Tagore brought to the long table." },
   { id: "portrait-blue", src: "/assets/gallery/portrait-blue.webp", plate: "15", width: 1280, height: 960, alt: "An athlete stands with folded hands before the championship banner.", caption: "An athlete waits with folded hands before the championship banner." },
   { id: "portrait-yellow", src: "/assets/gallery/portrait-yellow.webp", plate: "16", width: 1280, height: 960, alt: "An athlete faces the camera in front of the championship banner, with a microphone clipped on.", caption: "An athlete faces the camera during recordings in front of the championship banner." },
   { id: "portrait-braid", src: "/assets/gallery/portrait-braid.webp", plate: "17", width: 1280, height: 960, alt: "An athlete stands with folded hands and a microphone before the championship banner.", caption: "An athlete stands with folded hands while being recorded before the championship banner." },
   { id: "portrait-navy", src: "/assets/gallery/portrait-navy.webp", plate: "18", width: 1280, height: 960, alt: "An athlete speaks into a microphone before the championship banner.", caption: "An athlete speaks into a microphone before the championship banner." },
   { id: "portrait-jersey", src: "/assets/gallery/portrait-jersey.webp", plate: "19", width: 960, height: 1280, alt: "An athlete is recorded before the championship banner on the morning of 3 October.", caption: "An athlete is recorded before the championship banner on the morning of 3 October." },
-  { id: "interview-banner", src: "/assets/gallery/interview-banner.webp", plate: "20", width: 960, height: 1280, alt: "A man speaks in a recorded conversation before the Prakriti Jagran Yatra banner.", caption: "A recorded conversation before the Prakriti Jagran Yatra banner." },
+  { id: "interview-banner", src: "/assets/gallery/interview-banner.webp", plate: "20", width: 960, height: 1280, alt: "An older man speaks on camera before the Prakriti Jagran Yatra banner, while a younger man listens. The recording is a career conversation with an ex-army cardiologist.", caption: "A career conversation, recorded before the Prakriti Jagran Yatra banner." },
   { id: "interview-sofa", src: "/assets/gallery/interview-sofa.webp", plate: "21", width: 1280, height: 960, alt: "Two men sit for a filmed conversation in front of the championship banner.", caption: "A conversation recorded before the championship banner." },
   { id: "interview-corridor", src: "/assets/gallery/interview-corridor.webp", plate: "22", width: 1280, height: 960, alt: "A woman is recorded by a camera crew in a corridor.", caption: "A recorded conversation in a corridor during the championship." },
   { id: "day-crew", src: "/assets/gallery/day-crew.webp", plate: "23", width: 1280, height: 960, alt: "A camera operator films Shyamal Ta, State President of the All Bengal Yogasana Sports Association, seated in the hall at Bharat Sevashram Sangha, Muluk.", caption: "Shyamal Ta, State President of the All Bengal Yogasana Sports Association, filmed in the hall at Bharat Sevashram Sangha, Muluk, on the morning of 3 October." },
@@ -81,36 +81,79 @@ export type RemoteFilm = {
   id: string;
   youtube: string;
   embed: string;
+  poster: string;
   plate: string;
   caption: string;
   alt: string;
+  vertical?: boolean;
 };
 
+function remote(id: string, videoId: string, plate: string, caption: string, alt: string, vertical = false): RemoteFilm {
+  return {
+    id,
+    youtube: vertical ? `https://www.youtube.com/shorts/${videoId}` : `https://www.youtube.com/watch?v=${videoId}`,
+    embed: `https://www.youtube-nocookie.com/embed/${videoId}`,
+    poster: `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`,
+    plate,
+    caption,
+    alt,
+    vertical,
+  };
+}
+
 export const remoteFilms: RemoteFilm[] = [
-  {
-    id: "yt-yajna",
-    youtube: "https://www.youtube.com/watch?v=_p_k4tdwbeU",
-    embed: "https://www.youtube-nocookie.com/embed/_p_k4tdwbeU",
-    plate: "47",
-    caption: "Shyamal Ta and the speakers with him, on the Vedic yajna.",
-    alt: "Shyamal Ta and the speakers with him discuss the Vedic yajna as a work offered without choosing a recipient, the morning order of flag, yajna, practice and competition, and the meals they describe as simple food.",
-  },
-  {
-    id: "yt-shyamal",
-    youtube: "https://www.youtube.com/watch?v=p6AdZy0HIi4",
-    embed: "https://www.youtube-nocookie.com/embed/p6AdZy0HIi4",
-    plate: "48",
-    caption: "Shyamal Ta with Amit Singh, recorded at Muluk.",
-    alt: "Amit Singh of Karmyog TV speaks with Shyamal Ta at Bharat Sevashram Sangha, Muluk, about the green grounds, the route from district competition, the mornings, and food and farming.",
-  },
-  {
-    id: "yt-abhay",
-    youtube: "https://www.youtube.com/watch?v=RLgAz4onoSM",
-    embed: "https://www.youtube-nocookie.com/embed/RLgAz4onoSM",
-    plate: "49",
-    caption: "Abhay Barman on competing here.",
-    alt: "Abhay Barman of Paschim Bardhaman speaks of competing at this championship, of medals he says he won earlier, and of asking young athletes to take the route from district to state.",
-  },
+  remote(
+    "yt-yajna",
+    "_p_k4tdwbeU",
+    "47",
+    "Shyamal Ta and the speakers with him, on the Vedic yajna.",
+    "Shyamal Ta and the speakers with him discuss the Vedic yajna as a work offered without choosing a recipient, the morning order of flag, yajna, practice and competition, and the meals they describe as simple food.",
+  ),
+  remote(
+    "yt-shyamal",
+    "p6AdZy0HIi4",
+    "48",
+    "Shyamal Ta with Amit Shil, recorded at Muluk.",
+    "Amit Shil of Karmyog TV speaks with Shyamal Ta at Bharat Sevashram Sangha, Muluk, about the work he is doing, his present activities in Yogasana, and the plans he describes.",
+  ),
+  remote(
+    "yt-abhay",
+    "RLgAz4onoSM",
+    "49",
+    "Abhay Barman on competing here.",
+    "Abhay Barman of Paschim Bardhaman speaks of competing at this championship, of medals he says he won earlier, and of asking young athletes to take the route from district to state.",
+  ),
+  remote(
+    "yt-mahacharya",
+    "J5WbntnJwng",
+    "50",
+    "Sourabh J. Sarkar and Reena J. Sarkar, at Muluk.",
+    "Sourabh J. Sarkar, Mahacharya, and Reena J. Sarkar, Gunomata, in the recording titled প্রকৃতি জাগরণ যজ্ঞ, at the championship in Muluk, Birbhum.",
+  ),
+  remote(
+    "yt-short-meet",
+    "i2cGyhSS1kU",
+    "51",
+    "A short from the state championship.",
+    "A vertical short from the state Yogasana championship.",
+    true,
+  ),
+  remote(
+    "yt-short-yajna",
+    "BpFFbFtfCFw",
+    "52",
+    "A short on the fire and the Sangha.",
+    "A vertical short whose title sets a Prakriti Jagaran fire beside Bharat Sevashram Sangha.",
+    true,
+  ),
+  remote(
+    "yt-short-line",
+    "-RJ1Lq8OUtk",
+    "53",
+    "A short of the line of a posture.",
+    "A vertical short of Yogasana at the championship: the strength, the discipline, and the line of a posture.",
+    true,
+  ),
 ];
 
 export const films: Film[] = [

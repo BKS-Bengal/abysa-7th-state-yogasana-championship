@@ -1,5 +1,3 @@
-export const championshipFilm = "https://www.youtube.com/shorts/-RJ1Lq8OUtk";
-
 export type PhotoRecord = {
   id: string;
   src: string;
@@ -44,9 +42,8 @@ export const publishedPhotos: PhotoRecord[] = [
     page: "home",
     section: "inside",
     theme: "voices",
-    alt: "Officials seated at a long table on the verandah, writing on papers beside laptops.",
-    caption: "Officials work through papers at a table on the verandah.",
-    youtube: championshipFilm,
+    alt: "Judges seated at a long table on the verandah, entering marks on papers beside laptops.",
+    caption: "Scoring.",
     usedOnce: true,
   },
   {
@@ -58,9 +55,8 @@ export const publishedPhotos: PhotoRecord[] = [
     page: "home",
     section: "inside",
     theme: "practice",
-    alt: "An athlete in a green, white and orange suit holds a standing balance, one foot drawn up behind the head.",
-    caption: "An athlete holds a standing balance during a performance.",
-    youtube: championshipFilm,
+    alt: "An athlete in a green, white and orange suit holds a standing balance, one foot drawn up behind the head, during an artistic-pair step.",
+    caption: "Artistic pair yoga demonstration.",
     usedOnce: true,
   },
   {
@@ -72,8 +68,8 @@ export const publishedPhotos: PhotoRecord[] = [
     page: "home",
     section: "inside",
     theme: "documentation",
-    alt: "A video camera on a tripod stands beside a sound desk and an open laptop on the hall floor.",
-    caption: "Recording equipment set up on the hall floor during the championship.",
+    alt: "Deepayan and Nazmul sit with a camera, a sound desk and a laptop during the championship broadcast.",
+    caption: "Media and technical broadcast setup. Deepayan and Nazmul.",
     usedOnce: true,
   },
   {

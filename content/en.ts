@@ -45,7 +45,13 @@ export const en: Copy = {
     watchFilm: "Watch the film",
     filmsEyebrow: "Recordings",
     filmsTitle: "Three recordings from the championship.",
-    filmsLead: "Shyamal Ta speaks at Muluk with Amit Singh of Karmyog TV. Abhay Barman of Paschim Bardhaman speaks of competing here. A third recording keeps Shyamal Ta, and the speakers with him, on the Vedic yajna. The films page also holds four films made in the hall.",
+    filmsLead: "Amit Shil of Karmyog TV speaks with Shyamal Ta at Muluk about the work he is doing, his present activities in Yogasana, and the plans he describes. Abhay Barman of Paschim Bardhaman speaks of competing here. A third recording keeps Shyamal Ta, and the speakers with him, on the Vedic yajna. Further recordings sit below. The films page also holds four films made in the hall.",
+    featureEyebrow: "The interview",
+    featureTitle: "The work, and what he plans.",
+    featureName: "MR. SHYAMAL TA",
+    featureRole: "STATE PRESIDENT – WEST BENGAL",
+    featureOrg: "ALL BENGAL YOGASANA SPORTS ASSOCIATION",
+    featureBody: "Amit Shil of Karmyog TV recorded this conversation with Shyamal Ta at Bharat Sevashram Sangha, Muluk. They speak about the work he is doing here, his present activities in Yogasana, and the plans he describes for what comes next.",
   },
   event: {
     eyebrow: "The championship",
@@ -102,10 +108,10 @@ export const en: Copy = {
     practice: "Athletes practise together on the mats. The association team leads the session.",
     nightTitle: "",
     night: "",
-    interview: "Later in the championship two men were recorded before the banner that carries the name Prakriti Jagran Yatra. The talk that set the mat beside food and farming is a separate one: Shyamal Ta with Amit Singh of Karmyog TV, kept with the films.",
-    interviewEyebrow: "A conversation",
-    interviewTitle: "Beyond the mat.",
-    interviewNote: "A conversation from later in the championship.",
+    interview: "This frame is a separate recording, made before the banner that carries the name Prakriti Jagran Yatra. The man speaking is an ex-army doctor who later specialised in the heart. His name is not printed on the frame. The conversation with Shyamal Ta and Amit Shil, about the work and the plans, is kept with the films.",
+    interviewEyebrow: "A recording",
+    interviewTitle: "From the army to the heart.",
+    interviewNote: "A career conversation, recorded before the Prakriti Jagran Yatra banner.",
     daysLabel: "The four days",
     daysLead: "From 1 to 4 October 2026 the championship occupied Bharat Sevashram Sangha at Muluk: the hall of Sri Sri Shiv Mandir, the courtyard, the open green field, and the rooms where athletes stayed. It is an ashram, not a city sports ground.",
     platesEyebrow: "Plates",
@@ -118,7 +124,7 @@ export const en: Copy = {
         opening: "On 1 October 2026 the championship opened at Bharat Sevashram Sangha in Muluk, Bolpur, Birbhum.",
         passages: [
           "The association had asked colleges and universities in West Bengal for a ground. None offered one. Bharat Sevashram Sangha took the meet in, through the interest of Swami Shanti Maharaj. The chair asked whoever led the association afterwards not to leave the Sangha. He said the association was joined to the national federation of the Government of India, and that the other yoga organisations in West Bengal were not. Those were his words from the opening. The championship banner names Yogasana Bharat and World Yogasana. He also said the association’s own programmes were already running somewhere in Bengal every day, and on some days in three or four places.",
-          "Sourav J. Sarkar was introduced as Mahacharya, and as State President of Bharatiya Krishak Samaj in West Bengal. The chair said he was an IIT student, and spoke of science in the farming of the Gangetic plain. He recalled Vivekananda’s line that one who would be a king must first learn to be a subject.",
+          "Sourabh J. Sarkar was introduced as Mahacharya, and as State President of Bharatiya Krishak Samaj in West Bengal. The chair said he was an IIT student, and spoke of science in the farming of the Gangetic plain. He recalled Vivekananda’s line that one who would be a king must first learn to be a subject.",
           "The chair said the previous year’s state championship had drawn about three hundred athletes, and that this year, even after he asked the districts to send no more, the gathering had passed six hundred. Those were his words from the opening. Rooms and meals at the ashram were already stretched. Standing in Birbhum, he said an opening could not leave Rabindranath aside. He introduced Kalyan Mukhopadhyay, a retired IPS officer who had long handled the West Bengal police.",
           "A woman who had arranged district judging from home was thanked. She said the women with her were homemakers, learning the work as they were asked to do it. A Vedic invocation was then chanted in the hall.",
           "Swami Shanti Maharaj welcomed the districts, and offered respect to the district and state office-bearers who had come. He noted that the lodging was imperfect, and recalled Swami Paramananda’s point that a seeker’s practice does not run on comfort. He called the ashram a place of practice, and returned the word yoga to yuj: to join, and to bring the mind under control.",
@@ -180,7 +186,7 @@ export const en: Copy = {
   media: {
     eyebrow: "Films",
     title: "Films from the championship.",
-    em: "Four films made in the hall, and three recordings kept on YouTube: a talk on the Vedic yajna, a conversation with Shyamal Ta, and Abhay Barman on competing here.",
+    em: "Four films made in the hall, and seven recordings kept on YouTube: the Vedic yajna, Shyamal Ta with Amit Shil, Abhay Barman, Sourabh J. Sarkar with Reena J. Sarkar, and three shorts.",
     play: "Play",
     open: "Open on YouTube",
     fig: "Fig.",
@@ -225,7 +231,7 @@ export const en: Copy = {
       "The association’s work was visible around the athletes: officials gathered in the courtyard, and the hall was filmed while the programme was underway.\n\nThe championship was documented alongside the sporting programme, so conversations and proceedings were kept with the competition on the mat.",
     voicesTitle: "Voices at the opening",
     voices:
-      "The hall on 1 October held more than one office. The chair, speaking for the association, told the story of the ground that colleges would not give, and of the Sangha that did. He introduced Sourav J. Sarkar as Mahacharya and as State President of Bharatiya Krishak Samaj, and he spoke of science in the farming of the Gangetic plain. Swami Shanti Maharaj welcomed the districts, named the imperfect lodging, and returned yoga to yuj: to join, and to bring the mind under control.\n\nKalyan Mukhopadhyay, the retired IPS officer, spoke of body, mind and bearing, and of police who stand from morning into the afternoon heat and are still expected to stay restrained. He asked people in Yogasana to work with the police. Supriyo Mukherjee, asked to help the meet be seen, compared kabaddi’s path from a village game to a paid public sport, and said he would look at competitive Yogasana. He announced no result of this meet. Rina-ji said practice continues whether or not anyone wins. Major Saheb quoted Rabindranath, named the four paths, left the English line “I for Illness, We for Wellness,” and closed with the peace chant. The thanks then turned to Papiya Bhattacharya (Roy), General Secretary. The four days tell these speeches in the order they were given.",
+      "The hall on 1 October held more than one office. The chair, speaking for the association, told the story of the ground that colleges would not give, and of the Sangha that did. He introduced Sourabh J. Sarkar as Mahacharya and as State President of Bharatiya Krishak Samaj, and he spoke of science in the farming of the Gangetic plain. Swami Shanti Maharaj welcomed the districts, named the imperfect lodging, and returned yoga to yuj: to join, and to bring the mind under control.\n\nKalyan Mukhopadhyay, the retired IPS officer, spoke of body, mind and bearing, and of police who stand from morning into the afternoon heat and are still expected to stay restrained. He asked people in Yogasana to work with the police. Supriyo Mukherjee, asked to help the meet be seen, compared kabaddi’s path from a village game to a paid public sport, and said he would look at competitive Yogasana. He announced no result of this meet. Rina-ji said practice continues whether or not anyone wins. Major Saheb quoted Rabindranath, named the four paths, left the English line “I for Illness, We for Wellness,” and closed with the peace chant. The thanks then turned to Papiya Bhattacharya (Roy), General Secretary. The four days tell these speeches in the order they were given.",
     leadersEyebrow: "Event leadership",
     presidentTerm: "State President",
     president: "Shyamal Ta",
@@ -271,7 +277,7 @@ export const en: Copy = {
     },
   },
   prakriti: {
-    eyebrow: "Beyond the mat",
+    eyebrow: "The journey",
     title: "Prakriti Jagran Yatra",
     bangla: "প্রকৃতি জাগরণ যাত্রা",
     lead: "Prakriti Jagran Yatra is the name carried beside the sport at this championship: a journey through how people live, eat, and farm, and what that leaves the young. It is not the name of the fire offering. The All Bengal Yogasana Sports Association presented the meet. The Yatra marked a subject inside it.",
@@ -289,7 +295,7 @@ export const en: Copy = {
       },
       {
         title: "Food, farming, and the young",
-        body: "The opening in the hall had already set Sourav J. Sarkar beside the sport. The chair introduced him as Mahacharya and as State President of Bharatiya Krishak Samaj in West Bengal, said he was an IIT student, and argued that farming reaches its height only when science is applied to it. He called the Gangetic basin, from the lower country of Uttar Pradesh to the Bengal delta, the best land, and he recalled Vivekananda’s line that one who would be a king must first learn to be a subject. Bharatiya Krishak Samaj was a joint organiser. The introduction itself is told with the opening.\n\nAmit Singh of Karmyog TV later sat with Shyamal Ta at the Sangha. He had come because he had been watching yoga programmes across West Bengal and beyond, and he remarked on the green, open grounds. Shyamal Ta described athletes coming through district competition from across the state. Singh then asked his own question. Karmyog, he said, had begun an effort he called Krishi Ratna League, to join cultivation with yoga so that this generation and the next might live with less illness and more strength. He asked how Shyamal Ta saw that joining.\n\nShyamal Ta called the thought timely. He said that had Singh been at the Sangha the day before, he would have heard Kartik Maharaj tell the athletes to rise at dawn, to practise daily, to learn the discipline of the Vedic yajna, and to eat food grown without poison. Shyamal Ta’s reading of that message was that the mat is not enough for a healthy body: food without poison has to reach the stomach, and that food comes from cultivation that refuses poison. He said the league and the association could stand together over the young and over farmers. That is his account of what was said, and of the joining.\n\nA separate sitting was recorded before the banner that carries this programme’s name. Two men sat for the camera there. The children of the gathering sat before the same banners.",
+        body: "The opening in the hall had already set Sourabh J. Sarkar beside the sport. The chair introduced him as Mahacharya and as State President of Bharatiya Krishak Samaj in West Bengal, said he was an IIT student, and argued that farming reaches its height only when science is applied to it. He called the Gangetic basin, from the lower country of Uttar Pradesh to the Bengal delta, the best land, and he recalled Vivekananda’s line that one who would be a king must first learn to be a subject. Bharatiya Krishak Samaj was a joint organiser. The introduction itself is told with the opening.\n\nAmit Shil of Karmyog TV later sat with Shyamal Ta at the Sangha. He had come because he had been watching yoga programmes across West Bengal and beyond, and he remarked on the green, open grounds. Shyamal Ta described athletes coming through district competition from across the state. Shil then asked his own question. Karmyog, he said, had begun an effort he called Krishi Ratna League, to join cultivation with yoga so that this generation and the next might live with less illness and more strength. He asked how Shyamal Ta saw that joining.\n\nShyamal Ta called the thought timely. He said that had Singh been at the Sangha the day before, he would have heard Kartik Maharaj tell the athletes to rise at dawn, to practise daily, to learn the discipline of the Vedic yajna, and to eat food grown without poison. Shyamal Ta’s reading of that message was that the mat is not enough for a healthy body: food without poison has to reach the stomach, and that food comes from cultivation that refuses poison. He said the league and the association could stand together over the young and over farmers. That is his account of what was said, and of the joining.\n\nA separate sitting was recorded before the banner that carries this programme’s name. Two men sat for the camera there. The children of the gathering sat before the same banners.",
         figures: ["interview-banner", "children-banner"],
         link: { href: "https://www.youtube.com/watch?v=p6AdZy0HIi4", label: "Open Shyamal Ta’s conversation" },
       },
@@ -312,7 +318,7 @@ export const en: Copy = {
       },
       {
         title: "Meals, in their words",
-        body: "In the same discourse he speaks of what athletes at a championship were given to eat. He says the fried food and the meat of the market were kept off the table. He says the meals were sattvic, with ghee and fresh curd, so that digestion would hold, and he says that on that food not one of the hundreds fell ill in the stomach. That is his account of the kitchen. It is his explanation. It is not a medical study, and nothing on this page is advice for treating an illness.\n\nHe ties the meal back to the field. Practice on the mat, in this discourse, does not by itself feed a body. Food grown without poison has to reach the stomach, and that food, he says, comes from cultivation that refuses poison. The same joining is what Amit Singh asked him about, and what the opening had already set beside Sourav J. Sarkar and the Gangetic plain.",
+        body: "In the same discourse he speaks of what athletes at a championship were given to eat. He says the fried food and the meat of the market were kept off the table. He says the meals were sattvic, with ghee and fresh curd, so that digestion would hold, and he says that on that food not one of the hundreds fell ill in the stomach. That is his account of the kitchen. It is his explanation. It is not a medical study, and nothing on this page is advice for treating an illness.\n\nHe ties the meal back to the field. Practice on the mat, in this discourse, does not by itself feed a body. Food grown without poison has to reach the stomach, and that food, he says, comes from cultivation that refuses poison. The same joining is what Amit Shil asked him about, and what the opening had already set beside Sourabh J. Sarkar and the Gangetic plain.",
       },
       {
         title: "A morning he taught",
@@ -321,6 +327,11 @@ export const en: Copy = {
       {
         title: "Breath, attention, and a life given",
         body: "Toward the end he describes bhastrika, a forceful breath held with a posture, and he offers a ratio of oxygen he says the breath takes in. He speaks of haemoglobin and of women’s health, and he tells the physical capacity of the Pandavas as a story of that practice. He then sets conditions for meditation: a seat, a change in the breath, and a ladder he names from courage toward samadhi. He maps eight centres in the body, and he quotes a line about eight centres and nine gates. He cites a Chanakya line on the end of poverty, and he says a person without money can still give time and intelligence. He tells of a teacher, Ashish Dar, as a life he says was turned by that giving.\n\nThis is his yogic teaching in the recording. The public record of the championship remains the sport on the mat, the gathering in the hall and the courtyard, and this discourse, attributed to the people who speak it. The film is there for anyone who wants the argument in their voices.",
+      },
+      {
+        title: "Mahacharya and Gunomata",
+        body: "A separate recording from the championship carries the public title প্রকৃতি জাগরণ যজ্ঞ. On its lower third, Sourabh J. Sarkar is named Adhyaksh of Bharatiya Krishak Samaj in West Bengal, and Mahacharya of Karmyog Ashram and GunoKul. Reena J. Sarkar is named CTO of Bharat Krishak Samaj in West Bengal, and Gunomata of Karmyog Ashram and GunoKul. He stands in yellow, microphone in hand. She sits beside him. That is the sitting in the film.\n\nThe chair’s introduction of Sourabh J. Sarkar, at the opening, is a different moment: the chair’s words, told with the four days. Rina-ji, who spoke then about practice continuing, is not named on this lower third. The courtyard fire of 3 October is a third thing, photographed in the morning, and it is not given this film’s title. The Vedic discourse with Shyamal Ta remains the other recording.",
+        link: { href: "https://www.youtube.com/watch?v=J5WbntnJwng", label: "Open the recording" },
       },
       {
         title: "Inside the championship",
@@ -362,8 +373,8 @@ export const en: Copy = {
       caption: "Dancers turn in the hall.",
     },
     remembrance: {
-      alt: "A woman in a yellow saree holds a framed portrait at the ceremonial table.",
-      caption: "A framed portrait is brought to the long table during the championship gathering.",
+      alt: "A woman in a yellow saree holds a framed portrait of Rabindranath Tagore at the long table, with a second portrait lying on the table.",
+      caption: "Portraits of Rabindranath Tagore brought to the long table.",
     },
     "ceremony-table": {
       alt: "People gathered at a long table under the sign of Sri Sri Shiv Mandir.",
@@ -450,8 +461,24 @@ export const en: Copy = {
       caption: "Shyamal Ta and the speakers with him, on the Vedic yajna.",
     },
     "yt-shyamal": {
-      alt: "Amit Singh of Karmyog TV speaks with Shyamal Ta at Bharat Sevashram Sangha, Muluk, about the green grounds, the route from district competition, the mornings, and food and farming.",
-      caption: "Shyamal Ta with Amit Singh, recorded at Muluk.",
+      alt: "Amit Shil of Karmyog TV speaks with Shyamal Ta at Bharat Sevashram Sangha, Muluk, about the work he is doing, his present activities in Yogasana, and the plans he describes.",
+      caption: "Shyamal Ta with Amit Shil, on the work and the plans.",
+    },
+    "yt-mahacharya": {
+      alt: "Sourabh J. Sarkar, Mahacharya, and Reena J. Sarkar, Gunomata, in the recording titled প্রকৃতি জাগরণ যজ্ঞ, at the championship in Muluk, Birbhum.",
+      caption: "Sourabh J. Sarkar and Reena J. Sarkar, at Muluk.",
+    },
+    "yt-short-meet": {
+      alt: "A vertical short from the state Yogasana championship.",
+      caption: "A short from the state championship.",
+    },
+    "yt-short-yajna": {
+      alt: "A vertical short whose title sets a Prakriti Jagaran fire beside Bharat Sevashram Sangha.",
+      caption: "A short on the fire and the Sangha.",
+    },
+    "yt-short-line": {
+      alt: "A vertical short of Yogasana at the championship: the strength, the discipline, and the line of a posture.",
+      caption: "A short of the line of a posture.",
     },
     "yt-abhay": {
       alt: "Abhay Barman of Paschim Bardhaman speaks of competing at this championship, of medals he says he won earlier, and of asking young athletes to take the route from district to state.",
@@ -462,16 +489,16 @@ export const en: Copy = {
       caption: "Young athletes seated together during an indoor session in the hall.",
     },
     "yt-verandah-table": {
-      alt: "Officials seated at a long table on the verandah, writing on papers beside laptops.",
-      caption: "Officials work through papers at a table on the verandah.",
+      alt: "Judges seated at a long table on the verandah, entering marks on papers beside laptops.",
+      caption: "Scoring.",
     },
     "yt-standing-balance": {
-      alt: "An athlete in a green, white and orange suit holds a standing balance, one foot drawn up behind the head.",
-      caption: "An athlete holds a standing balance during a performance.",
+      alt: "An athlete in a green, white and orange suit holds a standing balance, one foot drawn up behind the head, during an artistic-pair step.",
+      caption: "Artistic pair yoga demonstration.",
     },
     "hall-crew": {
-      alt: "A video camera on a tripod stands beside a sound desk and an open laptop on the hall floor.",
-      caption: "Recording equipment set up on the hall floor during the championship.",
+      alt: "Deepayan and Nazmul sit with a camera, a sound desk and a laptop during the championship broadcast.",
+      caption: "Media and technical broadcast setup. Deepayan and Nazmul.",
     },
     "recognition-stand": {
       alt: "An athlete in an orange shirt holds a medal while officials stand beside her in the hall.",
@@ -538,8 +565,16 @@ export const en: Copy = {
       caption: "An athlete is recorded before the championship banner on the morning of 3 October.",
     },
     "interview-banner": {
-      alt: "A man speaks in a recorded conversation before the Prakriti Jagran Yatra banner.",
-      caption: "A recorded conversation before the Prakriti Jagran Yatra banner.",
+      alt: "An older man speaks on camera before the Prakriti Jagran Yatra banner, while a younger man listens. The recording is a career conversation with an ex-army cardiologist.",
+      caption: "A career conversation with an ex-army cardiologist, before the Prakriti Jagran Yatra banner.",
+    },
+    "table-address": {
+      alt: "Sourabh J. Sarkar, in yellow, stands with a microphone beside the long table.",
+      caption: "Sourabh J. Sarkar, Mahacharya, addressing the gathering.",
+    },
+    dance: {
+      alt: "Two dancers in cream, red and gold perform in the hall of Sri Sri Shiv Mandir while the gathering watches.",
+      caption: "Inaugural dance in the hall.",
     },
     "interview-sofa": {
       alt: "Two men sit for a filmed conversation in front of the championship banner.",
