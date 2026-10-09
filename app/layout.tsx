@@ -35,20 +35,23 @@ const banglaQuote = Tiro_Bangla({
   display: "swap",
 });
 
-const title = "7th State Yogasana Sports Championship 2026–27";
+const title = "ABYSA 7th State Yogasana Sports Championship 2026–27";
 const description =
-  "The 7th State Yogasana Sports Championship, 1–4 October 2026, at Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum.";
+  "ABYSA presents the 7th State Yogasana Sports Championship, 1–4 October 2026, at Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://prakriti-jagaran-mancha.vercel.app"),
+  metadataBase: new URL("https://abysa-7th-state-yogasana-championship.vercel.app"),
   title: {
     default: title,
-    template: "%s — State Yogasana Championship",
+    template: "%s — ABYSA",
   },
   description,
+  alternates: { canonical: "/" },
   openGraph: {
     title,
     description,
+    siteName: title,
+    url: "/",
     type: "website",
     locale: "en_IN",
     images: [{ url: "/assets/hero/championship-banner.webp", width: 3456, height: 2304, alt: "Official banner for the 7th State Yogasana Sports Championship 2026–27 at Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum." }],

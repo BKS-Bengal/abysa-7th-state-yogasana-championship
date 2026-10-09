@@ -20,10 +20,10 @@ export const en: Copy = {
     skip: "Skip to content",
     skipIntro: "Skip intro",
   },
-  footer: "7th State Yogasana Sports Championship 2026–27 · All Bengal Yogasana Sports Association · Yogasana Bharat, New Delhi · World Yogasana",
+  footer: "ABYSA · 7th State Yogasana Sports Championship 2026–27 · All Bengal Yogasana Sports Association · Yogasana Bharat, New Delhi · World Yogasana",
   lightbox: { previous: "Previous", next: "Next", close: "Close" },
   home: {
-    presents: "Yogasana",
+    presents: "ABYSA",
     title: "7th State Yogasana Sports Championship",
     bangla: "",
     championship: "2026–27",

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { HomePage } from "@/components/pages/HomePage";
 
-const title = "7th State Yogasana Sports Championship 2026–27";
+const title = "ABYSA 7th State Yogasana Sports Championship 2026–27";
 const description =
-  "The 7th State Yogasana Sports Championship, 1–4 October 2026, at Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum.";
+  "ABYSA presents the 7th State Yogasana Sports Championship, 1–4 October 2026, at Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum.";
 
 export const metadata: Metadata = {
   title: { absolute: title },
