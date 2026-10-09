@@ -92,8 +92,8 @@ export const remoteFilms: RemoteFilm[] = [
     youtube: "https://www.youtube.com/watch?v=_p_k4tdwbeU",
     embed: "https://www.youtube-nocookie.com/embed/_p_k4tdwbeU",
     plate: "47",
-    caption: "A recorded talk on the Vedic yajna, during the championship.",
-    alt: "A talk recorded around the 7th State Yogasana Sports Championship on the Vedic yajna, yoga, and meditation.",
+    caption: "Shyamal Ta and the speakers with him, on the Vedic yajna.",
+    alt: "Shyamal Ta and the speakers with him, in a recording made around the championship, on the Vedic yajna and the morning order of the meet.",
   },
   {
     id: "yt-shyamal",

@@ -43,6 +43,9 @@ export function PrakritiPage() {
             {section.figures?.map((id) => (
               <EditorialFigure key={id} id={id} />
             ))}
+            {section.link ? (
+              <p><a href={section.link.href} target="_blank" rel="noreferrer">{section.link.label}</a></p>
+            ) : null}
           </div>
         </section>
       ))}

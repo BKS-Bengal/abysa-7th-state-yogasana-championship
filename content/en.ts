@@ -115,16 +115,14 @@ export const en: Copy = {
         opening: "On 1 October 2026 the championship opened at Bharat Sevashram Sangha in Muluk, Bolpur, Birbhum.",
         passages: [
           "The association had asked colleges and universities in West Bengal for a ground. None offered one. Bharat Sevashram Sangha took the meet in, through the interest of Swami Shanti Maharaj. The chair asked whoever led the association afterwards not to leave the Sangha.",
-          "Sourav J. Sarkar was introduced as Mahacharya, and as State President of Bharatiya Krishak Samaj in West Bengal. The chair remarked that he was an IIT student, and spoke of science in the farming of the Gangetic plain.",
-          "The chair said the state field was larger than the previous year’s championship, and that rooms and meals at the ashram were already stretched. He asked the district committees to send no more. Standing in Birbhum, he said an opening could not leave Rabindranath aside. He introduced Kalyan Mukhopadhyay, a retired IPS officer who had long handled the West Bengal police.",
-          "Kalyan Mukhopadhyay said Yogasana holds the body, the mind, and one’s bearing together, and that a police officer needs that restraint when the day runs long.",
-          "Supriyo Mukherjee, speaking for the media, compared the public rise of kabaddi and said competitive Yogasana might be carried further. He announced no result of this meet.",
-          "Rina-ji said practice has to continue, whether or not one wins. Major Saheb closed with the words he spoke in the hall: “I for Illness, We for Wellness.”",
+          "Sourav J. Sarkar was introduced as Mahacharya, and as State President of Bharatiya Krishak Samaj in West Bengal. The chair said he was an IIT student, and spoke of science in the farming of the Gangetic plain. He recalled Vivekananda’s line that one who would be a king must first learn to be a subject.",
+          "The chair said the previous year’s state championship had drawn about three hundred athletes, and that this year, even after he asked the districts to send no more, the gathering had passed six hundred. Those were his words from the opening. Rooms and meals at the ashram were already stretched. Standing in Birbhum, he said an opening could not leave Rabindranath aside. He introduced Kalyan Mukhopadhyay, a retired IPS officer who had long handled the West Bengal police.",
           "A woman who had arranged district judging from home was thanked. She said the women with her were homemakers, learning the work as they were asked to do it. A Vedic invocation was then chanted in the hall.",
           "Swami Shanti Maharaj welcomed the districts. He noted that the lodging was imperfect, and recalled Swami Paramananda’s point that a seeker’s practice does not run on comfort. He returned the word yoga to yuj: to join, and to bring the mind under control.",
-          "A rhythmic, artistic presentation followed in the hall.",
-          "Kalyan Mukhopadhyay said a yogasana is complete only when the body, the mind, and one’s conduct are all held, and that the police needed that kind of control. Supriyo Mukherjee, asked to help the meet be seen, spoke of how media had lifted kabaddi from a village game, and said he would look at what might be done for competitive Yogasana.",
-          "Rina-ji said practice has to continue, whether or not anyone wins. Major Saheb asked that yoga be of the mind as well as the body. He recalled Rabindranath’s image of keeping company with the world, and left one line in English: “I for Illness, We for Wellness.” The thanks then turned to Papiya Bhattacharya (Roy), General Secretary.",
+          "A rhythmic, artistic presentation followed in the hall. The chair thanked the dancers for that artistic and rhythmic work.",
+          "Kalyan Mukhopadhyay said a yogasana is complete only when the body, the mind, and one’s bearing are all held. He described police standing from morning into the afternoon heat, still expected to stay restrained, and said that control is what the police need at every hour. He asked people in Yogasana to work with the police, and to teach them to be calmer, and still firm.",
+          "Supriyo Mukherjee, asked to help the meet be seen, said media had taken kabaddi from a village game to a paid public sport, and that he would look at what might be done for competitive Yogasana. He also said he had not known of West Bengal’s results in the sport until that day. He announced no result of this meet.",
+          "Rina-ji said practice has to continue, whether or not anyone wins. Major Saheb quoted Rabindranath: “বিশ্ব সাথে যেথায় তুমি বিহারো.” He named the four paths Vivekananda speaks of — raja, jnana, karma, and bhakti — and asked that yoga be of the mind as well as the body. He left one line in English: “I for Illness, We for Wellness.” The thanks then turned to Papiya Bhattacharya (Roy), General Secretary.",
         ],
         close: "From that opening, the championship moved into its working days.",
       },
@@ -286,7 +284,16 @@ export const en: Copy = {
       {
         title: "Food, farming, and the young",
         body: "At the opening, the chair introduced Sourav J. Sarkar as Mahacharya and as State President of Bharatiya Krishak Samaj, and said he was an IIT student. He spoke of science in the cultivation of the Gangetic plain. Bharatiya Krishak Samaj was a joint organiser, and the farmers’ organisation in that room.\n\nA conversation recorded later, before the Prakriti Jagran Yatra banner, returned to the meal and to the next generation. The Yatra, in that conversation, set the mat beside food, farming, and the lives that follow the four days.",
-        figures: ["interview-banner"],
+        figures: ["interview-banner", "children-banner"],
+      },
+      {
+        title: "What the name carries",
+        body: "In the Karmyog account that uses this name, Prakriti Jagran Yatra is a journey through earth, water, fire, air, and sky, then the sun and the moon, the living world, the body, the breath, the mind, and the whole. That is how the name is carried. It is the name beside this championship. It is not the name of the fire on the morning of 3 October, and it is not a second title for the meet.",
+      },
+      {
+        title: "The recorded talk",
+        body: "A recording made around this championship keeps Shyamal Ta, and the speakers with him, on the Vedic yajna. They speak of it as a work offered without choosing who should receive it, and of the morning order he described elsewhere: the flag, a yajna, practice, then the competition. The recording is their discourse. It sits with the Yatra because the same days held both the sport and that talk.",
+        link: { href: "https://www.youtube.com/watch?v=_p_k4tdwbeU", label: "Open the recording" },
       },
       {
         title: "Inside the championship",
@@ -412,8 +419,8 @@ export const en: Copy = {
       caption: "The long table during the championship gathering.",
     },
     "yt-yajna": {
-      alt: "A talk recorded around the 7th State Yogasana Sports Championship on the Vedic yajna, yoga, and meditation.",
-      caption: "A recorded talk on the Vedic yajna, during the championship.",
+      alt: "Shyamal Ta and the speakers with him, in a recording made around the championship, on the Vedic yajna and the morning order of the meet.",
+      caption: "Shyamal Ta and the speakers with him, on the Vedic yajna.",
     },
     "yt-shyamal": {
       alt: "Shyamal Ta speaks during the championship about the mornings, the association, and the route from district competition.",
