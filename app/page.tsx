@@ -11,7 +11,15 @@ export const metadata: Metadata = {
   openGraph: {
     title,
     description,
+    siteName: title,
+    url: "/",
     images: [{ url: "/assets/hero/championship-banner.webp", width: 3456, height: 2304, alt: "Official banner for the 7th State Yogasana Sports Championship 2026–27 at Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum." }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/assets/hero/championship-banner.webp"],
   },
 };
 
