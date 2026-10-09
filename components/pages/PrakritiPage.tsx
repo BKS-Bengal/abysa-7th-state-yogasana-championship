@@ -1,5 +1,6 @@
 "use client";
 
+import { EditorialFigure } from "@/components/EditorialFigure";
 import { prakritiArt } from "@/lib/media";
 import { SiteFrame } from "@/components/SiteFrame";
 import { useLanguage } from "@/lib/language";
@@ -38,6 +39,9 @@ export function PrakritiPage() {
             <h2 id={`prakriti-${index}`}>{section.title}</h2>
             {section.body.split(/\n\n+/).map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
+            ))}
+            {section.figures?.map((id) => (
+              <EditorialFigure key={id} id={id} />
             ))}
           </div>
         </section>

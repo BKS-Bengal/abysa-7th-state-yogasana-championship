@@ -1,6 +1,6 @@
 "use client";
 
-import { films, stills, type Still } from "@/lib/media";
+import { films, remoteFilms, stills, type Still } from "@/lib/media";
 import { useLanguage } from "@/lib/language";
 import { ImageReveal } from "./ImageReveal";
 
@@ -102,6 +102,27 @@ export function MediaView({ onOpen }: Props) {
                 <span>{copy.media.play}</span>
               </span>
             </button>
+          );
+        })}
+        {remoteFilms.map((film) => {
+          const text = copy.captions[film.id];
+          const title = text?.caption ?? film.caption;
+          const detail = text?.alt ?? film.alt;
+          return (
+            <article key={film.id} className="film feature">
+              <iframe
+                src={film.embed}
+                title={title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+              <span className="film-meta">
+                <span>{copy.media.fig} {film.plate}</span>
+                <strong>{title}</strong>
+                <p>{detail}</p>
+                <a href={film.youtube} target="_blank" rel="noreferrer">{copy.media.open}</a>
+              </span>
+            </article>
           );
         })}
       </div>

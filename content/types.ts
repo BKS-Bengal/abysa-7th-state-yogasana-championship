@@ -88,7 +88,7 @@ export type Copy = {
     lead: string;
     note: string;
     definition: string;
-    sections: { title: string; body: string }[];
+    sections: { title: string; body: string; figures?: string[] }[];
   };
   event: {
     eyebrow: string;
@@ -164,6 +164,7 @@ export type Copy = {
     title: string;
     em: string;
     play: string;
+    open: string;
     fig: string;
   };
   information: {

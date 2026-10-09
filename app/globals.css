@@ -705,12 +705,27 @@ blockquote footer {
 figure { margin: 0; }
 
 figure img,
+.film iframe,
 .film img,
 .practice-track img {
   display: block;
   width: 100%;
   height: auto;
 }
+
+.film iframe {
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
+.film-meta p,
+.film-meta a {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: inherit;
+}
+
+.film-meta a { text-decoration: underline; }
 
 figcaption,
 .film-meta,

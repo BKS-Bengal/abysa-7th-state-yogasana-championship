@@ -7,7 +7,7 @@ export const en: Copy = {
     event: "Championship",
     yogasana: "Yogasana",
     organisation: "People",
-    prakriti: "Prakriti Jagaran Mancha",
+    prakriti: "Prakriti Jagran Yatra",
     story: "Four days",
     gallery: "Gallery",
     media: "Films",
@@ -37,7 +37,7 @@ export const en: Copy = {
     ctaProgramme: "Contents",
     ctaVisit: "The four days",
     programmeTitle: "The four days",
-    programmeLead: "The opening is told first. The mornings on the grounds, and the close, follow it. People, Prakriti Jagaran Mancha, the gallery, the films, and About keep the offices and the archive beside that sequence.",
+    programmeLead: "The opening is told first. The mornings on the grounds, and the close, follow it. People, Prakriti Jagran Yatra, the gallery, the films, and About keep the offices and the archive beside that sequence.",
     duringTitle: "During the championship",
     insideEyebrow: "Inside",
     insideTitle: "Inside the championship",
@@ -99,7 +99,7 @@ export const en: Copy = {
     practice: "Athletes practise together on the mats. The association team leads the session.",
     nightTitle: "",
     night: "",
-    interview: "Later in the championship a conversation was recorded before the Prakriti Jagaran banner. It set the mat beside food, farming, and the lives that follow.",
+    interview: "Later in the championship a conversation was recorded before the Prakriti Jagran Yatra banner. It set the mat beside food, farming, and the lives that follow.",
     interviewEyebrow: "A conversation",
     interviewTitle: "Beyond the mat.",
     interviewNote: "A conversation from later in the championship.",
@@ -117,6 +117,9 @@ export const en: Copy = {
           "The association had asked colleges and universities in West Bengal for a ground. None offered one. Bharat Sevashram Sangha took the meet in, through the interest of Swami Shanti Maharaj. The chair asked whoever led the association afterwards not to leave the Sangha.",
           "Sourav J. Sarkar was introduced as Mahacharya, and as State President of Bharatiya Krishak Samaj in West Bengal. The chair remarked that he was an IIT student, and spoke of science in the farming of the Gangetic plain.",
           "The chair said the state field was larger than the previous year’s championship, and that rooms and meals at the ashram were already stretched. He asked the district committees to send no more. Standing in Birbhum, he said an opening could not leave Rabindranath aside. He introduced Kalyan Mukhopadhyay, a retired IPS officer who had long handled the West Bengal police.",
+          "Kalyan Mukhopadhyay said Yogasana holds the body, the mind, and one’s bearing together, and that a police officer needs that restraint when the day runs long.",
+          "Supriyo Mukherjee, speaking for the media, compared the public rise of kabaddi and said competitive Yogasana might be carried further. He announced no result of this meet.",
+          "Rina-ji said practice has to continue, whether or not one wins. Major Saheb closed with the words he spoke in the hall: “I for Illness, We for Wellness.”",
           "A woman who had arranged district judging from home was thanked. She said the women with her were homemakers, learning the work as they were asked to do it. A Vedic invocation was then chanted in the hall.",
           "Swami Shanti Maharaj welcomed the districts. He noted that the lodging was imperfect, and recalled Swami Paramananda’s point that a seeker’s practice does not run on comfort. He returned the word yoga to yuj: to join, and to bring the mind under control.",
           "A rhythmic, artistic presentation followed in the hall.",
@@ -175,9 +178,10 @@ export const en: Copy = {
   },
   media: {
     eyebrow: "Films",
-    title: "Four films from the championship.",
-    em: "Four films: the gathering, the hall of Sri Sri Shiv Mandir, the dais, and the long table.",
+    title: "Films from the championship.",
+    em: "Four films made in the hall, and three recordings kept on YouTube: a talk on the Vedic yajna, a conversation with Shyamal Ta, and Abhay Barman on competing here.",
     play: "Play",
+    open: "Open on YouTube",
     fig: "Fig.",
   },
   information: {
@@ -191,8 +195,8 @@ export const en: Copy = {
     organisers:
       "Karmyog for the 21st Century and Bharatiya Krishak Samaj were joint organisers of the championship.",
     closeEyebrow: "Close",
-    closeTitle: "Prakriti Jagaran Mancha",
-    closeName: "Prakriti Jagaran Mancha",
+    closeTitle: "Prakriti Jagran Yatra",
+    closeName: "Prakriti Jagran Yatra",
     closePlace: "Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum",
     closeDate: "",
   },
@@ -204,7 +208,7 @@ export const en: Copy = {
     practice:
       "On the mat at Muluk, Yogasana was repetition, control, and precision. Beside the health centre, the association team led from the front. The postures prepared a performance. The performance itself waited for the hall.",
     sport:
-      "Competitive Yogasana is that work performed in public. Artistic Yogasana was the form contested at this meet. The portrait before the championship banner is an athlete of the gathering.",
+      "Competitive Yogasana is that work performed in public. Artistic Yogasana was the form contested at this meet. The portrait before the championship banner is an athlete of the gathering.\n\nAbhay Barman of Paschim Bardhaman spoke of competing here. He also spoke of medals he said he had won earlier, at a world meet and an Asian meet, and of Yogasana as a possible career as well as a practice. Those earlier medals are his account. They are not the result of this championship.",
     mottoGloss: "Equanimity is Yoga",
     session: "Judged as a sport.",
     pathway:
@@ -264,23 +268,29 @@ export const en: Copy = {
   },
   prakriti: {
     eyebrow: "Beyond the mat",
-    title: "Prakriti Jagaran Mancha",
-    bangla: "প্রকৃতি জাগরণ মঞ্চ",
-    lead: "Prakriti Jagaran Mancha is the name this championship used for a concern beside the sport: how people eat, how they farm, and what that leaves the young. The All Bengal Yogasana Sports Association presented the meet. This name marked a subject inside it.",
+    title: "Prakriti Jagran Yatra",
+    bangla: "প্রকৃতি জাগরণ যাত্রা",
+    lead: "Prakriti Jagran Yatra is the name carried beside the sport at this championship: a journey through how people live, eat, and farm, and what that leaves the young. It is not the name of the fire offering. The All Bengal Yogasana Sports Association presented the meet. The Yatra marked a subject inside it.",
     note: "",
     definition: "",
     sections: [
       {
-        title: "The morning yajna",
-        body: "Shyamal Ta described the mornings of this championship as the flag, a Vedic yajna, then practice, then the competition. The morning of 3 October stands apart from that description: in the courtyard at Muluk he addressed the gathering, and sat beside the fire offering.",
+        title: "The mornings he described",
+        body: "Shyamal Ta described the mornings of this championship as the flag, a Vedic yajna, then practice, then the competition. That was his account of how a day at Muluk began. It is not a second name for the championship, and it is not the name of one particular fire.",
       },
       {
-        title: "Health, food, agriculture",
-        body: "At the opening, the chair spoke of science in the cultivation of the Gangetic plain. Bharatiya Krishak Samaj, a joint organiser, was the farmers’ organisation in that room.\n\nA conversation recorded later, before the Prakriti Jagaran banner, returned to the meal and to the next generation.",
+        title: "The morning of 3 October",
+        body: "The morning of 3 October stands apart from that description. In the courtyard at Bharat Sevashram Sangha, Muluk, Shyamal Ta addressed the gathering. He then sat beside the fire offering, microphone in hand, with athletes and officials around him.\n\nThe photographs of that morning show the address and the offering in the courtyard. They do not rename the rite.",
+        figures: ["morning-address", "morning-havan"],
       },
       {
-        title: "Why it was part of the championship",
-        body: "Judging, certificates, and medals remained the sporting close. The wider subject was the company the meet kept: an ashram, a farmers’ organisation, and a sporting body, on the same grounds, while athletes performed.",
+        title: "Food, farming, and the young",
+        body: "At the opening, the chair introduced Sourav J. Sarkar as Mahacharya and as State President of Bharatiya Krishak Samaj, and said he was an IIT student. He spoke of science in the cultivation of the Gangetic plain. Bharatiya Krishak Samaj was a joint organiser, and the farmers’ organisation in that room.\n\nA conversation recorded later, before the Prakriti Jagran Yatra banner, returned to the meal and to the next generation. The Yatra, in that conversation, set the mat beside food, farming, and the lives that follow the four days.",
+        figures: ["interview-banner"],
+      },
+      {
+        title: "Inside the championship",
+        body: "Judging, certificates, and medals remained the sporting close. The Yatra was the company the meet kept: an ashram, a farmers’ organisation, and a sporting body, on the same grounds, while athletes performed. From the courtyard the day moved into the hall.",
       },
     ],
   },
@@ -378,15 +388,15 @@ export const en: Copy = {
       caption: "The association team leads morning practice at Muluk.",
     },
     "interview-seated": {
-      alt: "A man is filmed in conversation before the Prakriti Jagaran banner.",
-      caption: "A recorded conversation before the Prakriti Jagaran banner.",
+      alt: "A man is filmed in conversation before the Prakriti Jagran Yatra banner.",
+      caption: "A recorded conversation before the Prakriti Jagran Yatra banner.",
     },
     "interview-camera": {
       alt: "A camera on a tripod set up before the event banner.",
       caption: "Recording equipment set up before the event banner.",
     },
     "film-corridor": {
-      alt: "The gathering seated before the 7th State Yogasana Sports Championship banner and the Prakriti Jagaran banner.",
+      alt: "The gathering seated before the 7th State Yogasana Sports Championship banner and the Prakriti Jagran Yatra banner.",
       caption: "The gathering seated before the championship banners.",
     },
     "film-athletes": {
@@ -400,6 +410,18 @@ export const en: Copy = {
     "film-ceremony": {
       alt: "People gathered at the long table inside Sri Sri Shiv Mandir.",
       caption: "The long table during the championship gathering.",
+    },
+    "yt-yajna": {
+      alt: "A talk recorded around the 7th State Yogasana Sports Championship on the Vedic yajna, yoga, and meditation.",
+      caption: "A recorded talk on the Vedic yajna, during the championship.",
+    },
+    "yt-shyamal": {
+      alt: "Shyamal Ta speaks during the championship about the mornings, the association, and the route from district competition.",
+      caption: "Shyamal Ta, in a recorded conversation at Muluk.",
+    },
+    "yt-abhay": {
+      alt: "Abhay Barman of Paschim Bardhaman speaks of competing at this championship, and of Yogasana as a practice and a possible career.",
+      caption: "Abhay Barman on competing here.",
     },
     "indoor-session": {
       alt: "Young athletes seated in rows during an indoor championship session, with officials behind them.",
@@ -482,8 +504,8 @@ export const en: Copy = {
       caption: "An athlete is recorded before the championship banner on the morning of 3 October.",
     },
     "interview-banner": {
-      alt: "A man speaks in a recorded conversation before the Prakriti Jagaran banner.",
-      caption: "A recorded conversation before the Prakriti Jagaran banner.",
+      alt: "A man speaks in a recorded conversation before the Prakriti Jagran Yatra banner.",
+      caption: "A recorded conversation before the Prakriti Jagran Yatra banner.",
     },
     "interview-sofa": {
       alt: "Two men sit for a filmed conversation in front of the championship banner.",

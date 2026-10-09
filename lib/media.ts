@@ -37,7 +37,7 @@ export const prakritiArt = {
   src: "/assets/hero/prakriti-jagaran.webp",
   width: 1024,
   height: 576,
-  alt: "Artwork for Prakriti Jagaran and the 7th State Yogasana Sports Championship: a figure in yellow sounds a conch, with the All Bengal Yogasana Sports Association, Yogasana Bharat and World Yogasana marks, at Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum.",
+  alt: "Artwork for Prakriti Jagran Yatra and the 7th State Yogasana Sports Championship: a figure in yellow sounds a conch, with the All Bengal Yogasana Sports Association, Yogasana Bharat and World Yogasana marks, at Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum.",
 };
 
 export const logo = {
@@ -54,7 +54,7 @@ const archive: Still[] = [
   { id: "morning-address", src: "/assets/gallery/morning-address.webp", plate: "06", width: 1280, height: 960, alt: "Shyamal Ta, State President of the All Bengal Yogasana Sports Association, addresses the courtyard gathering at Bharat Sevashram Sangha, Muluk.", caption: "Shyamal Ta, State President of the All Bengal Yogasana Sports Association, addressing the courtyard gathering at Bharat Sevashram Sangha, Muluk, on the morning of 3 October." },
   { id: "morning-havan", src: "/assets/gallery/morning-havan.webp", plate: "07", width: 1280, height: 960, alt: "Shyamal Ta, State President of the All Bengal Yogasana Sports Association, sits beside the fire offering at Bharat Sevashram Sangha, Muluk.", caption: "Shyamal Ta, State President of the All Bengal Yogasana Sports Association, beside the fire offering at Bharat Sevashram Sangha, Muluk, on the morning of 3 October." },
   { id: "hall-athletes", src: "/assets/gallery/hall-athletes.webp", plate: "08", width: 1280, height: 960, alt: "Athletes in orange shirts sit on the floor of the hall, facing the front.", caption: "Athletes of the state championship, seated in the hall." },
-  { id: "children-banner", src: "/assets/gallery/children-banner.webp", plate: "09", width: 1280, height: 960, alt: "Children in orange sit before the championship banner and the Prakriti Jagaran banner.", caption: "Children seated before the championship banner and the Prakriti Jagaran banner." },
+  { id: "children-banner", src: "/assets/gallery/children-banner.webp", plate: "09", width: 1280, height: 960, alt: "Children in orange sit before the championship banner and the Prakriti Jagran Yatra banner.", caption: "Children seated before the championship banner and the Prakriti Jagran Yatra banner." },
   { id: "hall-wide", src: "/assets/gallery/hall-wide.webp", plate: "10", width: 1280, height: 960, alt: "A wide view of the hall, with the gathering seated before the dais and the Sri Sri Shiv Mandir sign.", caption: "The hall at Sri Sri Shiv Mandir, during the championship gathering." },
   { id: "dais-address", src: "/assets/gallery/dais-address.webp", plate: "11", width: 1280, height: 960, alt: "A speaker with a microphone stands at the championship dais.", caption: "An address from the dais, beneath the championship banner." },
   { id: "table-address", src: "/assets/gallery/table-address.webp", plate: "12", width: 960, height: 1280, alt: "A speaker in yellow stands at a microphone beside the long table.", caption: "An address during the event proceedings." },
@@ -65,7 +65,7 @@ const archive: Still[] = [
   { id: "portrait-braid", src: "/assets/gallery/portrait-braid.webp", plate: "17", width: 1280, height: 960, alt: "An athlete stands with folded hands and a microphone before the championship banner.", caption: "An athlete stands with folded hands while being recorded before the championship banner." },
   { id: "portrait-navy", src: "/assets/gallery/portrait-navy.webp", plate: "18", width: 1280, height: 960, alt: "An athlete speaks into a microphone before the championship banner.", caption: "An athlete speaks into a microphone before the championship banner." },
   { id: "portrait-jersey", src: "/assets/gallery/portrait-jersey.webp", plate: "19", width: 960, height: 1280, alt: "An athlete is recorded before the championship banner on the morning of 3 October.", caption: "An athlete is recorded before the championship banner on the morning of 3 October." },
-  { id: "interview-banner", src: "/assets/gallery/interview-banner.webp", plate: "20", width: 960, height: 1280, alt: "A man speaks in a recorded conversation before the Prakriti Jagaran banner.", caption: "A recorded conversation before the Prakriti Jagaran banner." },
+  { id: "interview-banner", src: "/assets/gallery/interview-banner.webp", plate: "20", width: 960, height: 1280, alt: "A man speaks in a recorded conversation before the Prakriti Jagran Yatra banner.", caption: "A recorded conversation before the Prakriti Jagran Yatra banner." },
   { id: "interview-sofa", src: "/assets/gallery/interview-sofa.webp", plate: "21", width: 1280, height: 960, alt: "Two men sit for a filmed conversation in front of the championship banner.", caption: "A conversation recorded before the championship banner." },
   { id: "interview-corridor", src: "/assets/gallery/interview-corridor.webp", plate: "22", width: 1280, height: 960, alt: "A woman is recorded by a camera crew in a corridor.", caption: "A recorded conversation in a corridor during the championship." },
   { id: "day-crew", src: "/assets/gallery/day-crew.webp", plate: "23", width: 1280, height: 960, alt: "A camera operator films Shyamal Ta, State President of the All Bengal Yogasana Sports Association, seated in the hall at Bharat Sevashram Sangha, Muluk.", caption: "Shyamal Ta, State President of the All Bengal Yogasana Sports Association, filmed in the hall at Bharat Sevashram Sangha, Muluk, on the morning of 3 October." },
@@ -77,6 +77,42 @@ const archive: Still[] = [
 
 export const stills: Still[] = [...archive, ...publishedStills];
 
+export type RemoteFilm = {
+  id: string;
+  youtube: string;
+  embed: string;
+  plate: string;
+  caption: string;
+  alt: string;
+};
+
+export const remoteFilms: RemoteFilm[] = [
+  {
+    id: "yt-yajna",
+    youtube: "https://www.youtube.com/watch?v=_p_k4tdwbeU",
+    embed: "https://www.youtube-nocookie.com/embed/_p_k4tdwbeU",
+    plate: "47",
+    caption: "A recorded talk on the Vedic yajna, during the championship.",
+    alt: "A talk recorded around the 7th State Yogasana Sports Championship on the Vedic yajna, yoga, and meditation.",
+  },
+  {
+    id: "yt-shyamal",
+    youtube: "https://www.youtube.com/watch?v=p6AdZy0HIi4",
+    embed: "https://www.youtube-nocookie.com/embed/p6AdZy0HIi4",
+    plate: "48",
+    caption: "Shyamal Ta, in a recorded conversation at Muluk.",
+    alt: "Shyamal Ta speaks during the championship about the mornings, the association, and the route from district competition.",
+  },
+  {
+    id: "yt-abhay",
+    youtube: "https://www.youtube.com/watch?v=RLgAz4onoSM",
+    embed: "https://www.youtube-nocookie.com/embed/RLgAz4onoSM",
+    plate: "49",
+    caption: "Abhay Barman on competing here.",
+    alt: "Abhay Barman of Paschim Bardhaman speaks of competing at this championship, and of Yogasana as a practice and a possible career.",
+  },
+];
+
 export const films: Film[] = [
   {
     id: "film-corridor",
@@ -85,7 +121,7 @@ export const films: Film[] = [
     plate: "28",
     width: 1280,
     height: 720,
-    alt: "The gathering seated before the 7th State Yogasana Sports Championship banner and the Prakriti Jagaran banner.",
+    alt: "The gathering seated before the 7th State Yogasana Sports Championship banner and the Prakriti Jagran Yatra banner.",
     caption: "The gathering seated before the championship banners.",
     duration: "0:17",
   },
