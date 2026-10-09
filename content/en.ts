@@ -7,7 +7,7 @@ export const en: Copy = {
     event: "Championship",
     yogasana: "Yogasana",
     organisation: "People",
-    prakriti: "Prakriti",
+    prakriti: "Prakriti Jagaran Mancha",
     story: "Four days",
     gallery: "Gallery",
     media: "Films",
@@ -37,7 +37,7 @@ export const en: Copy = {
     ctaProgramme: "Contents",
     ctaVisit: "The four days",
     programmeTitle: "The four days",
-    programmeLead: "The opening is told first. The mornings on the grounds, and the close, follow it. People, the gallery, the films, and About keep the offices and the archive beside that sequence.",
+    programmeLead: "The opening is told first. The mornings on the grounds, and the close, follow it. People, Prakriti Jagaran Mancha, the gallery, the films, and About keep the offices and the archive beside that sequence.",
     duringTitle: "During the championship",
     insideEyebrow: "Inside",
     insideTitle: "Inside the championship",
@@ -48,7 +48,7 @@ export const en: Copy = {
     eyebrow: "The championship",
     title: "The 7th State Yogasana Sports Championship.",
     present:
-      "The All Bengal Yogasana Sports Association presents the championship at Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum. The association is affiliated to Yogasana Bharat, New Delhi, and to World Yogasana.",
+      "The All Bengal Yogasana Sports Association presented the championship at Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum. The championship banner names Yogasana Bharat, New Delhi, and World Yogasana.",
     championship:
       "This is the state championship of Yogasana for West Bengal. Athletes come through an organised competitive pathway. The gathering ran from 1 to 4 October 2026.",
     motto: "समत्वं योग उच्यते",
@@ -62,7 +62,7 @@ export const en: Copy = {
     dateNote: "",
     rows: informationRows("en"),
     whatTitle: "What the championship is",
-    what: "This is West Bengal’s state meet of competitive Yogasana, the 7th State Yogasana Sports Championship, 2026–27. It ran from 1 to 4 October 2026 at Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum, in the hall of Sri Sri Shiv Mandir and on the grounds around it.\n\nThe All Bengal Yogasana Sports Association presented it, affiliated to Yogasana Bharat, New Delhi, and to World Yogasana. Karmyog for the 21st Century and Bharatiya Krishak Samaj joined as organisers.",
+    what: "This is West Bengal’s state meet of competitive Yogasana, the 7th State Yogasana Sports Championship, 2026–27. It ran from 1 to 4 October 2026 at Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum, in the hall of Sri Sri Shiv Mandir and on the grounds around it.\n\nThe All Bengal Yogasana Sports Association presented it. The championship banner names Yogasana Bharat, New Delhi, and World Yogasana. Karmyog for the 21st Century and Bharatiya Krishak Samaj joined as organisers.",
     sportLink: "Yogasana, as a sport",
     whoTitle: "Athletes",
     who: "Men and women came through district competition into this state field, and stayed with it across the four days. Abhay Barman of Paschim Bardhaman spoke of competing here, and of the sport as a possible career as well as a practice.",
@@ -181,15 +181,15 @@ export const en: Copy = {
     fig: "Fig.",
   },
   information: {
-    eyebrow: "Affiliation",
+    eyebrow: "On the banner",
     title: "Event information",
     lead: "",
     affiliation:
-      "Yogasana Bharat, New Delhi, is the national affiliation of the All Bengal Yogasana Sports Association.",
+      "The championship banner names Yogasana Bharat, New Delhi, and World Yogasana.",
     organisersEyebrow: "Joint organisers",
     organisersTitle: "Joint organisers",
     organisers:
-      "Karmyog for the 21st Century and Bharatiya Krishak Samaj are joint organisers of the championship.",
+      "Karmyog for the 21st Century and Bharatiya Krishak Samaj were joint organisers of the championship.",
     closeEyebrow: "Close",
     closeTitle: "Prakriti Jagaran Mancha",
     closeName: "Prakriti Jagaran Mancha",
@@ -214,10 +214,10 @@ export const en: Copy = {
   organisation: {
     eyebrow: "The association",
     title: "The association that held the championship.",
-    lead: "Shyamal Ta, State President of the All Bengal Yogasana Sports Association and an executive committee member of Yogasana Bharat, held the offices that ran the championship. Papiya Bhattacharya (Roy) was General Secretary. The association carried selection, judging, accommodation, and the route from district competition toward higher Yogasana.",
+    lead: "Shyamal Ta, State President of the All Bengal Yogasana Sports Association, held the office that ran the championship. The championship banner also names him as an executive committee member of Yogasana Bharat. Papiya Bhattacharya (Roy) was General Secretary. The association carried selection, judging, accommodation, and the route from district competition toward higher Yogasana.",
     filmedTitle: "Documenting the proceedings.",
     filmed:
-      "The association’s work is visible around the athletes: officials gathered in the courtyard, and the hall filmed while the programme is underway.\n\nThe championship was documented alongside the sporting programme, so conversations and proceedings were kept with the competition on the mat.",
+      "The association’s work was visible around the athletes: officials gathered in the courtyard, and the hall was filmed while the programme was underway.\n\nThe championship was documented alongside the sporting programme, so conversations and proceedings were kept with the competition on the mat.",
     leadersEyebrow: "Event leadership",
     presidentTerm: "State President",
     president: "Shyamal Ta",
@@ -226,8 +226,8 @@ export const en: Copy = {
     joint:
       "These are the institutions named with the championship.",
     partnersTitle: "Institutions",
-    abysaRole: "Presents and runs the state championship: selection, judging, accommodation, and preparation for higher-level competition.",
-    nationalRole: "National affiliation of the All Bengal Yogasana Sports Association.",
+    abysaRole: "Presented and ran this state championship: selection, judging, accommodation, and preparation for higher-level competition.",
+    nationalRole: "Named on the championship banner with the association.",
     worldRole: "The World Yogasana mark is carried on the championship banner with Yogasana Bharat.",
     jointRole: "Joined the association in organising this championship.",
     eventLeadership: "Event leadership",
@@ -264,15 +264,15 @@ export const en: Copy = {
   },
   prakriti: {
     eyebrow: "Beyond the mat",
-    title: "Yogasana, food, and the next generation.",
-    bangla: "Prakriti Jagaran Mancha",
+    title: "Prakriti Jagaran Mancha",
+    bangla: "প্রকৃতি জাগরণ মঞ্চ",
     lead: "Prakriti Jagaran Mancha is the name this championship used for a concern beside the sport: how people eat, how they farm, and what that leaves the young. The All Bengal Yogasana Sports Association presented the meet. This name marked a subject inside it.",
     note: "",
     definition: "",
     sections: [
       {
         title: "The morning yajna",
-        body: "Shyamal Ta described the mornings of this championship: the flag, a Vedic yajna, then practice, then the competition. On the morning of 3 October he addressed the courtyard at Muluk, and sat beside the fire offering there.",
+        body: "Shyamal Ta described the mornings of this championship as the flag, a Vedic yajna, then practice, then the competition. The morning of 3 October stands apart from that description: in the courtyard at Muluk he addressed the gathering, and sat beside the fire offering.",
       },
       {
         title: "Health, food, agriculture",
