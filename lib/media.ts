@@ -75,6 +75,7 @@ const archive: Still[] = [
   { id: "night-asana", src: "/assets/gallery/night-asana.webp", plate: "27", width: 800, height: 600, alt: "An athlete holds a standing balance on a mat at night, with judges seated behind.", caption: "A standing balance during the evening session." },
   { id: "mahacharya-gunomata", src: "/assets/gallery/mahacharya-gunomata.webp", plate: "54", width: 1250, height: 703, alt: "Sourabh J. Sarkar stands in yellow with a microphone while Reena J. Sarkar sits beside him.", caption: "Mahacharya Sourabh J. Sarkar and Gunomata Reena J. Sarkar, in the Prakriti Jagran Yajna recording." },
   { id: "vedic-discourse-card", src: "/assets/gallery/vedic-discourse-card.webp", plate: "55", width: 1280, height: 720, alt: "Shyamal Ta holds a microphone on the title card of the Vedic yajna recording.", caption: "Shyamal Ta, in the Vedic yajna recording." },
+  { id: "kalyan-mukhopadhyay", src: "/assets/gallery/kalyan-mukhopadhyay.webp", plate: "56", width: 447, height: 447, alt: "Kalyan Mukhopadhyay, in a navy jacket, holding a book.", caption: "Kalyan Mukhopadhyay, retired IPS." },
 ];
 
 export const stills: Still[] = [...archive, ...publishedStills];
