@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { films, remoteFilms, stills, type RemoteFilm, type Still } from "@/lib/media";
 import { useLanguage } from "@/lib/language";
+import { GalleryReel } from "./GalleryReel";
 import { ImageReveal } from "./ImageReveal";
 
 type Props = { onOpen: (id: string) => void };
@@ -76,6 +77,7 @@ export function GalleryView({ onOpen }: Props) {
   const { copy } = useLanguage();
   return (
     <section className="gallery tone-photo" aria-labelledby="gallery-title">
+      <GalleryReel />
       <header className="chapter-head">
         <p className="eyebrow">{copy.gallery.eyebrow}</p>
         <h2 id="gallery-title">{copy.gallery.title}</h2>
