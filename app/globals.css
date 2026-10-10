@@ -705,12 +705,27 @@ blockquote footer {
 figure { margin: 0; }
 
 figure img,
+.film iframe,
 .film img,
 .practice-track img {
   display: block;
   width: 100%;
   height: auto;
 }
+
+.film iframe {
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
+.film-meta p,
+.film-meta a {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: inherit;
+}
+
+.film-meta a { text-decoration: underline; }
 
 figcaption,
 .film-meta,
@@ -2968,8 +2983,70 @@ html[lang="bn"] .roster h2 { max-width: 36rem; }
   line-height: 1.25;
 }
 
+.film.short {
+  max-width: 22rem;
+}
+
+.film.short iframe,
+.film.short img {
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+}
+
+.film-card {
+  color: inherit;
+  text-decoration: none;
+}
+
+.film .plate-button {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.film-play {
+  position: absolute;
+  left: 0.8rem;
+  bottom: 0.8rem;
+  color: #f4ecdf;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+}
+
+.nameplate {
+  display: grid;
+  gap: 0.15rem;
+  margin: 0 0 1.1rem;
+  padding: 0.85rem 1rem 0.85rem 1.05rem;
+  background: #1a3d2b;
+  color: #f4ecdf;
+  border-left: 4px solid #c6a15b;
+}
+
+.nameplate p {
+  margin: 0;
+}
+
+.nameplate p:first-child {
+  font-size: 1.35rem;
+  letter-spacing: 0.04em;
+}
+
+.feature-interview iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  background: #111;
+}
+
 @media (max-width: 720px) {
   .cinema { grid-template-columns: 1fr; }
+  .film.short { max-width: none; }
 }
 
 .dossier,

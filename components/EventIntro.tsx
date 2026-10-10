@@ -1,12 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import { remoteFilms } from "@/lib/media";
 import { EditorialFigure } from "./EditorialFigure";
 import { useLanguage } from "@/lib/language";
 
 export function EventIntro() {
   const { copy } = useLanguage();
   const event = copy.event;
+  const interview = remoteFilms.find((film) => film.id === "yt-shyamal");
 
   return (
     <>
@@ -34,6 +36,11 @@ export function EventIntro() {
           <p className="chapter-no">03</p>
           <h2 id="event-dais">{event.judgedTitle}</h2>
           <Paragraphs text={event.judged} />
+          <h3>{event.judgingTitle}</h3>
+          <Paragraphs text={event.judging} />
+          {interview ? (
+            <p><a href={interview.youtube} target="_blank" rel="noreferrer">{copy.media.watchInterview}</a></p>
+          ) : null}
         </div>
       </section>
       <section className="spread spread-oxblood" aria-labelledby="event-dance">

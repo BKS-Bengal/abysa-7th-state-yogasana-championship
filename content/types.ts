@@ -1,6 +1,6 @@
 export type Locale = "en" | "bn";
 
-export type PlateText = { alt: string; caption: string };
+export type PlateText = { alt: string; caption?: string };
 
 export type Copy = {
   nav: {
@@ -44,6 +44,15 @@ export type Copy = {
     insideTitle: string;
     insideLead: string;
     watchFilm: string;
+    filmsEyebrow: string;
+    filmsTitle: string;
+    filmsLead: string;
+    featureEyebrow: string;
+    featureTitle: string;
+    featureName: string;
+    featureRole: string;
+    featureOrg: string;
+    featureBody: string;
   };
   yogasana: {
     eyebrow: string;
@@ -63,6 +72,8 @@ export type Copy = {
     lead: string;
     filmedTitle: string;
     filmed: string;
+    voicesTitle: string;
+    voices: string;
     leadersEyebrow: string;
     presidentTerm: string;
     president: string;
@@ -88,8 +99,7 @@ export type Copy = {
     lead: string;
     note: string;
     definition: string;
-    contextTitle: string;
-    context: string;
+    sections: { title: string; body: string; figures?: string[]; link?: { href: string; label: string } }[];
   };
   event: {
     eyebrow: string;
@@ -112,6 +122,8 @@ export type Copy = {
     who: string;
     judgedTitle: string;
     judged: string;
+    judgingTitle: string;
+    judging: string;
     gatheringTitle: string;
     gathering: string;
     whereTitle: string;
@@ -163,6 +175,8 @@ export type Copy = {
     title: string;
     em: string;
     play: string;
+    open: string;
+    watchInterview: string;
     fig: string;
   };
   information: {

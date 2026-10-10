@@ -17,16 +17,35 @@
  *   Publish those offices. Do not say they attended, and do not call them a committee.
  * - Narendra Modi, Rabindranath Tagore, and the unlabeled namaste portrait on the banner
  *   are not leadership profiles. Do not publish Suvendu Adhikari.
- * - Dr Major Narayan Bhattacharya / Mukhopadhyay: inauguration guest in the brief only. Not published.
- * - Mahacharya Sourabh J. Sarkar: independently State President, Bharatiya Krishak Samaj, West Bengal, and associated with Karmyog.
- *   Attendance, lamp lighting, and leadership of a 2 October yajna are brief-only. Do not publish him as present.
- * - Gunamata Rina J. Sarkar, Kalyan Mukherjee, Swami Sanghamitrananda Ji, Mr Supriya,
- *   Kartik Maharaj, Hiranmoy Maharaj: presence at this championship is brief-only. Do not name them.
+ * - Opening transcript (yoga-festival-content.md, Part 2 only). Do not publish Part 3.
+ *   The chair is not securely named Shyamal Ta. Do not treat "শ্যামল দাস" as his name.
+ * - Swami Shanti Maharaj: welcomed the hall. He cites Swami Paramananda; do not quote that line as Shanti's.
+ *   No verified separate photograph. Do not label an unnamed monk as him.
+ * - Sourav J. Sarkar (সৌরভ জে সরকার): introduced as State President, Bharatiya Krishak Samaj, West Bengal,
+ *   and as an IIT student. He has no speech block. Do not attribute the host's lines to him.
+ *   Do not publish lamp lighting or leadership of a 2 October yajna.
+ * - Kalyan Mukhopadhyay: retired IPS; the host said he long handled West Bengal police.
+ *   Body, mind, and conduct — prose, not a fabricated English quotation. Not "Mukherjee".
+ * - Supriyo Mukherjee: asked to help with media coverage. Kabaddi comparison only.
+ *   Do not quote the Gemini paraphrase, and do not say ABYSA is building a league.
+ * - Major Saheb: host uses only that name. Exact English line: "I for Illness, We for Wellness."
+ *   Do not call him an armed-forces veteran. Do not expand to Dr Major Narayan.
+ * - Rina-ji: host says রিনাজি. Practice continues whether one wins or not.
+ *   Do not expand to Gunamata Rina J. Sarkar.
+ * - An unnamed woman was thanked for arranging district judging from home. Do not name her.
+ * - Papiya was named as the person whose thanks would close the programme. Her speech is not in the transcript.
+ * - Swami Sanghamitrananda Ji, Kartik Maharaj, Hiranmoy Maharaj: still unpublished.
  * - Approximately 800 competitors, six stages, 10–12 judges per stage, clock times,
  *   First/Second/Third/Fourth, and a named prize hour: brief-only. Do not publish.
  * - Fire offering is dated 3 October in the courtyard photograph, not 2 October.
  *   Do not retitle it Prakriti Jagaran Yajna or Shanti Yajna.
  * - Official English title remains 7th State, not "Seven State".
+ * - Abhay Barman (Paschim Bardhaman): said on camera he was competing here, and that he treats
+ *   Yogasana as a possible career. Do not publish his medal, cash-award, or government-job claims as facts.
+ * - Shyamal Ta, filmed at Muluk, described mornings as flag, yagna, practice, then competition.
+ *   Do not retitle the 3 October photograph, and do not publish his athlete or judge totals.
+ * - Do not publish the yagna discourse (ghee, disease, conversion, fees) as event fact.
+ * - Kartik Maharaj and Hironmoy are named in that discourse as coming; not independently verified. Do not publish.
  * - A state result can lead toward national competition (reported for this meet). Do not publish a results table or a minor's name.
  */
 export const people = [

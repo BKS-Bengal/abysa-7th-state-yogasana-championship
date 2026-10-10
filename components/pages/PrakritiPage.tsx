@@ -1,12 +1,14 @@
 "use client";
 
-import { prakritiArt } from "@/lib/media";
+import { EditorialFigure } from "@/components/EditorialFigure";
+import { prakritiArt, remoteFilms } from "@/lib/media";
 import { SiteFrame } from "@/components/SiteFrame";
 import { useLanguage } from "@/lib/language";
 
 export function PrakritiPage() {
   const { copy, locale } = useLanguage();
   const page = copy.prakriti;
+  const interview = remoteFilms.find((film) => film.id === "yt-shyamal");
 
   return (
     <SiteFrame>
@@ -31,13 +33,23 @@ export function PrakritiPage() {
           {page.note ? <p>{page.note}</p> : null}
         </div>
       </section>
-      <section className="affiliate-band" aria-labelledby="prakriti-printed">
-        <p className="chapter-no">02</p>
-        <div>
-          <h2 id="prakriti-printed">{page.contextTitle}</h2>
-          <p>{page.context}</p>
-        </div>
-      </section>
+      {page.sections.map((section, index) => (
+        <section className="affiliate-band" key={section.title} aria-labelledby={`prakriti-${index}`}>
+          <p className="chapter-no">{String(index + 2).padStart(2, "0")}</p>
+          <div>
+            <h2 id={`prakriti-${index}`}>{section.title}</h2>
+            {section.body.split(/\n\n+/).map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+            {section.figures?.map((id) => (
+              <EditorialFigure key={id} id={id} />
+            ))}
+            {section.link ? (
+              <p><a href={section.link.href.includes("hdyJD2A38dY") && interview ? interview.youtube : section.link.href} target="_blank" rel="noreferrer">{section.link.label}</a></p>
+            ) : null}
+          </div>
+        </section>
+      ))}
     </SiteFrame>
   );
 }

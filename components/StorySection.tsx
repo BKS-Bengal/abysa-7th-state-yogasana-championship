@@ -2,6 +2,7 @@
 
 import { Fragment } from "react";
 import { dayDate } from "@/content/facts";
+import { remoteFilms } from "@/lib/media";
 import { EditorialFigure } from "./EditorialFigure";
 import { useLanguage } from "@/lib/language";
 
@@ -13,6 +14,7 @@ const dayFigures: Record<string, string[]> = {
 export function StorySection() {
   const { copy, locale } = useLanguage();
   const story = copy.story;
+  const interview = remoteFilms.find((film) => film.id === "yt-shyamal");
 
   return (
     <>
@@ -55,6 +57,13 @@ export function StorySection() {
                 <EditorialFigure id={id} className="day-plate" priority={figureIndex === 0} />
               </Fragment>
             ))}
+            {figures.length > 0
+              ? day.passages.slice(figures.length).map((passage) => (
+                  <div className="day-chapter day-beat" key={passage}>
+                    <p>{passage}</p>
+                  </div>
+                ))
+              : null}
             <div className="day-chapter">
               <p className="day-close">{day.close}</p>
               <a className="day-next" href={next ? `#${next.id}` : "#plates"}>
@@ -69,6 +78,9 @@ export function StorySection() {
           <p className="eyebrow">{story.interviewEyebrow}</p>
           <h2 id="story-interview-title">{story.interviewTitle}</h2>
           <p>{story.interview}</p>
+          {interview ? (
+            <p><a href={interview.youtube} target="_blank" rel="noreferrer">{copy.media.watchInterview}</a></p>
+          ) : null}
           <p className="edit-note">{story.interviewNote}</p>
         </div>
         <EditorialFigure id="interview-banner" />

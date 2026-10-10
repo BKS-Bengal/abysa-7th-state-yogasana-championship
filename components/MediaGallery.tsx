@@ -1,17 +1,16 @@
 "use client";
 
-import { films, stills, type Still } from "@/lib/media";
+import { useState } from "react";
+import { films, remoteFilms, stills, type RemoteFilm, type Still } from "@/lib/media";
 import { useLanguage } from "@/lib/language";
 import { ImageReveal } from "./ImageReveal";
 
 type Props = { onOpen: (id: string) => void };
 
 export const galleryGroups: { id: string; ids: string[] }[] = [
-  { id: "day-01", ids: [] },
-  { id: "day-02", ids: [] },
-  { id: "day-03", ids: ["portrait-navy", "portrait-braid", "portrait-yellow", "portrait-blue", "interview-sofa"] },
-  { id: "day-04", ids: [] },
-  { id: "wider", ids: ["table-address", "remembrance", "medal-placed", "certificate-youth", "interview-corridor", "night-officials", "night-floor"] },
+  { id: "recorded", ids: ["portrait-navy", "portrait-braid", "portrait-yellow", "portrait-blue"] },
+  { id: "recognition", ids: ["recognition-steps", "recognition-medal", "medal-placed", "recognition-stand", "certificate-youth", "recognition-saree", "recognition-blue", "recognition-gold", "recognition-orange", "recognition-pair", "recognition-line"] },
+  { id: "hall", ids: ["table-address", "remembrance", "interview-sofa", "interview-corridor", "night-officials", "night-floor"] },
 ];
 
 const span: Record<string, string> = {
@@ -26,6 +25,38 @@ const span: Record<string, string> = {
 
 const byId = new Map(stills.map((item) => [item.id, item]));
 
+function RemoteFilmCard({ film }: { film: RemoteFilm }) {
+  const { copy } = useLanguage();
+  const [playing, setPlaying] = useState(false);
+  const text = copy.captions[film.id];
+  const title = text?.caption ?? film.caption;
+  const detail = text?.alt ?? film.alt;
+  const shape = film.vertical ? "film short" : "film feature";
+  return (
+    <article className={shape}>
+      {playing ? (
+        <iframe
+          src={`${film.embed}?autoplay=1`}
+          title={title}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        />
+      ) : (
+        <button type="button" className="plate-button" onClick={() => setPlaying(true)} aria-label={`${title}. ${copy.media.play}`}>
+          <img src={film.poster} alt="" width={film.vertical ? 360 : 1280} height={film.vertical ? 640 : 720} loading="lazy" />
+          <span className="film-play">{copy.media.play}</span>
+        </button>
+      )}
+      <span className="film-meta">
+        <span>{copy.media.fig} {film.plate}</span>
+        <strong>{title}</strong>
+        <p>{detail}</p>
+        <a href={film.youtube} target="_blank" rel="noreferrer">{copy.media.open}</a>
+      </span>
+    </article>
+  );
+}
+
 function Shot({ item, onOpen, priority = false }: { item: Still; onOpen: (id: string) => void; priority?: boolean }) {
   const { copy } = useLanguage();
   const text = copy.captions[item.id];
@@ -33,7 +64,7 @@ function Shot({ item, onOpen, priority = false }: { item: Still; onOpen: (id: st
     <ImageReveal
       {...item}
       alt={text?.alt ?? item.alt}
-      caption={text?.caption ?? item.caption}
+      caption={(text?.caption ?? item.caption)?.trim() || undefined}
       className={span[item.id] ?? ""}
       onOpen={() => onOpen(item.id)}
       priority={priority}
@@ -106,6 +137,9 @@ export function MediaView({ onOpen }: Props) {
             </button>
           );
         })}
+        {remoteFilms.map((film) => (
+          <RemoteFilmCard key={film.id} film={film} />
+        ))}
       </div>
       </div>
     </section>

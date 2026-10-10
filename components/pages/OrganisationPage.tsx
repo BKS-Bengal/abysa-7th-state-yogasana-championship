@@ -78,6 +78,15 @@ export function OrganisationPage() {
         </div>
         <EditorialFigure id="day-crew" />
       </section>
+      <section className="spread" aria-labelledby="org-voices">
+        <div className="spread-copy">
+          <p className="chapter-no">03</p>
+          <h2 id="org-voices">{page.voicesTitle}</h2>
+          {page.voices.split(/\n\n+/).map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </div>
+      </section>
     </SiteFrame>
   );
 }
