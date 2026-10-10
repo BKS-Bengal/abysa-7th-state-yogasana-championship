@@ -86,6 +86,7 @@ export function OrganisationPage() {
             <p key={paragraph}>{paragraph}</p>
           ))}
         </div>
+        <EditorialFigure id="kalyan-mukhopadhyay" className="edit-portrait" />
       </section>
     </SiteFrame>
   );

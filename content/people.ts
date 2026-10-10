@@ -26,6 +26,7 @@
  *   Do not publish lamp lighting or leadership of a 2 October yajna.
  * - Kalyan Mukhopadhyay: retired IPS; the host said he long handled West Bengal police.
  *   Body, mind, and conduct — prose, not a fabricated English quotation. Not "Mukherjee".
+ *   The supplied portrait is his. It is not a Muluk frame. Do not place it in the hall or call him the book's author.
  * - Supriyo Mukherjee: asked to help with media coverage. Kabaddi comparison only.
  *   Do not quote the Gemini paraphrase, and do not say ABYSA is building a league.
  * - Major Saheb: host uses only that name. Exact English line: "I for Illness, We for Wellness."

@@ -584,6 +584,10 @@ export const en: Copy = {
       alt: "Title card of the Vedic yajna recording, with Shyamal Ta holding a microphone and a gathering seated around a fire.",
       caption: "Shyamal Ta, in the Vedic yajna recording.",
     },
+    "kalyan-mukhopadhyay": {
+      alt: "Kalyan Mukhopadhyay, in a navy jacket, holding a book.",
+      caption: "Kalyan Mukhopadhyay, retired IPS.",
+    },
     dance: {
       alt: "Two dancers in cream, red and gold perform in the hall of Sri Sri Shiv Mandir while the gathering watches.",
       caption: "Inaugural dance in the hall.",
