@@ -30,6 +30,12 @@ Transcripts and guides in the owner’s Downloads folder (not stored in the repo
 - Athlete portrait names and medal years. Unidentified portraits keep a neutral alt and no visible caption.
 - Watermarks were not removed.
 
+## Prakriti page imagery
+
+The Mahacharya and Gunomata still is a crop of `photo_2026-10-09_20-30-08.jpg`, the YouTube frame of `J5WbntnJwng`. Browser chrome was removed. The on-screen lower thirds remain. Caption names Sourabh J. Sarkar, Mahacharya, and Reena J. Sarkar, Gunomata.
+
+Amit Shil’s voice note asks for Hiranmoy Maharaj, Kartik Maharaj, athlete names, and medal years on specific frames. Those names are not tied to a photograph in the transcripts, and he says the doctor’s name is not remembered. Those captions stay off. Voice-note labels that conflict with the frames (pranayama, ashram-girls dance, dawn Yajna on a championship photo) were not applied.
+
 ## Banner and Short
 
 The championship banner in `children-banner.webp` prints “7th STATE YOGASANA SPORTS CHAMPIONSHIP 2026-27”. A second banner begins with the Bengali প্রকৃতি. The rest of that line was not legible enough to quote যাত্রা or যজ্ঞ, so public captions still say “a second banner”.

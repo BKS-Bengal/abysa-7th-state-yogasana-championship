@@ -176,9 +176,9 @@ export const en: Copy = {
   gallery: {
     eyebrow: "Photographs",
     title: "Photographs from the championship",
-    em: "Athletes before the banner, recognition in the hall, and the evening.",
+    em: "Athletes, recognition in the hall, and the evening.",
     groups: [
-      { id: "recorded", kicker: "People", title: "Athletes before the banner", note: "On 3 October, athletes stood before the championship banner." },
+      { id: "recorded", kicker: "People", title: "Athletes", note: "On 3 October." },
       { id: "recognition", kicker: "Recognition", title: "Medals and certificates", note: "Officials of the championship place the medals and hold the certificates beside the athletes." },
       { id: "hall", kicker: "The hall", title: "Table and evening", note: "An address from the long table, portraits brought to the table, and the evening in the hall." },
     ],
@@ -288,6 +288,7 @@ export const en: Copy = {
       {
         title: "The mornings he described",
         body: "Shyamal Ta described the mornings of this championship as beginning near sunrise, about five o’clock, with the national flag, then a Vedic yajna at which he said athletes, judges and officials were present, then practice, then the competition. That was his account of how a day at Muluk began. It is not a second name for the championship, and it is not the name of one particular fire.",
+        figures: ["practice-low", "practice-rise"],
       },
       {
         title: "The morning of 3 October",
@@ -296,8 +297,8 @@ export const en: Copy = {
       },
       {
         title: "Food, farming, and the young",
-        body: "The opening in the hall had already set Sourabh J. Sarkar beside the sport. The chair introduced him as Mahacharya and as State President of Bharatiya Krishak Samaj in West Bengal, said he was an IIT student, and argued that farming reaches its height only when science is applied to it. He called the Gangetic basin, from the lower country of Uttar Pradesh to the Bengal delta, the best land, and he recalled Vivekananda’s line that one who would be a king must first learn to be a subject. Bharatiya Krishak Samaj was a joint organiser. The introduction itself is told with the opening.\n\nAmit Shil of Karmyog TV later sat with Shyamal Ta at the Sangha. He had come because he had been watching yoga programmes across West Bengal and beyond, and he remarked on the green, open grounds. Shyamal Ta described athletes coming through district competition from across the state. Shil then asked his own question. Karmyog, he said, had begun an effort he called Krishi Ratna League, to join cultivation with yoga so that this generation and the next might live with less illness and more strength. He asked how Shyamal Ta saw that joining.\n\nShyamal Ta called the thought timely. He said that had Shil been at the Sangha the day before, he would have heard Kartik Maharaj tell the athletes to rise at dawn, to practise daily, to learn the discipline of the Vedic yajna, and to eat food grown without poison. Shyamal Ta’s reading of that message was that the mat is not enough for a healthy body: food without poison has to reach the stomach, and that food comes from cultivation that refuses poison. He said the league and the association could stand together over the young and over farmers. That is his account of what was said, and of the joining.\n\nOther frames from the gathering sit with this page: a conversation before a banner, and children seated before the banners. Neither frame is the interview with Shyamal Ta.",
-        figures: ["interview-banner", "children-banner"],
+        body: "The opening in the hall had already set Sourabh J. Sarkar beside the sport. The chair introduced him as Mahacharya and as State President of Bharatiya Krishak Samaj in West Bengal, said he was an IIT student, and argued that farming reaches its height only when science is applied to it. He called the Gangetic basin, from the lower country of Uttar Pradesh to the Bengal delta, the best land, and he recalled Vivekananda’s line that one who would be a king must first learn to be a subject. Bharatiya Krishak Samaj was a joint organiser. The introduction itself is told with the opening.\n\nAmit Shil of Karmyog TV later sat with Shyamal Ta at the Sangha. He had come because he had been watching yoga programmes across West Bengal and beyond, and he remarked on the green, open grounds. Shyamal Ta described athletes coming through district competition from across the state. Shil then asked his own question. Karmyog, he said, had begun an effort he called Krishi Ratna League, to join cultivation with yoga so that this generation and the next might live with less illness and more strength. He asked how Shyamal Ta saw that joining.\n\nShyamal Ta called the thought timely. He said that had Shil been at the Sangha the day before, he would have heard Kartik Maharaj tell the athletes to rise at dawn, to practise daily, to learn the discipline of the Vedic yajna, and to eat food grown without poison. Shyamal Ta’s reading of that message was that the mat is not enough for a healthy body: food without poison has to reach the stomach, and that food comes from cultivation that refuses poison. He said the league and the association could stand together over the young and over farmers. That is his account of what was said, and of the joining.\n\nBeside that account, Sourabh J. Sarkar addresses the gathering from the long table, and children sit before the banners. Neither frame is the interview with Shyamal Ta.",
+        figures: ["table-address", "children-banner"],
         link: { href: "https://www.youtube.com/watch?v=hdyJD2A38dY", label: "Watch the full interview" },
       },
       {
@@ -307,6 +308,7 @@ export const en: Copy = {
       {
         title: "The recorded talk",
         body: "A recording made around this championship keeps Shyamal Ta, and the speakers with him, on the Vedic yajna. It is a long discourse, not a caption for the courtyard photograph. They argue, they chant, they describe the morning of the meet, and they teach a way of eating, bathing and breathing. What follows is their account, in the order of the film. The listener who wants the voices themselves can open the recording.",
+        figures: ["vedic-discourse-card"],
         link: { href: "https://www.youtube.com/watch?v=_p_k4tdwbeU", label: "Open the recording" },
       },
       {
@@ -332,6 +334,7 @@ export const en: Copy = {
       {
         title: "Mahacharya and Gunomata",
         body: "A separate recording from the championship carries the public title প্রকৃতি জাগরণ যজ্ঞ. On its lower third, Sourabh J. Sarkar is named Adhyaksh of Bharatiya Krishak Samaj in West Bengal, and Mahacharya of Karmyog Ashram and GunoKul. Reena J. Sarkar is named CTO of Bharat Krishak Samaj in West Bengal, and Gunomata of Karmyog Ashram and GunoKul. He stands in yellow, microphone in hand. She sits beside him. That is the sitting in the film.\n\nThe chair’s introduction of Sourabh J. Sarkar, at the opening, is a different moment: the chair’s words, told with the four days. Rina-ji, who spoke then about practice continuing, is not named on this lower third. The courtyard fire of 3 October is a third thing, photographed in the morning, and it is not given this film’s title. The Vedic discourse with Shyamal Ta remains the other recording.",
+        figures: ["mahacharya-gunomata"],
         link: { href: "https://www.youtube.com/watch?v=J5WbntnJwng", label: "Open the recording" },
       },
       {
@@ -355,11 +358,11 @@ export const en: Copy = {
     },
     address: {
       alt: "A speaker in yellow stands at a microphone beside the long table.",
-      caption: "An address from the table in the hall.",
+      caption: "",
     },
     "dais-speaker": {
       alt: "A speaker with a microphone stands among officials at the championship dais.",
-      caption: "The dais, with the championship banner behind.",
+      caption: "",
     },
     "dance-pair": {
       alt: "Two dancers in red and cream perform in the hall while the audience watches.",
@@ -395,11 +398,11 @@ export const en: Copy = {
     },
     "from-the-floor": {
       alt: "The gathering stands and sits around the dais, many holding phones.",
-      caption: "The gathering around the dais, seen from the floor of the hall.",
+      caption: "",
     },
     "crossing-dais": {
       alt: "A blurred figure crosses in front of the championship dais.",
-      caption: "Movement in front of the championship dais.",
+      caption: "",
     },
     "field-circle": {
       alt: "A circle seated on the ashram field at Muluk.",
@@ -443,7 +446,7 @@ export const en: Copy = {
     },
     "film-corridor": {
       alt: "The gathering seated before the 7th State Yogasana Sports Championship banner and a second banner.",
-      caption: "The gathering seated before the championship banners.",
+      caption: "",
     },
     "film-athletes": {
       alt: "Athletes in orange seated in the hall at Sri Sri Shiv Mandir.",
@@ -467,7 +470,7 @@ export const en: Copy = {
     },
     "yt-mahacharya": {
       alt: "Sourabh J. Sarkar, Mahacharya, and Reena J. Sarkar, Gunomata, in the recording titled প্রকৃতি জাগরণ যজ্ঞ, at the championship in Muluk, Birbhum.",
-      caption: "Sourabh J. Sarkar and Reena J. Sarkar, at Muluk.",
+      caption: "Sourabh J. Sarkar, Mahacharya, and Reena J. Sarkar, Gunomata, at Muluk.",
     },
     "yt-short-meet": {
       alt: "A vertical short from the state Yogasana championship.",
@@ -499,7 +502,7 @@ export const en: Copy = {
     },
     "hall-crew": {
       alt: "Deepayan and Nazmul sit with a camera, a sound desk and a laptop during the championship broadcast.",
-      caption: "Media and technical broadcast setup. Deepayan and Nazmul.",
+      caption: "Deepayan and Nazmul.",
     },
     "recognition-stand": {
       alt: "An athlete in an orange shirt holds a medal while officials stand beside her in the hall.",
@@ -572,6 +575,14 @@ export const en: Copy = {
     "table-address": {
       alt: "Sourabh J. Sarkar, in yellow, stands with a microphone beside the long table.",
       caption: "Sourabh J. Sarkar, Mahacharya, addressing the gathering.",
+    },
+    "mahacharya-gunomata": {
+      alt: "Sourabh J. Sarkar stands in yellow with a microphone while Reena J. Sarkar sits beside him. The lower thirds name him Mahacharya and her Gunomata.",
+      caption: "Mahacharya Sourabh J. Sarkar and Gunomata Reena J. Sarkar, in the Prakriti Jagran Yajna recording.",
+    },
+    "vedic-discourse-card": {
+      alt: "Title card of the Vedic yajna recording, with Shyamal Ta holding a microphone and a gathering seated around a fire.",
+      caption: "Shyamal Ta, in the Vedic yajna recording.",
     },
     dance: {
       alt: "Two dancers in cream, red and gold perform in the hall of Sri Sri Shiv Mandir while the gathering watches.",

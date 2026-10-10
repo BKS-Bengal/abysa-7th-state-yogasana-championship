@@ -5,10 +5,13 @@ import { prakritiArt, remoteFilms } from "@/lib/media";
 import { SiteFrame } from "@/components/SiteFrame";
 import { useLanguage } from "@/lib/language";
 
+const pairIds = new Set(["morning-address", "morning-havan", "practice-low", "practice-rise"]);
+
 export function PrakritiPage() {
   const { copy, locale } = useLanguage();
   const page = copy.prakriti;
   const interview = remoteFilms.find((film) => film.id === "yt-shyamal");
+  let mediaIndex = 0;
 
   return (
     <SiteFrame>
@@ -33,23 +36,43 @@ export function PrakritiPage() {
           {page.note ? <p>{page.note}</p> : null}
         </div>
       </section>
-      {page.sections.map((section, index) => (
-        <section className="affiliate-band" key={section.title} aria-labelledby={`prakriti-${index}`}>
-          <p className="chapter-no">{String(index + 2).padStart(2, "0")}</p>
-          <div>
-            <h2 id={`prakriti-${index}`}>{section.title}</h2>
-            {section.body.split(/\n\n+/).map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
-            {section.figures?.map((id) => (
-              <EditorialFigure key={id} id={id} />
-            ))}
-            {section.link ? (
-              <p><a href={section.link.href.includes("hdyJD2A38dY") && interview ? interview.youtube : section.link.href} target="_blank" rel="noreferrer">{section.link.label}</a></p>
+      {page.sections.map((section, index) => {
+        const figures = section.figures ?? [];
+        const flip = figures.length > 0 && mediaIndex++ % 2 === 1;
+        const pair = figures.length > 1 && figures.every((id) => pairIds.has(id));
+        const href = section.link
+          ? section.link.href.includes("hdyJD2A38dY") && interview
+            ? interview.youtube
+            : section.link.href
+          : "";
+        return (
+          <section
+            className={["prakriti-spread", figures.length ? "" : "is-text", flip ? "is-flip" : "", pair ? "has-pair" : ""].filter(Boolean).join(" ")}
+            key={section.title}
+            aria-labelledby={`prakriti-${index}`}
+          >
+            <div className="prakriti-head">
+              <p className="chapter-no">{String(index + 2).padStart(2, "0")}</p>
+              <h2 id={`prakriti-${index}`}>{section.title}</h2>
+            </div>
+            {figures.length ? (
+              <div className="prakriti-media">
+                {figures.map((id) => (
+                  <EditorialFigure key={id} id={id} />
+                ))}
+              </div>
             ) : null}
-          </div>
-        </section>
-      ))}
+            <div className="prakriti-body">
+              {section.body.split(/\n\n+/).map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+              {section.link ? (
+                <p><a href={href} target="_blank" rel="noreferrer">{section.link.label}</a></p>
+              ) : null}
+            </div>
+          </section>
+        );
+      })}
     </SiteFrame>
   );
 }
