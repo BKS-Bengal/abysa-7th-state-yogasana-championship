@@ -1,13 +1,14 @@
 "use client";
 
 import { EditorialFigure } from "@/components/EditorialFigure";
-import { prakritiArt } from "@/lib/media";
+import { prakritiArt, remoteFilms } from "@/lib/media";
 import { SiteFrame } from "@/components/SiteFrame";
 import { useLanguage } from "@/lib/language";
 
 export function PrakritiPage() {
   const { copy, locale } = useLanguage();
   const page = copy.prakriti;
+  const interview = remoteFilms.find((film) => film.id === "yt-shyamal");
 
   return (
     <SiteFrame>
@@ -44,7 +45,7 @@ export function PrakritiPage() {
               <EditorialFigure key={id} id={id} />
             ))}
             {section.link ? (
-              <p><a href={section.link.href} target="_blank" rel="noreferrer">{section.link.label}</a></p>
+              <p><a href={section.link.href.includes("hdyJD2A38dY") && interview ? interview.youtube : section.link.href} target="_blank" rel="noreferrer">{section.link.label}</a></p>
             ) : null}
           </div>
         </section>

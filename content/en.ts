@@ -7,7 +7,7 @@ export const en: Copy = {
     event: "Championship",
     yogasana: "Yogasana",
     organisation: "People",
-    prakriti: "Prakriti Jagran Yatra",
+    prakriti: "Prakriti Jagran Yajna",
     story: "Four days",
     gallery: "Gallery",
     media: "Films",
@@ -37,11 +37,11 @@ export const en: Copy = {
     ctaProgramme: "Contents",
     ctaVisit: "The four days",
     programmeTitle: "The four days",
-    programmeLead: "The opening is told first. The mornings on the grounds, and the close, follow it. People, Prakriti Jagran Yatra, the gallery, the films, and About keep the offices and the archive beside that sequence.",
+    programmeLead: "The opening is told first. The mornings on the grounds, and the close, follow it. People, Prakriti Jagran Yajna, the gallery, the films, and About keep the offices and the archive beside that sequence.",
     duringTitle: "During the championship",
     insideEyebrow: "Inside",
     insideTitle: "Inside the championship",
-    insideLead: "Officials worked through papers on the verandah, athletes performed on the mat, and the proceedings were recorded from the hall floor. The gallery holds other frames from the same championship.",
+    insideLead: "Officials worked through papers on the verandah, and athletes performed on the mat. The gallery holds other frames from the same championship.",
     watchFilm: "Watch the film",
     filmsEyebrow: "Recordings",
     filmsTitle: "Three recordings from the championship.",
@@ -78,7 +78,7 @@ export const en: Copy = {
     judgedTitle: "Competition",
     judged: "Artistic Yogasana was contested. What had been prepared on the mats was performed in the hall of Sri Sri Shiv Mandir. The dais and the long table faced that same room.",
     judgingTitle: "Judging",
-    judging: "A judging panel assessed the performances. District judging had already shaped who reached this state meet.\n\nIn the conversation recorded at Muluk, Shyamal Ta argued that time is the point of the judging. He said roughly six hundred athletes had come, and that about sixty-four or sixty-five judges were at work from morning into the night. He set that against meets he said were announced as a thousand or more and then finished in a single day by twenty or twenty-five judges. His arithmetic was that, across four days, one judge here would watch only a few athletes in a day, because alignment, the time a posture is held, and balance cannot be seen in a hurry. Those figures are his, spoken in the interview, as the opening figures were his.",
+    judging: "A judging panel assessed the performances. District judging had already shaped who reached this state meet.\n\nIn the conversation recorded at Muluk, Shyamal Ta argued that time is the point of the judging. He said about 550 to 600 athletes had come, and that about sixty-four or sixty-five judges were at work from morning into the night. He set that against meets he said were announced as a thousand or more and then finished in a single day by twenty or twenty-five judges. His arithmetic was that, across four days, one judge here would watch only a few athletes in a day, because alignment, the time a posture is held, and balance cannot be seen in a hurry. Those figures are his, spoken in the interview, as the opening figures were his.",
     gatheringTitle: "Around the competition",
     gathering: "Dance sat in the same hall as the sport. Beyond the hall, the championship used a verandah, a field, and a courtyard. Shyamal Ta described the mornings there: the flag, a yajna, then practice, then the competition.",
     whereTitle: "The four days",
@@ -108,10 +108,10 @@ export const en: Copy = {
     practice: "Athletes practise together on the mats. The association team leads the session.",
     nightTitle: "",
     night: "",
-    interview: "This frame is a separate recording, made before the banner that carries the name Prakriti Jagran Yatra. The man speaking is an ex-army doctor who later specialised in the heart. His name is not printed on the frame. The conversation with Shyamal Ta and Amit Shil, about the work and the plans, is kept with the films.",
+    interview: "This frame is a separate recording, made before a banner at the gathering. The man speaking is not named on the frame. The conversation with Shyamal Ta and Amit Shil, about the work and the plans, is a different recording, kept with the films.",
     interviewEyebrow: "A recording",
-    interviewTitle: "From the army to the heart.",
-    interviewNote: "A career conversation, recorded before the Prakriti Jagran Yatra banner.",
+    interviewTitle: "A conversation before a banner.",
+    interviewNote: "A separate recording from the interview with Shyamal Ta.",
     daysLabel: "The four days",
     daysLead: "From 1 to 4 October 2026 the championship occupied Bharat Sevashram Sangha at Muluk: the hall of Sri Sri Shiv Mandir, the courtyard, the open green field, and the rooms where athletes stayed. It is an ashram, not a city sports ground.",
     platesEyebrow: "Plates",
@@ -155,7 +155,7 @@ export const en: Copy = {
         passages: [
           "Shyamal Ta, State President of the All Bengal Yogasana Sports Association, addressed the gathering seated on the mats. Athletes and officials were in the same courtyard, before the day moved into the hall.",
           "A fire offering followed in that courtyard. Shyamal Ta sat beside the fire, microphone in hand, with athletes and officials around him.",
-          "The day then turned to portraits before the championship banner, and to the hall being filmed. By evening, young athletes sat together indoors, officials behind them.",
+          "The day then turned to portraits before the championship banner, and to the hall. By evening, young athletes sat together indoors, officials behind them.",
         ],
         close: "By evening, the gathering had moved from the open courtyard into the hall.",
       },
@@ -178,9 +178,9 @@ export const en: Copy = {
     title: "Photographs from the championship",
     em: "Athletes before the banner, recognition in the hall, and the evening.",
     groups: [
-      { id: "recorded", kicker: "People", title: "Athletes recorded", note: "On 3 October, athletes stood before the championship banner while the gathering was recorded." },
+      { id: "recorded", kicker: "People", title: "Athletes before the banner", note: "On 3 October, athletes stood before the championship banner." },
       { id: "recognition", kicker: "Recognition", title: "Medals and certificates", note: "Officials of the championship place the medals and hold the certificates beside the athletes." },
-      { id: "hall", kicker: "The hall", title: "Table, conversation, evening", note: "An address from the long table, a framed portrait brought forward, two recorded conversations, and the evening in the hall." },
+      { id: "hall", kicker: "The hall", title: "Table and evening", note: "An address from the long table, portraits brought to the table, and the evening in the hall." },
     ],
   },
   media: {
@@ -189,6 +189,7 @@ export const en: Copy = {
     em: "Four films made in the hall, and seven recordings kept on YouTube: the Vedic yajna, Shyamal Ta with Amit Shil, Abhay Barman, Sourabh J. Sarkar with Reena J. Sarkar, and three shorts.",
     play: "Play",
     open: "Open on YouTube",
+    watchInterview: "Watch the full interview",
     fig: "Fig.",
   },
   information: {
@@ -202,8 +203,8 @@ export const en: Copy = {
     organisers:
       "Karmyog for the 21st Century and Bharatiya Krishak Samaj were joint organisers of the championship.",
     closeEyebrow: "Close",
-    closeTitle: "Prakriti Jagran Yatra",
-    closeName: "Prakriti Jagran Yatra",
+    closeTitle: "Prakriti Jagran Yajna",
+    closeName: "Prakriti Jagran Yajna",
     closePlace: "Bharat Sevashram Sangha, Muluk, Bolpur, Birbhum",
     closeDate: "",
   },
@@ -219,16 +220,16 @@ export const en: Copy = {
     mottoGloss: "Equanimity is Yoga",
     session: "Judged as a sport.",
     pathway:
-      "District competition led into this state meet. A state result can lead on to the national level. That is the route the association describes.",
+      "Shyamal Ta, in the interview recorded at Muluk, described the route as he runs it: district championships, then this state meet, then selection onward to the National Games and Khelo India. That is his account of the ladder. It is not a promise of a place, an award, or employment.\n\nIn the same interview he spoke of money and of people by name. He said the registration fee was ₹50, and he set that against stay charges of ₹1,500 to ₹2,000. He named Ritu Mondal as someone who had entered the police and received cash awards, and Oliva of Hooghly as someone who had received a government post. He spoke of railway and central posts, of three further national gold medalists still waiting for joining letters, and of awards at Nabanna on 28 August: three of ₹3 lakh and one of ₹5 lakh. This site has not checked those names, sums, or appointments. They remain his account. Entering this championship is not a guarantee of a job or an award.",
     mottoNote: "The line on the Yogasana Bharat seal.",
   },
   organisation: {
     eyebrow: "The association",
     title: "The association that held the championship.",
     lead: "Shyamal Ta, State President of the All Bengal Yogasana Sports Association, held the office that ran the championship. The championship banner also names him as an executive committee member of Yogasana Bharat. Papiya Bhattacharya (Roy) was General Secretary. The association carried selection, judging, accommodation, and the route from district competition toward higher Yogasana.",
-    filmedTitle: "Documenting the proceedings.",
+    filmedTitle: "In the courtyard and the hall.",
     filmed:
-      "The association’s work was visible around the athletes: officials gathered in the courtyard, and the hall was filmed while the programme was underway.\n\nThe championship was documented alongside the sporting programme, so conversations and proceedings were kept with the competition on the mat.",
+      "Officials gathered in the courtyard. The hall held the gathering while the programme was underway.",
     voicesTitle: "Voices at the opening",
     voices:
       "The hall on 1 October held more than one office. The chair, speaking for the association, told the story of the ground that colleges would not give, and of the Sangha that did. He introduced Sourabh J. Sarkar as Mahacharya and as State President of Bharatiya Krishak Samaj, and he spoke of science in the farming of the Gangetic plain. Swami Shanti Maharaj welcomed the districts, named the imperfect lodging, and returned yoga to yuj: to join, and to bring the mind under control.\n\nKalyan Mukhopadhyay, the retired IPS officer, spoke of body, mind and bearing, and of police who stand from morning into the afternoon heat and are still expected to stay restrained. He asked people in Yogasana to work with the police. Supriyo Mukherjee, asked to help the meet be seen, compared kabaddi’s path from a village game to a paid public sport, and said he would look at competitive Yogasana. He announced no result of this meet. Rina-ji said practice continues whether or not anyone wins. Major Saheb quoted Rabindranath, named the four paths, left the English line “I for Illness, We for Wellness,” and closed with the peace chant. The thanks then turned to Papiya Bhattacharya (Roy), General Secretary. The four days tell these speeches in the order they were given.",
@@ -277,10 +278,10 @@ export const en: Copy = {
     },
   },
   prakriti: {
-    eyebrow: "The journey",
-    title: "Prakriti Jagran Yatra",
-    bangla: "প্রকৃতি জাগরণ যাত্রা",
-    lead: "Prakriti Jagran Yatra is the name carried beside the sport at this championship: a journey through how people live, eat, and farm, and what that leaves the young. It is not the name of the fire offering. The All Bengal Yogasana Sports Association presented the meet. The Yatra marked a subject inside it.",
+    eyebrow: "The offering",
+    title: "Prakriti Jagran Yajna",
+    bangla: "প্রকৃতি জাগরণ যজ্ঞ",
+    lead: "Prakriti Jagran Yajna is the name of this chapter: the recorded invocation and the talk of how people live, eat, and farm, set beside the sport. The All Bengal Yogasana Sports Association presented the meet. The photographs of 3 October show a fire offering in the courtyard that morning. They do not carry this title.",
     note: "",
     definition: "",
     sections: [
@@ -295,13 +296,13 @@ export const en: Copy = {
       },
       {
         title: "Food, farming, and the young",
-        body: "The opening in the hall had already set Sourabh J. Sarkar beside the sport. The chair introduced him as Mahacharya and as State President of Bharatiya Krishak Samaj in West Bengal, said he was an IIT student, and argued that farming reaches its height only when science is applied to it. He called the Gangetic basin, from the lower country of Uttar Pradesh to the Bengal delta, the best land, and he recalled Vivekananda’s line that one who would be a king must first learn to be a subject. Bharatiya Krishak Samaj was a joint organiser. The introduction itself is told with the opening.\n\nAmit Shil of Karmyog TV later sat with Shyamal Ta at the Sangha. He had come because he had been watching yoga programmes across West Bengal and beyond, and he remarked on the green, open grounds. Shyamal Ta described athletes coming through district competition from across the state. Shil then asked his own question. Karmyog, he said, had begun an effort he called Krishi Ratna League, to join cultivation with yoga so that this generation and the next might live with less illness and more strength. He asked how Shyamal Ta saw that joining.\n\nShyamal Ta called the thought timely. He said that had Singh been at the Sangha the day before, he would have heard Kartik Maharaj tell the athletes to rise at dawn, to practise daily, to learn the discipline of the Vedic yajna, and to eat food grown without poison. Shyamal Ta’s reading of that message was that the mat is not enough for a healthy body: food without poison has to reach the stomach, and that food comes from cultivation that refuses poison. He said the league and the association could stand together over the young and over farmers. That is his account of what was said, and of the joining.\n\nA separate sitting was recorded before the banner that carries this programme’s name. Two men sat for the camera there. The children of the gathering sat before the same banners.",
+        body: "The opening in the hall had already set Sourabh J. Sarkar beside the sport. The chair introduced him as Mahacharya and as State President of Bharatiya Krishak Samaj in West Bengal, said he was an IIT student, and argued that farming reaches its height only when science is applied to it. He called the Gangetic basin, from the lower country of Uttar Pradesh to the Bengal delta, the best land, and he recalled Vivekananda’s line that one who would be a king must first learn to be a subject. Bharatiya Krishak Samaj was a joint organiser. The introduction itself is told with the opening.\n\nAmit Shil of Karmyog TV later sat with Shyamal Ta at the Sangha. He had come because he had been watching yoga programmes across West Bengal and beyond, and he remarked on the green, open grounds. Shyamal Ta described athletes coming through district competition from across the state. Shil then asked his own question. Karmyog, he said, had begun an effort he called Krishi Ratna League, to join cultivation with yoga so that this generation and the next might live with less illness and more strength. He asked how Shyamal Ta saw that joining.\n\nShyamal Ta called the thought timely. He said that had Shil been at the Sangha the day before, he would have heard Kartik Maharaj tell the athletes to rise at dawn, to practise daily, to learn the discipline of the Vedic yajna, and to eat food grown without poison. Shyamal Ta’s reading of that message was that the mat is not enough for a healthy body: food without poison has to reach the stomach, and that food comes from cultivation that refuses poison. He said the league and the association could stand together over the young and over farmers. That is his account of what was said, and of the joining.\n\nOther frames from the gathering sit with this page: a conversation before a banner, and children seated before the banners. Neither frame is the interview with Shyamal Ta.",
         figures: ["interview-banner", "children-banner"],
-        link: { href: "https://www.youtube.com/watch?v=p6AdZy0HIi4", label: "Open Shyamal Ta’s conversation" },
+        link: { href: "https://www.youtube.com/watch?v=hdyJD2A38dY", label: "Watch the full interview" },
       },
       {
-        title: "What the name carries",
-        body: "In the Karmyog account that uses this name, Prakriti Jagran Yatra is not a slogan set beside the sport. It is a pilgrimage of fifteen steps. The point of the pilgrimage is that the world outside the body and the life inside it are one continuous field. The account opens on self-mastery: when body, breath, mind and consciousness are brought under one’s own hold, the restlessness of ordinary life can loosen, and service can become the purpose of a life. It welcomes the listener toward what it calls the good, the true and the beautiful.\n\nThe steps are walked in order. Earth is the ground under the feet. Water is what nourishes and moves. Fire is heat and change. Air is breath, the world’s and the person’s. Sky is the open space that holds the rest. Sun and moon follow: light, and the cooler balance of the night. Then the cosmos, and the living world, the web of creatures. Only then does the account turn inward: the body as the vessel, the breath as the life in it, the mind, consciousness as memory and awareness, the self, and at last the whole, in which no part is left outside. The teaching is that the part contains the whole, and the whole contains every part. Nature is not treated there as a store of material standing apart from the person who eats and practises.\n\nThe same account then asks auspiciousness for each step in turn, from the earth to the whole. It sets beside that chant the Vedic verse of fullness, that the full comes out of the full and the full remains, and the wish that all beings be happy. It speaks of work done without claiming the fruit, of a land of grain and flower, and of a strength that does not bargain for an easy path. That film closes on the national anthem. All of this is how the Karmyog account carries the name. It is the name beside this championship. It is not the name of the fire on the morning of 3 October, and it is not a second title for the meet.",
+        title: "The opening invocation",
+        body: "The recording that carries the title Prakriti Jagran Yajna opens by invoking fifteen elements, outer and inner, as one field. It is the opening of this chapter, not a separate programme. The account opens on self-mastery: when body, breath, mind and consciousness are brought under one’s own hold, the restlessness of ordinary life can loosen, and service can become the purpose of a life. It welcomes the listener toward what it calls the good, the true and the beautiful.\n\nThe steps are walked in order. Earth is the ground under the feet. Water is what nourishes and moves. Fire is heat and change. Air is breath, the world’s and the person’s. Sky is the open space that holds the rest. Sun and moon follow: light, and the cooler balance of the night. Then the cosmos, and the living world, the web of creatures. Only then does the account turn inward: the body as the vessel, the breath as the life in it, the mind, consciousness as memory and awareness, the self, and at last the whole, in which no part is left outside. The teaching is that the part contains the whole, and the whole contains every part. Nature is not treated there as a store of material standing apart from the person who eats and practises.\n\nThe same account then asks auspiciousness for each step in turn, from the earth to the whole. It sets beside that chant the Vedic verse of fullness, that the full comes out of the full and the full remains, and the wish that all beings be happy. It speaks of work done without claiming the fruit, of a land of grain and flower, and of a strength that does not bargain for an easy path. That film closes on the national anthem. This is the opening of the Prakriti Jagran Yajna recording. It is not the name of the fire photographed on the morning of 3 October, and it is not a second title for the meet.",
       },
       {
         title: "The recorded talk",
@@ -314,7 +315,7 @@ export const en: Copy = {
       },
       {
         title: "The prayers in the recording",
-        body: "The film is not only argument. It includes prayer and mantra. An opening song asks for the strength to bear sorrow, and not to be shaken from the path. The Gayatri is chanted, the prayer that divine light guide the intellect. Another prayer asks that what is harmful be removed and what is good be brought near. They describe the sipping of water and the touching of the body, dedicating speech, breath, sight, hearing, the arms and the thighs. The principal offering is accompanied by the Mahamrityunjaya mantra, and the rite is closed with the full offering and the peace chant. These are the words of the recording. They explain a dedication of work. They are not a second name for Prakriti Jagran Yatra, and they are not a prescription.",
+        body: "The film is not only argument. It includes prayer and mantra. An opening song asks for the strength to bear sorrow, and not to be shaken from the path. The Gayatri is chanted, the prayer that divine light guide the intellect. Another prayer asks that what is harmful be removed and what is good be brought near. They describe the sipping of water and the touching of the body, dedicating speech, breath, sight, hearing, the arms and the thighs. The principal offering is accompanied by the Mahamrityunjaya mantra, and the rite is closed with the full offering and the peace chant. These are the words of the recording. They explain a dedication of work. They are not a second title for the championship, and they are not a prescription.",
       },
       {
         title: "Meals, in their words",
@@ -335,7 +336,7 @@ export const en: Copy = {
       },
       {
         title: "Inside the championship",
-        body: "Judging, certificates, and medals remained the sporting close. The Yatra was the company the meet kept: an ashram, a farmers’ organisation, and a sporting body, on the same grounds, while athletes performed. From the courtyard the day moved into the hall.",
+        body: "Judging, certificates, and medals remained the sporting close. Prakriti Jagran Yajna was the company the meet kept beside the sport: an ashram, a farmers’ organisation, and a sporting body, on the same grounds, while athletes performed. From the courtyard the day moved into the hall. The courtyard fire of 3 October stays a photograph of that morning. It is not given this chapter’s title.",
       },
     ],
   },
@@ -365,8 +366,8 @@ export const en: Copy = {
       caption: "Dance in the hall during the gathering.",
     },
     "dance-record": {
-      alt: "Dancers mid-movement, with a phone held up to record the performance.",
-      caption: "The dance in the hall, recorded from the floor.",
+      alt: "Dancers mid-movement in the hall.",
+      caption: "The dance in the hall.",
     },
     "dance-turn": {
       alt: "Dancers seen from behind, turning in red blouses and cream skirts.",
@@ -389,7 +390,7 @@ export const en: Copy = {
       caption: "Young athletes seated along the mandir corridor.",
     },
     "hall-wide": {
-      alt: "The long hall opens onto the grounds, with children seated and cameras in the foreground.",
+      alt: "The long hall opens onto the grounds, with children seated.",
       caption: "The hall at Sri Sri Shiv Mandir, opening onto the grounds.",
     },
     "from-the-floor": {
@@ -433,15 +434,15 @@ export const en: Copy = {
       caption: "The association team leads morning practice at Muluk.",
     },
     "interview-seated": {
-      alt: "A man is filmed in conversation before the Prakriti Jagran Yatra banner.",
-      caption: "A recorded conversation before the Prakriti Jagran Yatra banner.",
+      alt: "A man speaks before a banner.",
+      caption: "",
     },
     "interview-camera": {
-      alt: "A camera on a tripod set up before the event banner.",
-      caption: "Recording equipment set up before the event banner.",
+      alt: "A camera on a tripod before a banner.",
+      caption: "",
     },
     "film-corridor": {
-      alt: "The gathering seated before the 7th State Yogasana Sports Championship banner and the Prakriti Jagran Yatra banner.",
+      alt: "The gathering seated before the 7th State Yogasana Sports Championship banner and a second banner.",
       caption: "The gathering seated before the championship banners.",
     },
     "film-athletes": {
@@ -473,7 +474,7 @@ export const en: Copy = {
       caption: "A short from the state championship.",
     },
     "yt-short-yajna": {
-      alt: "A vertical short whose title sets a Prakriti Jagaran fire beside Bharat Sevashram Sangha.",
+      alt: "A vertical short. Its YouTube title is Prakriti Jagaran Yagya beside Bharat Seva Sangha. On this site the chapter is Prakriti Jagran Yajna.",
       caption: "A short on the fire and the Sangha.",
     },
     "yt-short-line": {
@@ -545,28 +546,28 @@ export const en: Copy = {
       caption: "Officials and an athlete during recognition in the hall.",
     },
     "portrait-blue": {
-      alt: "An athlete waits with folded hands before the championship banner.",
-      caption: "An athlete waits with folded hands before the championship banner.",
+      alt: "An athlete stands with folded hands before the championship banner.",
+      caption: "",
     },
     "portrait-yellow": {
-      alt: "An athlete faces the camera in front of the championship banner, with a microphone clipped on.",
-      caption: "An athlete faces the camera during recordings in front of the championship banner.",
+      alt: "An athlete stands before the championship banner.",
+      caption: "",
     },
     "portrait-braid": {
-      alt: "An athlete stands with folded hands and a microphone before the championship banner.",
-      caption: "An athlete stands with folded hands while being recorded before the championship banner.",
+      alt: "An athlete stands with folded hands before the championship banner.",
+      caption: "",
     },
     "portrait-navy": {
-      alt: "An athlete speaks into a microphone before the championship banner.",
-      caption: "An athlete speaks into a microphone before the championship banner.",
+      alt: "An athlete stands before the championship banner.",
+      caption: "",
     },
     "portrait-jersey": {
-      alt: "An athlete is recorded before the championship banner on the morning of 3 October.",
-      caption: "An athlete is recorded before the championship banner on the morning of 3 October.",
+      alt: "An athlete stands before the championship banner.",
+      caption: "",
     },
     "interview-banner": {
-      alt: "An older man speaks on camera before the Prakriti Jagran Yatra banner, while a younger man listens. The recording is a career conversation with an ex-army cardiologist.",
-      caption: "A career conversation with an ex-army cardiologist, before the Prakriti Jagran Yatra banner.",
+      alt: "An older man speaks while a younger man listens, before a banner.",
+      caption: "",
     },
     "table-address": {
       alt: "Sourabh J. Sarkar, in yellow, stands with a microphone beside the long table.",
@@ -577,8 +578,8 @@ export const en: Copy = {
       caption: "Inaugural dance in the hall.",
     },
     "interview-sofa": {
-      alt: "Two men sit for a filmed conversation in front of the championship banner.",
-      caption: "A conversation recorded before the championship banner.",
+      alt: "Two men sit before the championship banner.",
+      caption: "",
     },
     "organisers-court": {
       alt: "Shyamal Ta, State President of the All Bengal Yogasana Sports Association, stands with officials and organisers in the courtyard at Bharat Sevashram Sangha, Muluk.",

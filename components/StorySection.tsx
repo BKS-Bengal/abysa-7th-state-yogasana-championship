@@ -2,6 +2,7 @@
 
 import { Fragment } from "react";
 import { dayDate } from "@/content/facts";
+import { remoteFilms } from "@/lib/media";
 import { EditorialFigure } from "./EditorialFigure";
 import { useLanguage } from "@/lib/language";
 
@@ -13,6 +14,7 @@ const dayFigures: Record<string, string[]> = {
 export function StorySection() {
   const { copy, locale } = useLanguage();
   const story = copy.story;
+  const interview = remoteFilms.find((film) => film.id === "yt-shyamal");
 
   return (
     <>
@@ -76,6 +78,9 @@ export function StorySection() {
           <p className="eyebrow">{story.interviewEyebrow}</p>
           <h2 id="story-interview-title">{story.interviewTitle}</h2>
           <p>{story.interview}</p>
+          {interview ? (
+            <p><a href={interview.youtube} target="_blank" rel="noreferrer">{copy.media.watchInterview}</a></p>
+          ) : null}
           <p className="edit-note">{story.interviewNote}</p>
         </div>
         <EditorialFigure id="interview-banner" />

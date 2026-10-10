@@ -15,6 +15,7 @@ export function EditorialFigure({ id, className, priority = false }: Props) {
   const still = stills.find((item) => item.id === id);
   if (!still) return null;
   const text = copy.captions[id];
+  const caption = (text?.caption ?? still.caption)?.trim() ?? "";
   const portrait = still.height > still.width;
   const classes = ["edit-figure", portrait ? "edit-portrait" : "", className].filter(Boolean).join(" ");
   const film = filmLinks[id];
@@ -30,17 +31,19 @@ export function EditorialFigure({ id, className, priority = false }: Props) {
         fetchPriority={priority ? "high" : "auto"}
         decoding="async"
       />
-      <figcaption>
-        <span>{copy.media.fig} {still.plate}</span>
-        <p>
-          {text?.caption ?? still.caption}
-          {film ? (
-            <a className="film-link" href={film} target="_blank" rel="noopener noreferrer">
-              {copy.home.watchFilm}
-            </a>
-          ) : null}
-        </p>
-      </figcaption>
+      {caption || film ? (
+        <figcaption>
+          <span>{copy.media.fig} {still.plate}</span>
+          <p>
+            {caption}
+            {film ? (
+              <a className="film-link" href={film} target="_blank" rel="noopener noreferrer">
+                {copy.home.watchFilm}
+              </a>
+            ) : null}
+          </p>
+        </figcaption>
+      ) : null}
     </figure>
   );
 }

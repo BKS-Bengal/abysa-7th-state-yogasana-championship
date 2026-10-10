@@ -64,7 +64,7 @@ function Shot({ item, onOpen, priority = false }: { item: Still; onOpen: (id: st
     <ImageReveal
       {...item}
       alt={text?.alt ?? item.alt}
-      caption={text?.caption ?? item.caption}
+      caption={(text?.caption ?? item.caption)?.trim() || undefined}
       className={span[item.id] ?? ""}
       onOpen={() => onOpen(item.id)}
       priority={priority}

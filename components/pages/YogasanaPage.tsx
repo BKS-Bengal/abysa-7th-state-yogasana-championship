@@ -47,7 +47,9 @@ export function YogasanaPage() {
           </blockquote>
           <div className="seal-row">
             <img src={logo.src} alt="" width={72} height={72} />
-            <p>{page.pathway}</p>
+            {page.pathway.split(/\n\n+/).map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
           </div>
         </div>
       </section>

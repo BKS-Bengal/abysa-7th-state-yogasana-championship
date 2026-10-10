@@ -74,7 +74,7 @@ export function Lightbox({ openId, onClose, ids }: Props) {
   const item = pool[active];
   if (!item) return null;
   const text = copy.captions[item.id];
-  const caption = text?.caption ?? item.caption;
+  const caption = (text?.caption ?? item.caption)?.trim() ?? "";
   const alt = text?.alt ?? item.alt;
 
   return (
@@ -82,7 +82,7 @@ export function Lightbox({ openId, onClose, ids }: Props) {
       className="lightbox"
       role="dialog"
       aria-modal="true"
-      aria-label={caption}
+      aria-label={caption || alt}
       onClick={(event) => {
         if (event.target === event.currentTarget) close();
       }}
@@ -100,7 +100,7 @@ export function Lightbox({ openId, onClose, ids }: Props) {
       <div className="lightbox-bar">
         <p>
           <span>{copy.media.fig} {item.plate}</span>
-          {caption}
+          {caption ? ` ${caption}` : null}
         </p>
         <div className="lightbox-nav">
           <button type="button" onClick={() => step(-1)} aria-label={copy.lightbox.previous}>

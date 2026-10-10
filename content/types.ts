@@ -1,6 +1,6 @@
 export type Locale = "en" | "bn";
 
-export type PlateText = { alt: string; caption: string };
+export type PlateText = { alt: string; caption?: string };
 
 export type Copy = {
   nav: {
@@ -176,6 +176,7 @@ export type Copy = {
     em: string;
     play: string;
     open: string;
+    watchInterview: string;
     fig: string;
   };
   information: {
