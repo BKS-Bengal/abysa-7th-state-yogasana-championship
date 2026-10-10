@@ -69,7 +69,7 @@ export const publishedPhotos: PhotoRecord[] = [
     section: "inside",
     theme: "documentation",
     alt: "Deepayan and Nazmul sit with a camera, a sound desk and a laptop during the championship broadcast.",
-    caption: "Media and technical broadcast setup. Deepayan and Nazmul.",
+    caption: "Deepayan and Nazmul.",
     usedOnce: true,
   },
   {
