@@ -38,4 +38,6 @@ YouTube oEmbed for `BpFFbFtfCFw` returned the title “Prakriti Jagaran Yagya”
 
 ## QA
 
-Recorded in the release report after the production build. Lint is not configured (`package.json` has `dev`, `build`, `start` only).
+`npx next build` on 10 October 2026 exited 0 and type-checked. There is no lint script. Local routes on port 3042 returned 200: `/`, `/event`, `/story`, `/gallery`, `/media`, `/organisation`, `/prakriti-jagaran-mancha`, `/information`, `/yogasana`. No public page contained `p6AdZy0HIi4` or “Prakriti Jagran Yatra”. Homepage iframes used `hdyJD2A38dY`, `RLgAz4onoSM`, and `_p_k4tdwbeU` at about 16:9. Overflow was absent at 390, 768, and 1280 px. Interview playback was not started, so it is not verified.
+
+Content commit: `38b7990f302f8bffe569ed10964841b9fee642e3` on `dev`. There is no `main` branch. The repository default is `master`.
